@@ -202,6 +202,27 @@ class TestDashboardHTTPServer(unittest.TestCase):
             self.assertIn("metadata", data["data"])
             self.assertEqual(data["data"]["metadata"]["total_forecast_hours"], 168)
 
+    def test_dashboard_bilingual_and_monitoring_markup(self):
+        """Verify index.html contains bilingual toggle, Agent API monitoring, and CSV export controls."""
+        url = f"http://127.0.0.1:{self.port}/"
+        with urllib.request.urlopen(url, timeout=5) as resp:
+            content = resp.read().decode("utf-8")
+            # Bilingual toggle
+            self.assertIn('id="advisory-lang-en"', content)
+            self.assertIn('id="advisory-lang-ta"', content)
+            self.assertIn('aria-label="Advisory Language Toggle"', content)
+            self.assertIn('தமிழ்', content)
+            # Agent health monitoring
+            self.assertIn('id="agent-status"', content)
+            self.assertIn('role="status"', content)
+            self.assertIn('aria-live="polite"', content)
+            # Advisory panel
+            self.assertIn('id="agent-advisory-result"', content)
+            self.assertIn('id="advisory-section"', content)
+            # CSV export controls
+            self.assertIn('Export Filtered', content)
+            self.assertIn('Download CSV', content)
+
 
 if __name__ == "__main__":
     unittest.main()

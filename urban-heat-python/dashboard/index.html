@@ -44,37 +44,84 @@ footer{text-align:center;color:#7b8798;font-size:12px;padding:28px 12px}
 <main>
  <h1>Heat Risk Dashboard</h1>
  <p class="sub">Analyze temperature and humidity to estimate heat risk for a location.</p>
- <section class="metrics">
-  <div class="card"><div class="metric-label"><span class="dot" style="background:#22c55e"></span>LOW</div><div class="metric-value">Low risk</div></div>
-  <div class="card"><div class="metric-label"><span class="dot" style="background:#eab308"></span>MODERATE</div><div class="metric-value">Moderate</div></div>
-  <div class="card"><div class="metric-label"><span class="dot" style="background:#f97316"></span>HIGH</div><div class="metric-value">High risk</div></div>
-  <div class="card"><div class="metric-label"><span class="dot" style="background:#ef4444"></span>SEVERE</div><div class="metric-value">Severe risk</div></div>
- </section>
- <section class="columns">
+  <section class="metrics" id="summaryMetrics">
   <div class="card">
-   <h3>New prediction</h3><p class="description">Enter readings to request a prediction from your existing API.</p>
-   <form id="form">
-    <label for="location">Location ID</label><input id="location" maxlength="100" required value="dashboard_test_001">
-    <label for="temp">Temperature (°C)</label><input id="temp" type="number" min="-50" max="70" step="0.1" value="36" required>
-    <label for="humidity">Relative humidity (%)</label><input id="humidity" type="number" min="0" max="100" step="0.1" value="40" required>
-    <button id="submit" type="submit">Calculate heat risk</button>
-   </form>
-   <p class="notice">Successful predictions are saved to your existing DynamoDB table. Use a test location ID.</p>
+   <div class="metric-label"><span class="dot" style="background:#22c55e"></span>LOW</div>
+   <div class="metric-value" id="lowCount">Loading...</div>
+   <p class="notice" id="lowPopulation"></p>
   </div>
   <div class="card">
-   <h3>Prediction result</h3><p class="description">The latest API response will appear here.</p>
-   <div class="empty" id="empty">Your prediction will appear here after submission.</div>
-   <div id="result"><span id="badge" class="badge"></span><h2 id="riskTitle"></h2><p id="message" class="description"></p>
-    <div class="readings"><div class="reading"><small>Temperature</small><strong id="outTemp"></strong></div><div class="reading"><small>Humidity</small><strong id="outHumidity"></strong></div></div>
-    <p id="outLocation" class="notice"></p>
-   </div>
-   <div id="error" role="alert"></div>
+   <div class="metric-label"><span class="dot" style="background:#eab308"></span>MODERATE</div>
+   <div class="metric-value" id="moderateCount">Loading...</div>
+   <p class="notice" id="moderatePopulation"></p>
+  </div>
+  <div class="card">
+   <div class="metric-label"><span class="dot" style="background:#f97316"></span>HIGH</div>
+   <div class="metric-value" id="highCount">Loading...</div>
+   <p class="notice" id="highPopulation"></p>
+  </div>
+  <div class="card">
+   <div class="metric-label"><span class="dot" style="background:#ef4444"></span>VERY HIGH</div>
+   <div class="metric-value" id="veryHighCount">Loading...</div>
+   <p class="notice" id="veryHighPopulation"></p>
   </div>
  </section>
+ <p class="notice" id="summaryStatus" role="status">Loading Chennai risk summary...</p>
 </main>
 <footer>ClimateGuard AI · Educational prototype · Categories are project-defined, not official health warnings.</footer>
 <script>
 const API_URL="https://gz3tj5hfxi.execute-api.us-east-1.amazonaws.com/prod/risk";
+
+const SUMMARY_URL = API_URL.replace(/\/risk\/?$/, "/summary");
+
+async function loadRiskSummary() {
+  const status = document.getElementById("summaryStatus");
+
+  try {
+    const response = await fetch(SUMMARY_URL);
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || "Summary request failed");
+    }
+
+    const categories = {
+      low: "Low",
+      moderate: "Moderate",
+      high: "High",
+      veryHigh: "Very High"
+    };
+
+    const formatNumber = value =>
+      Number(value).toLocaleString("en-IN", {
+        maximumFractionDigits: 1
+      });
+
+    for (const [key, category] of Object.entries(categories)) {
+      const row = data.summary.find(
+        item => item.risk_category.toLowerCase() === category.toLowerCase()
+      );
+
+      document.getElementById(key + "Count").textContent =
+        row ? formatNumber(row.hexagons) + " hexagons" : "0 hexagons";
+
+      document.getElementById(key + "Population").textContent =
+        "Vulnerable population: " +
+        formatNumber(row ? row.vulnerable_population : 0);
+    }
+
+    status.textContent =
+      "Chennai risk summary loaded · " + data.count +
+      " risk categories · Source: " + data.source;
+  } catch (error) {
+    status.textContent =
+      "Risk summary unavailable. The summary API may not be deployed yet, or its CORS configuration may need review.";
+    console.error("Risk summary error:", error);
+  }
+}
+
+loadRiskSummary();
+
 const form=document.getElementById("form");
 form.addEventListener("submit",async function(e){
  e.preventDefault();

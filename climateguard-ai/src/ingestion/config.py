@@ -13,12 +13,49 @@ DATA_PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 CACHE_DIR = PROJECT_ROOT / "cache"
 
 # Input Data File Paths
-CHENNAI_BOUNDARY_PATH = DATA_RAW_DIR / "chennai_tamil_nadu_india_boundary.geojson"
+def _resolve_boundary_path() -> Path:
+    """Resolve Chennai boundary GeoJSON checking project-local and workspace-root locations."""
+    local_path = DATA_RAW_DIR / "chennai_tamil_nadu_india_boundary.geojson"
+    if local_path.is_file():
+        return local_path
+    workspace_root_path = PROJECT_ROOT.parent / "data" / "raw" / "chennai_tamil_nadu_india_boundary.geojson"
+    if workspace_root_path.is_file():
+        return workspace_root_path
+    return local_path
 
-# Sibling workspace sample building path (fallback reference)
-SIBLING_BUILDING_SAMPLE_PATH = (
-    PROJECT_ROOT.parent / "urban-heat-python" / "data" / "raw" / "chennai_buildings_sample.geojson"
-)
+CHENNAI_BOUNDARY_PATH = _resolve_boundary_path()
+
+def _resolve_building_sample_path() -> Path:
+    """Resolve building sample GeoJSON checking local data/raw, sibling workspace, and workspace-root."""
+    local_path = DATA_RAW_DIR / "chennai_buildings_sample.geojson"
+    if local_path.is_file():
+        return local_path
+    sibling_path = (
+        PROJECT_ROOT.parent / "urban-heat-python" / "data" / "raw" / "chennai_buildings_sample.geojson"
+    )
+    if sibling_path.is_file():
+        return sibling_path
+    workspace_root_path = PROJECT_ROOT.parent / "data" / "raw" / "chennai_buildings_sample.geojson"
+    if workspace_root_path.is_file():
+        return workspace_root_path
+    return local_path
+
+SIBLING_BUILDING_SAMPLE_PATH = _resolve_building_sample_path()
+
+def _resolve_facilities_csv_path() -> Path:
+    """Resolve verified local facilities CSV checking local and workspace-root processed locations."""
+    candidates = [
+        DATA_PROCESSED_DIR / "chennai_facilities.csv",
+        PROJECT_ROOT.parent / "data" / "processed" / "chennai_facilities.csv",
+        PROJECT_ROOT.parent / "cache" / "osm" / "facilities.csv",
+    ]
+    for c in candidates:
+        if c.is_file():
+            return c
+    return DATA_PROCESSED_DIR / "chennai_facilities.csv"
+
+VERIFIED_FACILITIES_CSV_PATH = _resolve_facilities_csv_path()
+FACILITY_CACHE_TTL_SECONDS = 86400 * 7  # 7-day cache TTL for critical facilities
 
 # Coordinate Reference Systems
 GEOGRAPHIC_CRS = "EPSG:4326"   # WGS84 (Lon/Lat) for web services & GeoJSON

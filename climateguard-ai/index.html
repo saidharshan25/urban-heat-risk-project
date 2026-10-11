@@ -1,0 +1,4065 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClimateGuard AI — Chennai Heat Hazard Dashboard</title>
+  <meta name="description" content="ClimateGuard AI Chennai Heat Hazard Biometeorological Surveillance and Scenario Simulator Platform.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* -------------------------------------------------------------
+       VESPER.AI DESIGN SYSTEM TOKENS (BLACK & SILVER LUXURY PALETTE)
+       ------------------------------------------------------------- */
+    :root, [data-theme="dark"] {
+      --bg-canvas: #07080b;
+      --bg-surface: #0d0f15;
+      --bg-surface-elevated: #131722;
+      --bg-card: rgba(16, 20, 29, 0.85);
+      --bg-card-hover: rgba(24, 30, 44, 0.95);
+      --bg-sidebar: #090b10;
+      --bg-topbar: rgba(10, 12, 17, 0.88);
+      --bg-input: #07090f;
+      --bg-table-header: #10141f;
+
+      --border-hairline: rgba(255, 255, 255, 0.08);
+      --border-subtle: rgba(226, 232, 240, 0.14);
+      --border-highlight: rgba(226, 232, 240, 0.28);
+      --border-focus: #e2e8f0;
+
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --text-inverse: #07080b;
+
+      --silver-gradient: linear-gradient(135deg, #ffffff 0%, #cbd5e1 55%, #94a3b8 100%);
+      --silver-chrome: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.02) 100%);
+      --silver-glow: 0 0 25px rgba(226, 232, 240, 0.07);
+
+      --tier-green: #10b981;
+      --tier-green-bg: rgba(16, 185, 129, 0.12);
+      --tier-green-border: rgba(16, 185, 129, 0.35);
+      --tier-yellow: #f59e0b;
+      --tier-yellow-bg: rgba(245, 158, 11, 0.12);
+      --tier-yellow-border: rgba(245, 158, 11, 0.35);
+      --tier-orange: #f97316;
+      --tier-orange-bg: rgba(249, 115, 22, 0.12);
+      --tier-orange-border: rgba(249, 115, 22, 0.35);
+      --tier-red: #ef4444;
+      --tier-red-bg: rgba(239, 68, 68, 0.14);
+      --tier-red-border: rgba(239, 68, 68, 0.38);
+
+      --warning-bg: rgba(245, 158, 11, 0.08);
+      --warning-border: rgba(245, 158, 11, 0.3);
+      --warning-text: #fde68a;
+
+      --error-bg: rgba(239, 68, 68, 0.12);
+      --error-border: rgba(239, 68, 68, 0.4);
+      --error-text: #fca5a5;
+
+      --accent-cyan: #38bdf8;
+      --accent-cyan-bg: rgba(56, 189, 248, 0.12);
+
+      --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      --shadow-sidebar: 4px 0 24px rgba(0, 0, 0, 0.4);
+    }
+
+    [data-theme="light"] {
+      --bg-canvas: #f4f6fa;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #f8fafc;
+      --bg-card: rgba(255, 255, 255, 0.92);
+      --bg-card-hover: #ffffff;
+      --bg-sidebar: #0f172a;
+      --bg-topbar: rgba(255, 255, 255, 0.9);
+      --bg-input: #ffffff;
+      --bg-table-header: #f1f5f9;
+
+      --border-hairline: rgba(15, 23, 42, 0.08);
+      --border-subtle: rgba(15, 23, 42, 0.15);
+      --border-highlight: rgba(15, 23, 42, 0.35);
+      --border-focus: #0f172a;
+
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --text-inverse: #f8fafc;
+
+      --silver-gradient: linear-gradient(135deg, #0f172a 0%, #334155 60%, #475569 100%);
+      --silver-chrome: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(241, 245, 249, 0.6) 100%);
+      --silver-glow: 0 4px 20px rgba(15, 23, 42, 0.06);
+
+      --tier-green: #059669;
+      --tier-green-bg: rgba(5, 150, 105, 0.12);
+      --tier-green-border: rgba(5, 150, 105, 0.3);
+      --tier-yellow: #d97706;
+      --tier-yellow-bg: rgba(217, 119, 6, 0.12);
+      --tier-yellow-border: rgba(217, 119, 6, 0.3);
+      --tier-orange: #ea580c;
+      --tier-orange-bg: rgba(234, 88, 12, 0.12);
+      --tier-orange-border: rgba(234, 88, 12, 0.3);
+      --tier-red: #dc2626;
+      --tier-red-bg: rgba(220, 38, 38, 0.12);
+      --tier-red-border: rgba(220, 38, 38, 0.3);
+
+      --warning-bg: rgba(217, 119, 6, 0.08);
+      --warning-border: rgba(217, 119, 6, 0.25);
+      --warning-text: #92400e;
+
+      --error-bg: rgba(220, 38, 38, 0.08);
+      --error-border: rgba(220, 38, 38, 0.25);
+      --error-text: #991b1b;
+
+      --accent-cyan: #0284c7;
+      --accent-cyan-bg: rgba(2, 132, 199, 0.12);
+
+      --shadow-card: 0 4px 18px -2px rgba(15, 23, 42, 0.06), inset 0 1px 0 rgba(255, 255, 255, 1);
+      --shadow-sidebar: 4px 0 24px rgba(0, 0, 0, 0.15);
+    }
+
+    /* -------------------------------------------------------------
+       GLOBAL RESET & TYPOGRAPHY
+       ------------------------------------------------------------- */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-primary);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.55;
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Accessibility Focus & Reduced Motion */
+    :focus-visible {
+      outline: 2px solid var(--border-focus) !important;
+      outline-offset: 2px !important;
+      box-shadow: 0 0 0 4px rgba(226, 232, 240, 0.25) !important;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -60px;
+      left: 16px;
+      background: var(--text-primary);
+      color: var(--text-inverse);
+      padding: 10px 18px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border-radius: 6px;
+      z-index: 99999;
+      text-decoration: none;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+      top: 16px;
+      outline: 2px solid var(--accent-cyan);
+    }
+
+    /* -------------------------------------------------------------
+       APP SHELL: SIDEBAR + MAIN CONTENT
+       ------------------------------------------------------------- */
+    .vesper-app {
+      display: flex;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Sidebar */
+    .vesper-sidebar {
+      width: 270px;
+      background-color: var(--bg-sidebar);
+      border-right: 1px solid var(--border-hairline);
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow-y: auto;
+      overflow-x: hidden;
+      box-shadow: var(--shadow-sidebar);
+    }
+
+    .vesper-sidebar.collapsed {
+      width: 76px;
+    }
+
+    .sidebar-header {
+      padding: 24px 20px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-hairline);
+      min-height: 75px;
+    }
+
+    .sidebar-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .brand-emblem {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      border-radius: 9px;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f8fafc;
+      font-weight: 800;
+      font-size: 1.05rem;
+    }
+
+    .brand-meta {
+      display: flex;
+      flex-direction: column;
+      transition: opacity 0.2s ease;
+    }
+
+    .vesper-sidebar.collapsed .brand-meta {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .brand-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: var(--silver-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2;
+    }
+
+    .brand-sub {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Sidebar Nav */
+    .sidebar-nav {
+      flex: 1;
+      padding: 20px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .nav-section-title {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      padding: 10px 12px 6px;
+      font-weight: 700;
+      transition: opacity 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .vesper-sidebar.collapsed .nav-section-title {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .nav-item:hover, .nav-item:focus-visible {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-item.active {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .nav-item.active::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      bottom: 6px;
+      width: 3px;
+      background: var(--text-primary);
+      border-radius: 0 3px 3px 0;
+    }
+
+    .nav-icon {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.8;
+    }
+
+    .vesper-sidebar.collapsed .nav-label {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .sidebar-footer {
+      padding: 16px 14px;
+      border-top: 1px solid var(--border-hairline);
+    }
+
+    .sidebar-status-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-hairline);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      min-width: 8px;
+      border-radius: 50%;
+      background-color: var(--tier-green);
+      box-shadow: 0 0 8px var(--tier-green);
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    /* -------------------------------------------------------------
+       MAIN WRAPPER & TOPBAR
+       ------------------------------------------------------------- */
+    .vesper-main-wrapper {
+      flex: 1;
+      margin-left: 270px;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      transition: margin-left 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .vesper-sidebar.collapsed + .vesper-main-wrapper {
+      margin-left: 76px;
+    }
+
+    .vesper-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 900;
+      background: var(--bg-topbar);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-hairline);
+      height: 64px;
+      padding: 0 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-icon {
+      background: transparent;
+      border: 1px solid var(--border-hairline);
+      color: var(--text-secondary);
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-icon:hover {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-primary);
+      border-color: var(--border-subtle);
+    }
+
+    .breadcrumbs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .breadcrumbs span.current {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: var(--accent-cyan-bg);
+      color: var(--accent-cyan);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .status-badge.healthy {
+      background: var(--tier-green-bg);
+      color: var(--tier-green);
+      border-color: var(--tier-green-border);
+    }
+
+    .status-badge.error {
+      background: var(--error-bg);
+      color: var(--error-text);
+      border-color: var(--error-border);
+    }
+
+    .theme-toggle-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-hairline);
+      color: var(--text-secondary);
+      padding: 7px 12px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-size: 0.82rem;
+      font-weight: 600;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .theme-toggle-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-primary);
+    }
+
+    /* -------------------------------------------------------------
+       MAIN CONTENT CONTAINER
+       ------------------------------------------------------------- */
+    .vesper-content {
+      padding: 32px 36px 64px;
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Header Hero Section */
+    .hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      background-image: var(--silver-chrome);
+    }
+
+    .hero-title-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      background: var(--silver-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      margin-top: 6px;
+      max-width: 800px;
+      line-height: 1.5;
+    }
+
+    /* Metadata Telemetry Grid */
+    .metadata-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-hairline);
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-hairline);
+      border-radius: 9px;
+      padding: 12px 14px;
+    }
+
+    .meta-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .meta-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      word-break: break-all;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* -------------------------------------------------------------
+       BANNERS & ADVISORIES
+       ------------------------------------------------------------- */
+    .banner {
+      border-radius: 12px;
+      padding: 18px 24px;
+      margin-bottom: 24px;
+      font-size: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .banner-warning {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      color: var(--warning-text);
+    }
+
+    .banner-error {
+      background: var(--error-bg);
+      border: 1px solid var(--error-border);
+      color: var(--error-text);
+    }
+
+    .banner-title {
+      font-weight: 700;
+      font-size: 0.98rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* -------------------------------------------------------------
+       ALERT TIER DISTRIBUTION CARDS
+       ------------------------------------------------------------- */
+    .cards-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    .tier-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-hairline);
+      border-radius: 12px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    .tier-card:hover {
+      transform: translateY(-3px);
+      background: var(--bg-card-hover);
+      border-color: var(--border-subtle);
+    }
+
+    .tier-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+    }
+
+    .tier-card.green::before { background-color: var(--tier-green); }
+    .tier-card.yellow::before { background-color: var(--tier-yellow); }
+    .tier-card.orange::before { background-color: var(--tier-orange); }
+    .tier-card.red::before { background-color: var(--tier-red); }
+
+    .tier-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .tier-name {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .tier-card.green .tier-name { color: var(--tier-green); }
+    .tier-card.yellow .tier-name { color: var(--tier-yellow); }
+    .tier-card.orange .tier-name { color: var(--tier-orange); }
+    .tier-card.red .tier-name { color: var(--tier-red); }
+
+    .tier-indicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .tier-card.green .tier-indicator { background: var(--tier-green); box-shadow: 0 0 10px var(--tier-green); }
+    .tier-card.yellow .tier-indicator { background: var(--tier-yellow); box-shadow: 0 0 10px var(--tier-yellow); }
+    .tier-card.orange .tier-indicator { background: var(--tier-orange); box-shadow: 0 0 10px var(--tier-orange); }
+    .tier-card.red .tier-indicator { background: var(--tier-red); box-shadow: 0 0 10px var(--tier-red); }
+
+    .tier-count {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: -0.04em;
+    }
+
+    .tier-desc {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    /* -------------------------------------------------------------
+       PHASE 2: HEAT-RISK TIMELINE & DISTRIBUTION VISUALIZATION
+       ------------------------------------------------------------- */
+    .vis-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: 14px;
+      padding: 26px 30px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+
+    .vis-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-hairline);
+      padding-bottom: 16px;
+    }
+
+    .vis-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .vis-legend {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 18px;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-line {
+      width: 18px;
+      height: 3px;
+      border-radius: 2px;
+    }
+
+    .vis-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-tab {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-hairline);
+      color: var(--text-secondary);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .btn-tab:hover, .btn-tab.active {
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--text-primary);
+      border-color: var(--border-highlight);
+    }
+
+    /* SVG Timeline Container */
+    .timeline-container {
+      width: 100%;
+      height: 340px;
+      position: relative;
+      margin-bottom: 18px;
+      user-select: none;
+    }
+
+    .timeline-svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .tooltip-glass {
+      position: absolute;
+      background: rgba(13, 17, 23, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.8rem;
+      color: var(--text-primary);
+      pointer-events: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      z-index: 50;
+      display: none;
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1.45;
+    }
+
+    /* Diurnal & Distribution Stat Strip */
+    .stat-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-hairline);
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-hairline);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* -------------------------------------------------------------
+       PHASE 2: SCENARIO SIMULATOR (ENHANCED AGENT ENGINE)
+       ------------------------------------------------------------- */
+    #agent-panel {
+      padding: 30px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: 14px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+      color: var(--text-primary);
+    }
+
+    .section-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+
+    .scenario-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .scenario-pill-btn {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-hairline);
+      border-radius: 10px;
+      padding: 14px 16px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: var(--text-secondary);
+    }
+
+    .scenario-pill-btn:hover {
+      border-color: var(--border-subtle);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .scenario-pill-btn.active {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: var(--border-highlight);
+      color: var(--text-primary);
+      box-shadow: 0 2px 12px rgba(255, 255, 255, 0.05);
+    }
+
+    .scenario-pill-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .scenario-pill-desc {
+      font-size: 0.78rem;
+      line-height: 1.4;
+      color: var(--text-muted);
+    }
+
+    .scenario-multiplier-badge {
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-primary);
+    }
+
+    .comparison-strip {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-hairline);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 18px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+    }
+
+    .comparison-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .agent-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .agent-priority-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-hairline);
+      border-radius: 10px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .agent-priority-card:hover {
+      border-color: var(--border-subtle);
+      background: rgba(255, 255, 255, 0.04);
+      transform: translateY(-2px);
+    }
+
+    .agent-priority-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-hairline);
+      padding-bottom: 8px;
+      margin-bottom: 4px;
+    }
+
+    .agent-priority-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .agent-status-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-hairline);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-family: 'JetBrains Mono', monospace;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .advisory-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-hairline);
+      border-left: 3px solid var(--accent-cyan);
+      border-radius: 8px;
+      padding: 16px 20px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--text-primary);
+      margin-top: 10px;
+    }
+
+    /* -------------------------------------------------------------
+       HOURLY FORECAST TABLE & CONTROLS
+       ------------------------------------------------------------- */
+    .controls-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: 12px;
+      padding: 18px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .filter-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    select, input[type="text"], input[type="number"] {
+      background: var(--bg-input);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 9px 14px;
+      font-size: 0.86rem;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    select:focus, input[type="text"]:focus, input[type="number"]:focus {
+      border-color: var(--border-focus);
+      background: var(--bg-surface-elevated);
+    }
+
+    .btn-reset, .btn-primary {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 9px 16px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-reset:hover, .btn-primary:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--border-highlight);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: #e2e8f0;
+      color: #07080b;
+      border-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-primary:hover {
+      background: #ffffff;
+      color: #000000;
+      box-shadow: 0 4px 14px rgba(255, 255, 255, 0.25);
+    }
+
+    .records-count-badge {
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .table-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .table-wrapper {
+      max-height: 620px;
+      overflow-y: auto;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border-subtle) transparent;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.86rem;
+    }
+
+    thead th {
+      background: var(--bg-table-header);
+      color: var(--text-secondary);
+      font-weight: 700;
+      padding: 14px 16px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid var(--border-hairline);
+      white-space: nowrap;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--border-hairline);
+      transition: background-color 0.15s ease;
+    }
+
+    tbody tr:hover {
+      background-color: rgba(255, 255, 255, 0.035);
+    }
+
+    tbody td {
+      padding: 14px 16px;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+
+    .badge-tier {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.03em;
+    }
+
+    .badge-tier.green {
+      background: var(--tier-green-bg);
+      color: var(--tier-green);
+      border: 1px solid var(--tier-green-border);
+    }
+
+    .badge-tier.yellow {
+      background: var(--tier-yellow-bg);
+      color: var(--tier-yellow);
+      border: 1px solid var(--tier-yellow-border);
+    }
+
+    .badge-tier.orange {
+      background: var(--tier-orange-bg);
+      color: var(--tier-orange);
+      border: 1px solid var(--tier-orange-border);
+    }
+
+    .badge-tier.red {
+      background: var(--tier-red-bg);
+      color: var(--tier-red);
+      border: 1px solid var(--tier-red-border);
+    }
+
+    .badge-tier.invalid {
+      background: rgba(100, 116, 139, 0.15);
+      color: var(--text-muted);
+      border: 1px solid var(--border-hairline);
+    }
+
+    .validation-note {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      max-width: 260px;
+      white-space: normal;
+      word-break: break-word;
+      line-height: 1.4;
+    }
+
+    /* -------------------------------------------------------------
+       SCIENTIFIC LIMITATIONS FOOTER
+       ------------------------------------------------------------- */
+    .footer-limitations {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: 12px;
+      padding: 24px 28px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      box-shadow: var(--shadow-card);
+      margin-top: 24px;
+    }
+
+    .footer-limitations h3 {
+      color: var(--text-primary);
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .footer-limitations ul {
+      margin-left: 20px;
+      margin-top: 8px;
+    }
+
+    .footer-limitations li {
+      margin-bottom: 6px;
+    }
+
+    .site-footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      padding: 40px 16px 20px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Loading Spinner */
+    .spinner-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px;
+      gap: 16px;
+    }
+
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid var(--border-hairline);
+      border-top-color: var(--border-focus);
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 1024px) {
+      .vesper-sidebar { transform: translateX(-100%); }
+      .vesper-sidebar.mobile-open { transform: translateX(0); }
+      .vesper-main-wrapper { margin-left: 0 !important; }
+      .vesper-content { padding: 24px 20px 48px; }
+      .scenario-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .hero-title-row { flex-direction: column; }
+      h1 { font-size: 1.45rem; }
+      .controls-card { flex-direction: column; align-items: stretch; }
+      .filter-group { flex-direction: column; align-items: stretch; }
+    }
+
+    /* --- Phase 3 Styles: Advisory Panel, Planning Outputs, Alert Log --- */
+    .badge-draft {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(245, 158, 11, 0.14);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      padding: 3px 9px;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .badge-simulated {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(239, 68, 68, 0.12);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      padding: 3px 9px;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .badge-meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--bg-surface-elevated);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+      padding: 3px 9px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .advisory-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .advisory-text-box {
+      background: rgba(255, 255, 255, 0.03);
+      border-left: 3px solid var(--border-focus);
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+    .advisory-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .precaution-card {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 12px 14px;
+      transition: border-color 0.2s;
+    }
+    .precaution-card:hover {
+      border-color: var(--border-highlight);
+    }
+    .precaution-card-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 8px;
+    }
+    .precaution-card ul {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+    .precaution-card li {
+      margin-bottom: 4px;
+    }
+    .advisory-limitations-box {
+      border-left: 3px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.06);
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      margin-top: 14px;
+      line-height: 1.5;
+    }
+    .planning-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .planning-tab-btn {
+      background: var(--bg-surface-elevated);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+      padding: 7px 14px;
+      border-radius: 6px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      transition: all 0.2s;
+    }
+    .planning-tab-btn:hover {
+      border-color: var(--border-highlight);
+      color: var(--text-primary);
+    }
+    .planning-tab-btn.active {
+      background: var(--bg-card);
+      color: var(--text-primary);
+      border-color: var(--border-focus);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.06);
+    }
+    .output-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .output-table-scroll {
+      max-height: 440px;
+      overflow: auto;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      background: var(--bg-surface);
+    }
+    .output-data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      text-align: left;
+    }
+    .output-data-table th {
+      position: sticky;
+      top: 0;
+      background: var(--bg-table-header);
+      color: var(--text-secondary);
+      padding: 10px 12px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 1;
+      white-space: nowrap;
+    }
+    .output-data-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border-hairline);
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+    .output-data-table tr:hover td {
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .pagination-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: var(--silver-chrome);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-download:hover {
+      border-color: var(--border-focus);
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+    }
+    .alert-log-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 12px;
+    }
+    .alert-feed-item {
+      display: grid;
+      grid-template-columns: 160px 110px 110px 150px 1fr;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-hairline);
+      font-size: 0.82rem;
+      transition: background-color 0.3s;
+    }
+    .alert-feed-item:last-child {
+      border-bottom: none;
+    }
+    .alert-feed-item.newly-added {
+      background: rgba(245, 158, 11, 0.08);
+    }
+    @media (max-width: 900px) {
+      .alert-feed-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+    }
+
+
+    /* Phase 4 Accessibility & Screen Reader Support */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Phase 4 Responsive Table Scroll Cue & Touch Targets */
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 8px;
+      position: relative;
+      scrollbar-width: thin;
+    }
+    .table-responsive::-webkit-scrollbar {
+      height: 6px;
+    }
+    .table-responsive::-webkit-scrollbar-thumb {
+      background: var(--border-subtle);
+      border-radius: 3px;
+    }
+
+    .official-references-callout {
+      background: rgba(56, 189, 248, 0.05);
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 16px;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .official-ref-title {
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .official-ref-links {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .official-ref-links a {
+      color: var(--accent-cyan);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 600;
+    }
+    .official-ref-links a:hover {
+      color: var(--text-primary);
+    }
+    .precaution-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.07);
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 640px) {
+      .output-toolbar {
+        flex-direction: column !important;
+        align-items: stretch !important;
+      }
+      .output-toolbar > div {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+      }
+      .output-toolbar input,
+      .output-toolbar select,
+      .output-toolbar .btn-download {
+        width: 100% !important;
+        min-height: 44px !important;
+      }
+      .btn-icon, .btn-pill, .btn-action {
+        min-height: 42px;
+      }
+    }
+
+
+    /* Phase 4.2: Targeted Mobile Topbar & Container Responsive Layout */
+    .vesper-topbar {
+      min-width: 0;
+      max-width: 100%;
+    }
+    .topbar-left {
+      min-width: 0;
+    }
+    .topbar-right {
+      min-width: 0;
+    }
+
+    @media (max-width: 768px) {
+      .vesper-topbar {
+        height: auto !important;
+        min-height: 56px;
+        padding: 8px 12px !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+        align-items: center !important;
+      }
+      .topbar-left {
+        flex: 1 1 100% !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        gap: 8px !important;
+        justify-content: flex-start !important;
+      }
+      .breadcrumbs {
+        min-width: 0 !important;
+        flex: 1 1 auto !important;
+        font-size: 0.78rem !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+      }
+      .breadcrumbs .current {
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+        min-width: 0 !important;
+      }
+      .topbar-right {
+        flex: 1 1 100% !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+        justify-content: flex-start !important;
+      }
+      .topbar-right .btn-reset,
+      .topbar-right .status-badge,
+      .topbar-right .theme-toggle-btn {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        min-height: 36px !important;
+        padding: 4px 8px !important;
+        font-size: 0.75rem !important;
+        justify-content: center !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+      }
+      .vesper-content {
+        padding: 16px 10px 36px !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+      }
+      .hero-card, .vis-card, .controls-card {
+        padding: 16px 12px !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+      }
+      .vis-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+      }
+      .vis-controls {
+        width: 100% !important;
+        flex-wrap: wrap !important;
+      }
+      .vis-controls .btn-tab {
+        flex: 1 1 auto !important;
+        text-align: center !important;
+      }
+      .stat-strip {
+        grid-template-columns: 1fr !important;
+      }
+      .metadata-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .scenario-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .advisory-header-row {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 8px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .vesper-topbar {
+        padding: 6px 8px !important;
+        gap: 6px !important;
+      }
+      .topbar-left {
+        gap: 6px !important;
+      }
+      .topbar-right {
+        gap: 4px !important;
+      }
+      .breadcrumbs {
+        font-size: 0.72rem !important;
+      }
+      .hero-card, .vis-card, .controls-card {
+        padding: 14px 8px !important;
+      }
+      .stat-box {
+        padding: 10px 8px !important;
+      }
+      .vis-legend {
+        gap: 8px !important;
+        font-size: 0.72rem !important;
+      }
+      .legend-item {
+        font-size: 0.72rem !important;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="sr-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="vesper-app" id="vesper-app">
+    <!-- Collapsible Sidebar -->
+    <aside class="vesper-sidebar" id="vesper-sidebar" aria-label="Main Navigation">
+      <div class="sidebar-header">
+        <a href="#metadata-section" class="sidebar-brand">
+          <div class="brand-emblem" aria-hidden="true">CG</div>
+          <div class="brand-meta">
+            <span class="brand-title">CLIMATEGUARD AI</span>
+            <span class="brand-sub">SURVEILLANCE OS</span>
+          </div>
+        </a>
+        <button class="btn-icon" id="sidebar-collapse-btn" title="Collapse sidebar" aria-label="Collapse sidebar" aria-expanded="true" aria-controls="vesper-sidebar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Telemetry &amp; Data</div>
+        <a href="#metadata-section" class="nav-item active" id="nav-telemetry">
+          <span class="nav-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          </span>
+          <span class="nav-label">Surveillance Telemetry</span>
+        </a>
+        <a href="#timeline-vis-section" class="nav-item" id="nav-vis">
+          <span class="nav-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </span>
+          <span class="nav-label">Heat Hazard Timeline</span>
+        </a>
+        <a href="#tier-cards-row" class="nav-item" id="nav-tiers">
+          <span class="nav-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </span>
+          <span class="nav-label">Alert Tier Distribution</span>
+        </a>
+        <a href="#forecast-table-section" class="nav-item" id="nav-forecast">
+          <span class="nav-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </span>
+          <span class="nav-label">168h Hourly Records</span>
+        </a>
+
+        <div class="nav-section-title">Scenario Engine</div>
+        <a href="#agent-panel" class="nav-item" id="nav-agent">
+          <span class="nav-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m12 6 4 6h-8z"/><path d="m12 18-4-6h8z"/></svg>
+          </span>
+          <span class="nav-label">Scenario Simulator</span>
+        </a>
+
+        <div class="nav-section-title">Governance</div>
+        <a href="#advisory-section" class="nav-item" id="nav-advisory-panel">
+          <span class="nav-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+          </span>
+          <span class="nav-label">Precautionary Advisory</span>
+        </a>
+        <a href="#agent-output-wrapper" class="nav-item" id="nav-outputs">
+          <span class="nav-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </span>
+          <span class="nav-label">Planning Outputs</span>
+        </a>
+        <a href="#alert-log-section" class="nav-item" id="nav-alerts">
+          <span class="nav-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          </span>
+          <span class="nav-label">Simulated Alert Log</span>
+        </a>
+        <a href="#limitations-section" class="nav-item" id="nav-advisory">
+          <span class="nav-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </span>
+          <span class="nav-label">Scientific Advisory</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-status-box">
+          <div class="pulse-dot" aria-hidden="true"></div>
+          <span>● Local Port 8080 · Surveillance Active</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="vesper-main-wrapper">
+      <!-- Responsive Topbar -->
+      <header class="vesper-topbar">
+        <div class="topbar-left">
+          <button class="btn-icon" id="sidebar-toggle-btn" aria-label="Toggle navigation sidebar" aria-expanded="false" aria-controls="vesper-sidebar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <div class="breadcrumbs">
+            <span>ClimateGuard AI</span>
+            <span>/</span>
+            <span class="current">Chennai Heat Hazard Surveillance</span>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <button class="btn-reset" id="btn-refresh-telemetry" title="Reload report telemetry">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+            </svg>
+            Refresh
+          </button>
+
+          <!-- System Status Badge (Preserved ID) -->
+          <div id="system-status" class="status-badge" role="status" aria-live="polite">
+            <span>●</span> Initializing...
+          </div>
+
+          <!-- Theme Toggle Button -->
+          <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark and light theme">
+            <span id="theme-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </span>
+            <span id="theme-label">Light</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content Area -->
+      <main class="vesper-content" id="main-content">
+        <!-- Hero Header Card -->
+        <section class="hero-card">
+          <div class="hero-title-row">
+            <div>
+              <!-- EXACT REQUIRED TEST STRINGS PRESERVED -->
+              <h1>ClimateGuard AI — Chennai Heat Hazard Dashboard</h1>
+              <p class="hero-subtitle">
+                Biometeorological Heat Hazard Surveillance &amp; Scenario Simulator (Phase 2 Integration)
+              </p>
+            </div>
+          </div>
+
+          <!-- Metadata Telemetry Grid (Preserved IDs) -->
+          <div class="metadata-grid" id="metadata-section">
+            <div class="meta-item">
+              <span class="meta-label">Report Generation (UTC)</span>
+              <span class="meta-value" id="meta-generation-time">—</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Forecast Period</span>
+              <span class="meta-value" id="meta-forecast-period">—</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Valid / Total Records</span>
+              <span class="meta-value" id="meta-records-counts">—</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Invalid Records</span>
+              <span class="meta-value" id="meta-invalid-count">—</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Forecast Data Source</span>
+              <span class="meta-value" id="meta-data-source">—</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Error / Alert Banner (Preserved IDs) -->
+        <div id="error-banner" class="banner banner-error" style="display: none;" role="alert">
+          <div class="banner-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <span id="error-title">Report Unavailable</span>
+          </div>
+          <div id="error-message" class="banner-content">Unable to load heat hazard forecast.</div>
+        </div>
+
+        <!-- Mandatory Scientific Disclaimer Banner (EXACT REQUIRED TEST STRING PRESERVED) -->
+        <div class="banner banner-warning">
+          <div class="banner-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            Scientific Advisory &amp; Anti-Fabrication Notice
+          </div>
+          <div class="banner-content">
+            <strong>Estimates Only:</strong> Values displayed on this dashboard are biometeorological model-derived estimates computed from numerical weather forecasts (Open-Meteo 168h forecast for Chennai: 13.0827°N, 80.2707°E). They are <strong>not</strong> real-time ground weather station observations, <strong>not</strong> official government disaster alerts (e.g., IMD / TNSDMA), and <strong>not</strong> personalized clinical health predictions.
+          </div>
+        </div>
+
+        <!-- PHASE 2: INTERACTIVE HEAT-RISK TIMELINE & DISTRIBUTION VISUALIZATION -->
+        <section class="vis-card" id="timeline-vis-section" aria-label="Heat Hazard Forecast Visualization">
+          <div class="vis-header">
+            <div>
+              <div class="vis-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                168-Hour Biometeorological Heat Hazard Timeline
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 4px;">
+                Real-time curve tracking NOAA Heat Index (°C) vs Dry-Bulb Air Temp (°C) across the 7-day Chennai surveillance horizon.
+              </p>
+            </div>
+            <div class="vis-controls">
+              <button class="btn-tab active" id="btn-vis-168h">Full 168h</button>
+              <button class="btn-tab" id="btn-vis-48h">48h Zoom</button>
+              <button class="btn-tab" id="btn-vis-24h">24h Zoom</button>
+            </div>
+          </div>
+
+          <div class="vis-legend">
+            <div class="legend-item">
+              <span class="legend-line" style="background: var(--accent-cyan); height: 4px;"></span>
+              <span>Selected Hazard Temp (°C)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-line" style="background: #94a3b8; border-top: 2px dashed #94a3b8; height: 0;"></span>
+              <span>Air Temperature (°C)</span>
+            </div>
+            <div class="legend-item">
+              <span class="dot" style="background: var(--tier-yellow);"></span>
+              <span>Caution Zone (32°C–41°C)</span>
+            </div>
+            <div class="legend-item">
+              <span class="dot" style="background: var(--tier-orange);"></span>
+              <span>Ext. Caution (41°C–54°C)</span>
+            </div>
+            <div class="legend-item">
+              <span class="dot" style="background: var(--tier-red);"></span>
+              <span>Danger (&ge;54°C)</span>
+            </div>
+          </div>
+
+          <!-- Interactive Responsive SVG Timeline -->
+          <div class="timeline-container" id="timeline-box">
+            <svg class="timeline-svg" id="timeline-svg" viewBox="0 0 1000 320" preserveAspectRatio="none" aria-label="168-hour heat hazard area chart"></svg>
+            <div class="tooltip-glass" id="timeline-tooltip"></div>
+          </div>
+
+          <!-- Real Metric Summary Strip from API -->
+          <div class="stat-strip">
+            <div class="stat-box">
+              <div class="stat-label">Peak Forecast Hazard</div>
+              <div class="stat-value" id="stat-peak-val" style="color: var(--tier-yellow);">38.47 °C</div>
+              <div style="font-size: 0.74rem; color: var(--text-muted); margin-top: 2px;" id="stat-peak-time">2026-10-17 12:00 UTC</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Min Hazard Temp</div>
+              <div class="stat-value" id="stat-min-val" style="color: var(--tier-green);">26.83 °C</div>
+              <div style="font-size: 0.74rem; color: var(--text-muted); margin-top: 2px;">Night-time recovery</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Mean 168h Index</div>
+              <div class="stat-value" id="stat-mean-val">33.92 °C</div>
+              <div style="font-size: 0.74rem; color: var(--text-muted); margin-top: 2px;">Caution baseline</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Caution Tier Hours</div>
+              <div class="stat-value" id="stat-caution-hours" style="color: var(--tier-yellow);">138 / 168</div>
+              <div style="font-size: 0.74rem; color: var(--text-muted); margin-top: 2px;">82.1% of forecast horizon</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Alert Tier Distribution Cards (Preserved IDs) -->
+        <section class="cards-row" id="tier-cards-row" aria-label="Alert Tier Counts">
+          <div class="tier-card green" tabindex="0" role="button" aria-label="Filter by Green tier" onclick="filterByTierCard('Green')">
+            <div class="tier-card-header">
+              <span class="tier-name">GREEN (NORMAL)</span>
+              <div class="tier-indicator" aria-hidden="true"></div>
+            </div>
+            <div class="tier-count" id="count-green">—</div>
+            <div class="tier-desc">Hazard index &lt; 32&#176;C. Model-defined normal tier; fatigue may still occur.</div>
+          </div>
+
+          <div class="tier-card yellow" tabindex="0" role="button" aria-label="Filter by Yellow tier" onclick="filterByTierCard('Yellow')">
+            <div class="tier-card-header">
+              <span class="tier-name">YELLOW (CAUTION)</span>
+              <div class="tier-indicator" aria-hidden="true"></div>
+            </div>
+            <div class="tier-count" id="count-yellow">—</div>
+            <div class="tier-desc">32&#176;C - below 41&#176;C. Model-defined caution tier; heat risk depends on exposure and individual factors.</div>
+          </div>
+
+          <div class="tier-card orange" tabindex="0" role="button" aria-label="Filter by Orange tier" onclick="filterByTierCard('Orange')">
+            <div class="tier-card-header">
+              <span class="tier-name">ORANGE (EXTREME CAUTION)</span>
+              <div class="tier-indicator" aria-hidden="true"></div>
+            </div>
+            <div class="tier-count" id="count-orange">—</div>
+            <div class="tier-desc">41&#176;C - below 54&#176;C. Model-defined extreme-caution tier; reduce heat exposure and seek shade.</div>
+          </div>
+
+          <div class="tier-card red" tabindex="0" role="button" aria-label="Filter by Red tier" onclick="filterByTierCard('Red')">
+            <div class="tier-card-header">
+              <span class="tier-name">RED (DANGER)</span>
+              <div class="tier-indicator" aria-hidden="true"></div>
+            </div>
+            <div class="tier-count" id="count-red">—</div>
+            <div class="tier-desc">&ge; 54&#176;C. Model-defined danger tier; these estimates are not official warnings.</div>
+          </div>
+        </section>
+
+        <!-- PHASE 2: ENHANCED SCENARIO SIMULATOR (AGENT CONTROL PANEL) -->
+        <section id="agent-panel" aria-label="Scenario Simulator Engine">
+          <h2 class="section-title">ClimateGuard AI — Scenario Simulator &amp; Decision Engine</h2>
+          <p class="section-subtitle">
+            Simulate illustrative what-if scenarios (Baseline, Heatwave, Extreme Heat), inspect priority area rankings, generate preliminary advisories, and log demonstration response alerts.
+          </p>
+
+          <!-- Interactive Scenario Selector Grid -->
+          <div class="scenario-grid" role="radiogroup" aria-label="Select what-if scenario">
+            <div class="scenario-pill-btn" id="scenario-pill-baseline" tabindex="0" role="radio" aria-checked="false" onclick="selectScenario('baseline')">
+              <div class="scenario-pill-title">
+                <span>Baseline</span>
+                <span class="scenario-multiplier-badge">1.0x</span>
+              </div>
+              <p class="scenario-pill-desc">Standard risk scoring without additional atmospheric stress multipliers.</p>
+            </div>
+
+            <div class="scenario-pill-btn active" id="scenario-pill-heatwave" tabindex="0" role="radio" aria-checked="true" onclick="selectScenario('heatwave')">
+              <div class="scenario-pill-title">
+                <span>Heatwave</span>
+                <span class="scenario-multiplier-badge" style="color: var(--tier-yellow);">1.2x</span>
+              </div>
+              <p class="scenario-pill-desc">Simulated moderate heatwave (+20% illustrative stress assumption).</p>
+            </div>
+
+            <div class="scenario-pill-btn" id="scenario-pill-extreme" tabindex="0" role="radio" aria-checked="false" onclick="selectScenario('extreme_heat')">
+              <div class="scenario-pill-title">
+                <span>Extreme Heat</span>
+                <span class="scenario-multiplier-badge" style="color: var(--tier-red);">1.4x</span>
+              </div>
+              <p class="scenario-pill-desc">Simulated extreme thermal event (+40% illustrative stress assumption).</p>
+            </div>
+          </div>
+
+          <!-- Controls Card (Preserving all original input IDs) -->
+          <div class="controls-card" style="margin-bottom: 20px;">
+            <div class="filter-group">
+              <label class="filter-label" for="agent-scenario">Scenario:</label>
+              <select id="agent-scenario">
+                <option value="baseline">Baseline (1.0x)</option>
+                <option value="heatwave" selected>Heatwave (1.2x)</option>
+                <option value="extreme_heat">Extreme heat (1.4x)</option>
+              </select>
+
+              <label class="filter-label" for="agent-count">Priorities to show:</label>
+              <select id="agent-count">
+                <option value="3">3 Areas</option>
+                <option value="5" selected>5 Areas</option>
+                <option value="10">10 Areas</option>
+              </select>
+
+              <button class="btn-primary" id="agent-run">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Run Simulation
+              </button>
+              <button class="btn-reset" id="agent-advisory">Generate Advisory</button>
+            </div>
+
+            <div>
+              <button class="btn-reset" id="agent-outputs">Inspect Outputs</button>
+              <button class="btn-reset" id="agent-alert" style="margin-left: 6px;">Log Simulated Alert</button>
+            </div>
+          </div>
+
+          <!-- Agent Live Status (Preserved ID) -->
+          <div id="agent-status" class="agent-status-box" role="status" aria-live="polite">
+            <span class="pulse-dot" style="background: var(--text-muted);" aria-hidden="true"></span>
+            <span>Checking Agent API connection (port 8081)...</span>
+          </div>
+
+          <!-- Scenario Comparison & Real Telemetry Strip -->
+          <div id="agent-comparison-strip" class="comparison-strip" style="display: none;">
+            <div class="comparison-item">
+              <span class="stat-label">Active Scenario</span>
+              <span class="stat-value" id="comp-scenario-name">—</span>
+            </div>
+            <div class="comparison-item">
+              <span class="stat-label">Illustrative Multiplier</span>
+              <span class="stat-value" id="comp-multiplier">—</span>
+            </div>
+            <div class="comparison-item">
+              <span class="stat-label">Total Hexagons Evaluated</span>
+              <span class="stat-value" id="comp-hex-count">—</span>
+            </div>
+            <div class="comparison-item">
+              <span class="stat-label">Underserved Hexagons</span>
+              <span class="stat-value" id="comp-underserved-count" style="color: var(--tier-orange);">—</span>
+            </div>
+          </div>
+
+          <!-- Priority Results Display (Preserved ID) -->
+          <div id="agent-results" style="margin-top: 18px;">
+            <div class="advisory-box" style="color: var(--text-muted);">
+              Select a scenario and click <strong>Run Simulation</strong> to compute cooling-centre and water-point priority areas.
+            </div>
+          </div>
+
+          <!-- Precautionary Advisory Panel (Preserved ID agent-advisory-result) -->
+          <div style="margin-top: 28px;" id="advisory-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+              <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 0;" id="advisory-title-text">Precautionary Advisory Panel</h3>
+              <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <span class="badge-draft" id="advisory-safeguard-badge">Draft Only — Anti-Fabrication Safeguard</span>
+                <div class="lang-toggle-group" role="group" aria-label="Advisory Language Toggle" style="display: inline-flex; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 2px;">
+                  <button type="button" id="advisory-lang-en" class="lang-toggle-btn active" data-lang="en" style="padding: 3px 10px; font-size: 0.75rem; font-weight: 600; border-radius: 4px; border: none; cursor: pointer; background: var(--border-highlight); color: var(--text-primary); transition: all 0.2s ease;">English</button>
+                  <button type="button" id="advisory-lang-ta" class="lang-toggle-btn" data-lang="ta" style="padding: 3px 10px; font-size: 0.75rem; font-weight: 600; border-radius: 4px; border: none; cursor: pointer; background: transparent; color: var(--text-muted); transition: all 0.2s ease;">தமிழ்</button>
+                </div>
+              </div>
+            </div>
+            <div id="agent-advisory-result" class="advisory-box" role="region" aria-label="Precautionary Advisory Details">
+              No advisory generated yet. Click "Generate Advisory" above to synthesize scenario guidance.
+            </div>
+          </div>
+
+          <!-- Spatial Planning Outputs Explorer (Preserved IDs agent-output-wrapper, agent-output-result) -->
+          <div style="margin-top: 32px;" id="agent-output-wrapper">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+              <div>
+                <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 0;">Spatial Planning Outputs Explorer</h3>
+                <p style="color: var(--text-muted); font-size: 0.82rem; margin-top: 2px;">
+                  Real processed datasets for nature-based cooling and emergency team positioning across Chennai.
+                </p>
+              </div>
+              <button class="btn-reset" id="btn-reload-outputs" style="font-size: 0.8rem; padding: 4px 10px;">Refresh Data</button>
+            </div>
+
+            <div id="agent-output-status-pills" style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;"></div>
+
+            <div class="planning-tabs" role="tablist" aria-label="Planning Output Tables">
+              <button class="planning-tab-btn active" id="tab-btn-trees" role="tab" aria-selected="true" aria-controls="panel-trees">
+                🌳 Tree Planting Priorities (1,062 Hexagons)
+              </button>
+              <button class="planning-tab-btn" id="tab-btn-teams" role="tab" aria-selected="false" aria-controls="panel-teams">
+                🏥 Emergency Team Placement (3,859 Hexagons)
+              </button>
+            </div>
+
+            <div id="agent-output-result" style="margin-top: 6px;">
+              <!-- Dynamic Output Viewer Container -->
+            </div>
+          </div>
+
+          <!-- Simulated Alert Result & Audit Trail (Preserved ID agent-alert-result) -->
+          <div style="margin-top: 32px;" id="alert-log-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+              <div>
+                <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 0;">Simulated Alert Activity Log</h3>
+                <p style="color: var(--text-secondary); font-size: 0.82rem; margin-top: 2px;">
+                  Local demonstration audit log. Strictly isolated — zero SMS, email, or external emergency notifications are sent.
+                </p>
+              </div>
+              <span class="badge-simulated" id="badge-alert-count">0 Recorded Incidents</span>
+            </div>
+
+            <!-- Preserved ID agent-alert-result -->
+            <div id="agent-alert-result" class="advisory-box" role="status" style="margin-top: 6px;">No alert logged in this session.</div>
+
+            <!-- Real-time Activity Feed / Log Table -->
+            <div class="alert-log-card" id="agent-alert-feed-card" style="margin-top: 14px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+                <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);">Historical &amp; Current Simulation Audit Trail</div>
+                <div style="display: flex; gap: 8px; align-items: center;">
+                  <label for="alert-scenario-filter" style="font-size: 0.78rem; color: var(--text-muted);">Filter Scenario:</label>
+                  <select id="alert-scenario-filter" style="background: var(--bg-input); border: 1px solid var(--border-subtle); color: var(--text-primary); padding: 4px 8px; border-radius: 4px; font-size: 0.78rem;">
+                    <option value="ALL">All Scenarios</option>
+                    <option value="baseline">Baseline (1.0x)</option>
+                    <option value="heatwave">Heatwave (1.2x)</option>
+                    <option value="extreme_heat">Extreme Heat (1.4x)</option>
+                  </select>
+                </div>
+              </div>
+              <div id="alert-log-list" style="max-height: 280px; overflow-y: auto;">
+                <!-- Dynamically populated alert rows -->
+              </div>
+            </div>
+          </div>
+
+          <p style="margin-top: 22px; font-size: 0.82rem; color: var(--text-muted); border-top: 1px solid var(--border-hairline); padding-top: 16px;">
+            <strong>Uncertainty &amp; Methodology Disclosure:</strong> Scenario multipliers (1.0x, 1.2x, 1.4x) are illustrative research assumptions rather than calibrated weather predictions. Risk scores represent preliminary spatial screening metrics and candidate facilities have not been confirmed as operational cooling centres.
+          </p>
+        </section>
+
+        <!-- Table Controls / Filters (Preserved IDs) -->
+        <div class="controls-card">
+          <div class="filter-group">
+            <label class="filter-label" for="tier-filter">Alert Tier:</label>
+            <select id="tier-filter">
+              <option value="ALL">All Tiers</option>
+              <option value="GREEN">Green (Normal)</option>
+              <option value="YELLOW">Yellow (Caution)</option>
+              <option value="ORANGE">Orange (Extreme Caution)</option>
+              <option value="RED">Red (Danger)</option>
+              <option value="INVALID">Invalid / Unclassified</option>
+            </select>
+
+            <label class="filter-label" for="date-filter">Forecast Date:</label>
+            <select id="date-filter">
+              <option value="ALL">All Dates (Full 168h Horizon)</option>
+            </select>
+
+            <button class="btn-reset" id="btn-reset-filters">Reset Filters</button>
+          </div>
+
+          <div class="records-count-badge" id="table-record-count">
+            Showing — of — records
+          </div>
+        </div>
+
+        <!-- Hourly Forecast Table (Preserved IDs) -->
+        <section class="table-card" id="forecast-table-section">
+          <div class="table-wrapper">
+            <table id="forecast-table">
+              <thead>
+                <tr>
+                  <th scope="col">Timestamp</th>
+                  <th scope="col">Air Temp (°C)</th>
+                  <th scope="col">Humidity (%)</th>
+                  <th scope="col">Wind (km/h)</th>
+                  <th scope="col">Apparent Temp (°C)</th>
+                  <th scope="col">NOAA Heat Index (°C)</th>
+                  <th scope="col">Selected Index</th>
+                  <th scope="col">Alert Tier</th>
+                  <th scope="col">Validation Notes</th>
+                </tr>
+              </thead>
+              <tbody id="table-body">
+                <tr>
+                  <td colspan="9" style="text-align: center; padding: 48px;">
+                    <div class="spinner-container">
+                      <div class="spinner"></div>
+                      <span style="color: var(--text-secondary); font-size: 0.88rem;">Loading Chennai Heat Hazard Report...</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Scientific Limitations & Missing Data Notes (Preserved IDs) -->
+        <footer class="footer-limitations" id="limitations-section">
+          <h3>Scientific Limitations &amp; Pipeline Constraints</h3>
+          <div id="limitations-content">
+            Loading limitations notes from report...
+          </div>
+        </footer>
+
+        <!-- Vesper Footer -->
+        <div class="site-footer">
+          ClimateGuard AI · Phase 2 Heat Hazard &amp; Scenario Simulator Interface · Educational Prototype
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    /* -------------------------------------------------------------
+       THEME & SIDEBAR CONTROLLER
+       ------------------------------------------------------------- */
+    const themeToggleBtn = document.getElementById("theme-toggle-btn");
+    const themeIcon = document.getElementById("theme-icon");
+    const themeLabel = document.getElementById("theme-label");
+    const sidebar = document.getElementById("vesper-sidebar");
+    const sidebarToggleBtn = document.getElementById("sidebar-toggle-btn");
+    const sidebarCollapseBtn = document.getElementById("sidebar-collapse-btn");
+
+    function initTheme() {
+      const storedTheme = localStorage.getItem("cg_theme");
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const theme = storedTheme || (prefersDark ? "dark" : "dark");
+      applyTheme(theme);
+    }
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      localStorage.setItem("cg_theme", theme);
+      if (theme === "dark") {
+        themeLabel.textContent = "Light";
+      announceToScreenReader("Switched to dark theme");
+        themeIcon.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
+      } else {
+        themeLabel.textContent = "Dark";
+      announceToScreenReader("Switched to light theme");
+        themeIcon.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
+      }
+      if (allRecords.length > 0) {
+        renderTimelineChart(activeTimelineFilter);
+      }
+    }
+
+    themeToggleBtn.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme") || "dark";
+      applyTheme(current === "dark" ? "light" : "dark");
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.altKey && e.key.toLowerCase() === "t") themeToggleBtn.click();
+      if (e.altKey && e.key.toLowerCase() === "s") toggleSidebar();
+    });
+
+    function announceToScreenReader(message) {
+      const announcer = document.getElementById("sr-announcer");
+      if (announcer) {
+        announcer.textContent = "";
+        setTimeout(() => {
+          announcer.textContent = message;
+        }, 50);
+      }
+    }
+
+    function updateSidebarAria() {
+      const isMobile = window.innerWidth <= 1024;
+      if (isMobile) {
+        const isOpen = sidebar.classList.contains("mobile-open");
+        if (sidebarToggleBtn) {
+          sidebarToggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          sidebarToggleBtn.setAttribute("aria-label", isOpen ? "Close navigation sidebar" : "Open navigation sidebar");
+        }
+      } else {
+        const isCollapsed = sidebar.classList.contains("collapsed");
+        if (sidebarCollapseBtn) {
+          sidebarCollapseBtn.setAttribute("aria-expanded", isCollapsed ? "false" : "true");
+          sidebarCollapseBtn.setAttribute("aria-label", isCollapsed ? "Expand navigation sidebar" : "Collapse navigation sidebar");
+        }
+      }
+    }
+
+    function initSidebar() {
+      const collapsed = localStorage.getItem("cg_sidebar_collapsed") === "true";
+      if (collapsed) sidebar.classList.add("collapsed");
+      updateSidebarAria();
+    }
+
+    function toggleSidebar() {
+      if (window.innerWidth <= 1024) {
+        sidebar.classList.toggle("mobile-open");
+        const isOpen = sidebar.classList.contains("mobile-open");
+        announceToScreenReader(isOpen ? "Navigation sidebar opened" : "Navigation sidebar closed");
+      } else {
+        sidebar.classList.toggle("collapsed");
+        const isCollapsed = sidebar.classList.contains("collapsed");
+        localStorage.setItem("cg_sidebar_collapsed", isCollapsed);
+        announceToScreenReader(isCollapsed ? "Sidebar collapsed" : "Sidebar expanded");
+      }
+      updateSidebarAria();
+    }
+
+    if (sidebarToggleBtn) sidebarToggleBtn.addEventListener("click", toggleSidebar);
+    if (sidebarCollapseBtn) sidebarCollapseBtn.addEventListener("click", toggleSidebar);
+
+    document.addEventListener("click", (e) => {
+      if (window.innerWidth <= 1024 && sidebar.classList.contains("mobile-open")) {
+        if (!sidebar.contains(e.target) && !sidebarToggleBtn.contains(e.target)) {
+          sidebar.classList.remove("mobile-open");
+          updateSidebarAria();
+          announceToScreenReader("Navigation sidebar closed");
+        }
+      }
+    });
+
+    window.filterByTierCard = function(tierName) {
+      const tierFilter = document.getElementById("tier-filter");
+      if (tierFilter) {
+        for (let i = 0; i < tierFilter.options.length; i++) {
+          if (tierFilter.options[i].text.toUpperCase().includes(tierName.toUpperCase())) {
+            tierFilter.selectedIndex = i;
+            tierFilter.dispatchEvent(new Event("change"));
+            document.getElementById("forecast-table-section").scrollIntoView({ behavior: "smooth" });
+            break;
+          }
+        }
+      }
+    };
+
+    /* -------------------------------------------------------------
+       CORE TELEMETRY LOGIC & REPORT LOADER
+       ------------------------------------------------------------- */
+    let reportData = null;
+    let allRecords = [];
+    let availableDates = [];
+    let activeTimelineFilter = "168h";
+
+    const systemStatusEl = document.getElementById("system-status");
+    const errorBannerEl = document.getElementById("error-banner");
+    const errorTitleEl = document.getElementById("error-title");
+    const errorMessageEl = document.getElementById("error-message");
+
+    const metaGenTimeEl = document.getElementById("meta-generation-time");
+    const metaForecastPeriodEl = document.getElementById("meta-forecast-period");
+    const metaRecordsCountsEl = document.getElementById("meta-records-counts");
+    const metaInvalidCountEl = document.getElementById("meta-invalid-count");
+    const metaDataSourceEl = document.getElementById("meta-data-source");
+
+    const countGreenEl = document.getElementById("count-green");
+    const countYellowEl = document.getElementById("count-yellow");
+    const countOrangeEl = document.getElementById("count-orange");
+    const countRedEl = document.getElementById("count-red");
+
+    const tierFilterEl = document.getElementById("tier-filter");
+    const dateFilterEl = document.getElementById("date-filter");
+    const btnResetFiltersEl = document.getElementById("btn-reset-filters");
+    const tableRecordCountEl = document.getElementById("table-record-count");
+    const tableBodyEl = document.getElementById("table-body");
+    const limitationsContentEl = document.getElementById("limitations-content");
+    const btnRefreshTelemetry = document.getElementById("btn-refresh-telemetry");
+
+    if (btnRefreshTelemetry) {
+      btnRefreshTelemetry.addEventListener("click", () => fetchReport());
+    }
+
+    async function fetchReport() {
+      try {
+        systemStatusEl.className = "status-badge";
+        systemStatusEl.innerHTML = `<span>●</span> Fetching Report...`;
+
+        const response = await fetch("/api/report");
+        const payload = await response.json();
+
+        if (payload.status !== "SUCCESS" || !payload.data) {
+          showError(payload.message || "Unable to load report.");
+          return;
+        }
+
+        reportData = payload.data;
+        availableDates = payload.available_dates || [];
+        allRecords = reportData.hourly_forecast_hazard_records || [];
+
+        renderDashboard(reportData, availableDates);
+        announceToScreenReader(`Telemetry loaded: ${allRecords.length} hourly forecast records.`);
+      } catch (err) {
+        showError("Failed to communicate with dashboard backend: " + err.message);
+      }
+    }
+
+    function showError(message) {
+      systemStatusEl.className = "status-badge error";
+      systemStatusEl.innerHTML = "<span>●</span> Report Error";
+      errorBannerEl.style.display = "flex";
+      errorMessageEl.textContent = message;
+      tableBodyEl.innerHTML = `
+        <tr>
+          <td colspan="9" style="text-align: center; color: var(--error-text); padding: 36px;">
+            Error loading report: ${escapeHtml(message)}
+          </td>
+        </tr>`;
+    }
+
+    function renderDashboard(data, dates) {
+      systemStatusEl.className = "status-badge healthy";
+      systemStatusEl.innerHTML = "<span>●</span> Report Loaded (Read-Only)";
+      errorBannerEl.style.display = "none";
+
+      const meta = data.metadata || {};
+
+      // 1. Metadata
+      metaGenTimeEl.textContent = meta.generation_timestamp_utc || "N/A";
+      const forecastRecords = Array.isArray(data.hourly_forecast_hazard_records) ? data.hourly_forecast_hazard_records : [];
+      const forecastTimes = forecastRecords.map(r => r.time).filter(Boolean).sort();
+      metaForecastPeriodEl.textContent = forecastTimes.length
+        ? `${forecastTimes[0]} to ${forecastTimes[forecastTimes.length - 1]}`
+        : "Unavailable";
+      metaRecordsCountsEl.textContent = `${meta.valid_records_count || 0} / ${meta.total_forecast_hours || 0}`;
+      metaInvalidCountEl.textContent = `${meta.invalid_records_count || 0}`;
+      metaDataSourceEl.textContent = meta.forecast_source_file || "cache/weather_chennai_forecast_168h.json";
+
+      // 2. Alert Tier Counts
+      const dist = meta.alert_tier_distribution || {};
+      function getTierCount(distribution, keyword) {
+        for (const [k, v] of Object.entries(distribution)) {
+          if (k.toUpperCase().includes(keyword.toUpperCase())) {
+            return v;
+          }
+        }
+        return 0;
+      }
+      countGreenEl.textContent = getTierCount(dist, "GREEN");
+      countYellowEl.textContent = getTierCount(dist, "YELLOW");
+      countOrangeEl.textContent = getTierCount(dist, "ORANGE");
+      countRedEl.textContent = getTierCount(dist, "RED");
+
+      // 3. Stats Strip Update
+      const summary = meta.hazard_temperature_summary_c || {};
+      const peak = meta.peak_hazard_observation || {};
+      if (summary.max) document.getElementById("stat-peak-val").textContent = `${summary.max.toFixed(2)} °C`;
+      if (summary.min) document.getElementById("stat-min-val").textContent = `${summary.min.toFixed(2)} °C`;
+      if (summary.mean) document.getElementById("stat-mean-val").textContent = `${summary.mean.toFixed(2)} °C`;
+      if (peak.time) document.getElementById("stat-peak-time").textContent = `${peak.time} (${peak.alert_tier || "Caution"})`;
+      const yellowHours = getTierCount(dist, "YELLOW");
+      const totalHours = meta.total_forecast_hours || 168;
+      document.getElementById("stat-caution-hours").textContent = `${yellowHours} / ${totalHours} (${((yellowHours/totalHours)*100).toFixed(1)}%)`;
+
+      // 4. Populate Date Filter Dropdown
+      dateFilterEl.innerHTML = '<option value="ALL">All Dates (Full 168h Horizon)</option>';
+      dates.forEach(d => {
+        const opt = document.createElement("option");
+        opt.value = d;
+        opt.textContent = d;
+        dateFilterEl.appendChild(opt);
+      });
+
+      // Populate Tier filter dropdown
+      const currentTier = tierFilterEl.value;
+      let tierHtml = '<option value="ALL">All Tiers</option>';
+      const standardTiers = ["Green (Normal)", "Yellow (Caution)", "Orange (Extreme Caution)", "Red (Danger)"];
+      const allTiers = Array.from(new Set([...(data.available_tiers || []), ...standardTiers]));
+      allTiers.forEach(t => {
+        tierHtml += `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`;
+      });
+      tierFilterEl.innerHTML = tierHtml;
+      if (allTiers.includes(currentTier)) {
+        tierFilterEl.value = currentTier;
+      }
+
+      // 5. Populate Limitations Section
+      const limits = data.scientific_limitations_and_disclaimer || {};
+      let limitsHtml = `<ul>`;
+      for (const [k, v] of Object.entries(limits)) {
+        const label = k.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+        if (Array.isArray(v)) {
+          v.forEach(item => {
+            limitsHtml += `<li><strong>${escapeHtml(label)}:</strong> ${escapeHtml(item)}</li>`;
+          });
+        } else if (typeof v === "string") {
+          limitsHtml += `<li><strong>${escapeHtml(label)}:</strong> ${escapeHtml(v)}</li>`;
+        }
+      }
+      limitsHtml += `</ul>`;
+      limitationsContentEl.innerHTML = limitsHtml;
+
+      // 6. Render Timeline & Table
+      renderTimelineChart("168h");
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const selectedTier = tierFilterEl.value;
+      const selectedDate = dateFilterEl.value;
+
+      const filtered = allRecords.filter(r => {
+        if (selectedTier !== "ALL") {
+          const rTier = String(r.alert_tier || "INVALID").toUpperCase();
+          const target = selectedTier.toUpperCase();
+          if (!rTier.includes(target) && !target.includes(rTier)) return false;
+        }
+        if (selectedDate !== "ALL") {
+          const time = String(r.time || "");
+          if (!time.startsWith(selectedDate)) return false;
+        }
+        return true;
+      });
+
+      renderTable(filtered);
+    }
+
+    function renderTable(records) {
+      tableRecordCountEl.textContent = `Showing ${records.length} of ${allRecords.length} records`;
+
+      if (records.length === 0) {
+        tableBodyEl.innerHTML = `
+          <tr>
+            <td colspan="9" style="text-align: center; padding: 36px; color: var(--text-muted);">
+              No hourly forecast records match the selected filters.
+            </td>
+          </tr>`;
+        return;
+      }
+
+      const rows = records.map(r => {
+        const rawTier = r.alert_tier || "INVALID";
+        const tierUpper = rawTier.toUpperCase();
+        let badgeClass = "badge-tier";
+        if (tierUpper.includes("GREEN")) badgeClass += " green";
+        else if (tierUpper.includes("YELLOW")) badgeClass += " yellow";
+        else if (tierUpper.includes("ORANGE")) badgeClass += " orange";
+        else if (tierUpper.includes("RED")) badgeClass += " red";
+        else badgeClass += " invalid";
+
+        const airTemp = formatNumber(r.air_temperature_c);
+        const rh = formatNumber(r.relative_humidity_pct);
+        const wind = r.wind_speed_kmh !== undefined && r.wind_speed_kmh !== null ? formatNumber(r.wind_speed_kmh) : "N/A";
+        const appTemp = formatNumber(r.steadman_apparent_temp_c);
+        const heatIdx = r.noaa_heat_index_c !== undefined && r.noaa_heat_index_c !== null ? formatNumber(r.noaa_heat_index_c) : "N/A";
+        const hazardMetric = r.selected_hazard_metric ? escapeHtml(r.selected_hazard_metric) : "N/A";
+        const hazardTemp = formatNumber(r.hazard_temperature_c);
+        const notes = r.validation_notes && r.validation_notes.length > 0 ? escapeHtml(r.validation_notes.join(", ")) : "Valid";
+
+        return `
+          <tr>
+            <td style="font-family: 'JetBrains Mono', monospace; font-weight: 600;">${escapeHtml(r.time || "N/A")}</td>
+            <td style="font-family: 'JetBrains Mono', monospace;">${airTemp}</td>
+            <td style="font-family: 'JetBrains Mono', monospace;">${rh}</td>
+            <td style="font-family: 'JetBrains Mono', monospace;">${wind}</td>
+            <td style="font-family: 'JetBrains Mono', monospace;">${appTemp}</td>
+            <td style="font-family: 'JetBrains Mono', monospace;">${heatIdx}</td>
+            <td><span style="font-size: 0.8rem; color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace;">${hazardMetric} (${hazardTemp}°C)</span></td>
+            <td><span class="${badgeClass}">${escapeHtml(rawTier)}</span></td>
+            <td class="validation-note">${notes}</td>
+          </tr>
+        `;
+      });
+
+      tableBodyEl.innerHTML = rows.join("");
+    }
+
+    /* -------------------------------------------------------------
+       PHASE 2: SVG TIMELINE VISUALIZATION RENDERER
+       ------------------------------------------------------------- */
+    const svgEl = document.getElementById("timeline-svg");
+    const tooltipEl = document.getElementById("timeline-tooltip");
+    const timelineBoxEl = document.getElementById("timeline-box");
+
+    document.getElementById("btn-vis-168h").addEventListener("click", () => setTimelineZoom("168h"));
+    document.getElementById("btn-vis-48h").addEventListener("click", () => setTimelineZoom("48h"));
+    document.getElementById("btn-vis-24h").addEventListener("click", () => setTimelineZoom("24h"));
+
+    function setTimelineZoom(zoom) {
+      activeTimelineFilter = zoom;
+      document.querySelectorAll(".vis-controls .btn-tab").forEach(b => b.classList.remove("active"));
+      if (zoom === "168h") document.getElementById("btn-vis-168h").classList.add("active");
+      if (zoom === "48h") document.getElementById("btn-vis-48h").classList.add("active");
+      if (zoom === "24h") document.getElementById("btn-vis-24h").classList.add("active");
+      renderTimelineChart(zoom);
+    }
+
+    function renderTimelineChart(zoom) {
+      if (!allRecords || allRecords.length === 0) return;
+
+      let records = [...allRecords];
+      if (zoom === "24h") records = records.slice(0, 24);
+      else if (zoom === "48h") records = records.slice(0, 48);
+
+      const W = 1000;
+      const H = 320;
+      const padL = 50;
+      const padR = 20;
+      const padT = 30;
+      const padB = 40;
+
+      const plotW = W - padL - padR;
+      const plotH = H - padT - padB;
+
+      const minT = 24;
+      const maxT = 56;
+
+      const yScale = (val) => padT + plotH - ((val - minT) / (maxT - minT)) * plotH;
+      const xScale = (idx) => padL + (idx / (records.length - 1 || 1)) * plotW;
+
+      let svgContent = `
+        <defs>
+          <linearGradient id="hazardAreaGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32" />
+            <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0" />
+          </linearGradient>
+          <linearGradient id="cautionBandGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.10" />
+            <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.03" />
+          </linearGradient>
+        </defs>
+      `;
+
+      // 1. Shaded Alert Tier Bands
+      const y54 = yScale(54);
+      const y41 = yScale(41);
+      const y32 = yScale(32);
+
+      // Danger Zone (>= 54°C)
+      svgContent += `<rect x="${padL}" y="${padT}" width="${plotW}" height="${Math.max(0, y54 - padT)}" fill="#ef4444" fill-opacity="0.06" />`;
+      // Extreme Caution (41 - 54°C)
+      svgContent += `<rect x="${padL}" y="${y54}" width="${plotW}" height="${Math.max(0, y41 - y54)}" fill="#f97316" fill-opacity="0.06" />`;
+      // Caution Zone (32 - 41°C)
+      svgContent += `<rect x="${padL}" y="${y41}" width="${plotW}" height="${Math.max(0, y32 - y41)}" fill="url(#cautionBandGrad)" />`;
+      // Normal Zone (< 32°C)
+      svgContent += `<rect x="${padL}" y="${y32}" width="${plotW}" height="${Math.max(0, padT + plotH - y32)}" fill="#10b981" fill-opacity="0.03" />`;
+
+      // Threshold lines
+      svgContent += `<line x1="${padL}" y1="${y54}" x2="${W - padR}" y2="${y54}" stroke="#ef4444" stroke-dasharray="4,4" stroke-opacity="0.4" />`;
+      svgContent += `<text x="${padL + 6}" y="${y54 - 4}" fill="#ef4444" font-size="10" font-family="'JetBrains Mono', monospace" opacity="0.8">54°C Danger Threshold</text>`;
+
+      svgContent += `<line x1="${padL}" y1="${y41}" x2="${W - padR}" y2="${y41}" stroke="#f97316" stroke-dasharray="4,4" stroke-opacity="0.4" />`;
+      svgContent += `<text x="${padL + 6}" y="${y41 - 4}" fill="#f97316" font-size="10" font-family="'JetBrains Mono', monospace" opacity="0.8">41°C Extreme Caution Threshold</text>`;
+
+      svgContent += `<line x1="${padL}" y1="${y32}" x2="${W - padR}" y2="${y32}" stroke="#10b981" stroke-dasharray="4,4" stroke-opacity="0.4" />`;
+      svgContent += `<text x="${padL + 6}" y="${y32 - 4}" fill="#10b981" font-size="10" font-family="'JetBrains Mono', monospace" opacity="0.8">32°C Caution Threshold</text>`;
+
+      // 2. Y-Axis Grid Lines & Labels
+      [25, 30, 35, 40, 45, 50, 55].forEach(temp => {
+        const y = yScale(temp);
+        svgContent += `
+          <line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="currentColor" stroke-opacity="0.08" />
+          <text x="${padL - 8}" y="${y + 4}" fill="currentColor" opacity="0.5" font-size="10" text-anchor="end" font-family="'JetBrains Mono', monospace">${temp}°</text>
+        `;
+      });
+
+      // 3. Build Hazard Area & Lines
+      let hazardPoints = [];
+      let airPoints = [];
+      let maxHazardItem = null;
+      let maxHazardIdx = 0;
+
+      records.forEach((r, idx) => {
+        const hz = r.hazard_temperature_c || 30;
+        const at = r.air_temperature_c || 28;
+        const x = xScale(idx);
+        const yHz = yScale(hz);
+        const yAt = yScale(at);
+
+        hazardPoints.push(`${x},${yHz}`);
+        airPoints.push(`${x},${yAt}`);
+
+        if (!maxHazardItem || hz > maxHazardItem.hazard_temperature_c) {
+          maxHazardItem = r;
+          maxHazardIdx = idx;
+        }
+      });
+
+      // Area Path for Hazard
+      const areaD = `M ${xScale(0)},${padT + plotH} L ` + hazardPoints.join(" L ") + ` L ${xScale(records.length - 1)},${padT + plotH} Z`;
+      svgContent += `<path d="${areaD}" fill="url(#hazardAreaGrad)" />`;
+
+      // Air Temp Line (Dashed)
+      svgContent += `<path d="M ${airPoints.join(" L ")}" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4,3" opacity="0.75" />`;
+
+      // Hazard Temp Line (Solid Luminous)
+      svgContent += `<path d="M ${hazardPoints.join(" L ")}" fill="none" stroke="#38bdf8" stroke-width="2.6" />`;
+
+      // 4. Highlight Peak Point
+      if (maxHazardItem) {
+        const pkX = xScale(maxHazardIdx);
+        const pkY = yScale(maxHazardItem.hazard_temperature_c);
+        svgContent += `
+          <circle cx="${pkX}" cy="${pkY}" r="5" fill="#f59e0b" stroke="#ffffff" stroke-width="2" />
+          <line x1="${pkX}" y1="${pkY}" x2="${pkX}" y2="${padT + plotH}" stroke="#f59e0b" stroke-dasharray="2,2" stroke-opacity="0.6" />
+          <rect x="${Math.min(W - 130, pkX - 45)}" y="${pkY - 26}" width="90" height="20" rx="4" fill="#0d0f15" stroke="#f59e0b" stroke-width="1" />
+          <text x="${Math.min(W - 85, pkX)}" y="${pkY - 12}" fill="#f59e0b" font-size="10" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', monospace">Peak ${maxHazardItem.hazard_temperature_c.toFixed(1)}°C</text>
+        `;
+      }
+
+      // 5. X-Axis Time Labels
+      const step = Math.max(1, Math.floor(records.length / 7));
+      for (let i = 0; i < records.length; i += step) {
+        const x = xScale(i);
+        const rawTime = records[i].time || "";
+        const label = rawTime.includes("T") ? rawTime.split("T")[0].substring(5) + " " + rawTime.split("T")[1].substring(0, 5) : rawTime;
+        svgContent += `
+          <line x1="${x}" y1="${padT + plotH}" x2="${x}" y2="${padT + plotH + 5}" stroke="currentColor" stroke-opacity="0.3" />
+          <text x="${x}" y="${padT + plotH + 18}" fill="currentColor" opacity="0.6" font-size="9" text-anchor="middle" font-family="'JetBrains Mono', monospace">${label}</text>
+        `;
+      }
+
+      svgEl.innerHTML = svgContent;
+
+      // Attach Interactive Mouse Move Inspection
+      svgEl.onmousemove = (e) => {
+        const rect = svgEl.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const normX = (mouseX / rect.width) * W;
+
+        if (normX < padL || normX > W - padR) {
+          tooltipEl.style.display = "none";
+          return;
+        }
+
+        const idx = Math.min(records.length - 1, Math.max(0, Math.round(((normX - padL) / plotW) * (records.length - 1))));
+        const record = records[idx];
+        if (!record) return;
+
+        tooltipEl.style.display = "block";
+        tooltipEl.style.left = `${Math.min(rect.width - 200, Math.max(10, (idx / (records.length - 1)) * rect.width - 70))}px`;
+        tooltipEl.style.top = `15px`;
+
+        tooltipEl.innerHTML = `
+          <div style="font-weight:700; color:var(--text-primary); border-bottom:1px solid var(--border-hairline); padding-bottom:4px; margin-bottom:4px;">
+            ${escapeHtml(record.time || "")}
+          </div>
+          <div style="color:var(--accent-cyan); font-weight:700;">Hazard: ${formatNumber(record.hazard_temperature_c)}°C</div>
+          <div>Air Temp: ${formatNumber(record.air_temperature_c)}°C</div>
+          <div>Humidity: ${formatNumber(record.relative_humidity_pct)}%</div>
+          <div>Wind: ${formatNumber(record.wind_speed_kmh)} km/h</div>
+          <div style="margin-top:4px;"><span class="badge-tier ${record.alert_tier && record.alert_tier.toUpperCase().includes('YELLOW') ? 'yellow' : 'green'}">${escapeHtml(record.alert_tier || "Normal")}</span></div>
+        `;
+      };
+
+      svgEl.onmouseleave = () => {
+        tooltipEl.style.display = "none";
+      };
+    }
+
+    /* -------------------------------------------------------------
+       PHASE 2: SCENARIO SIMULATOR (AGENT ENGINE INTEGRATION)
+       ------------------------------------------------------------- */
+    const AGENT_API = "http://127.0.0.1:8081";
+    const agentScenarioEl = document.getElementById("agent-scenario");
+    const agentCountEl = document.getElementById("agent-count");
+    const agentStatusEl = document.getElementById("agent-status");
+    const agentResultsEl = document.getElementById("agent-results");
+    const agentAdvisoryResultEl = document.getElementById("agent-advisory-result");
+    const agentOutputResultEl = document.getElementById("agent-output-result");
+    const agentAlertResultEl = document.getElementById("agent-alert-result");
+    const comparisonStripEl = document.getElementById("agent-comparison-strip");
+
+    window.selectScenario = function(scenKey) {
+      agentScenarioEl.value = scenKey;
+      document.querySelectorAll(".scenario-pill-btn").forEach(p => {
+        p.classList.remove("active");
+        p.setAttribute("aria-checked", "false");
+      });
+      const targetPill = document.getElementById(`scenario-pill-${scenKey === 'extreme_heat' ? 'extreme' : scenKey}`);
+      if (targetPill) {
+        targetPill.classList.add("active");
+        targetPill.setAttribute("aria-checked", "true");
+      }
+    };
+
+    agentScenarioEl.addEventListener("change", () => {
+      selectScenario(agentScenarioEl.value);
+    });
+
+    async function agentRequest(path, options = {}, timeoutMs = 5000) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeoutMs);
+      try {
+        const response = await fetch(AGENT_API + path, {
+          ...options,
+          signal: controller.signal,
+          headers: {
+            "Content-Type": "application/json",
+            ...(options.headers || {})
+          }
+        });
+
+        let payload;
+        try {
+          payload = await response.json();
+        } catch {
+          throw new Error("Agent API returned an invalid JSON response.");
+        }
+
+        if (!response.ok) {
+          throw new Error(typeof payload.detail === "string" ? payload.detail : (payload.error || `Request failed (HTTP ${response.status})`));
+        }
+        return payload;
+      } catch (err) {
+        if (err.name === "AbortError") {
+          throw new Error("Request to Agent API timed out.");
+        }
+        throw err;
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+
+    let healthMonitorState = "DISCONNECTED"; // "CONNECTED" | "RECONNECTING" | "DISCONNECTED"
+    let healthRetryCount = 0;
+    const MAX_HEALTH_RETRIES = 5;
+    const HEALTH_CHECK_INTERVAL_MS = 15000;
+    const INITIAL_RECONNECT_BACKOFF_MS = 2500;
+    let healthTimer = null;
+    let isCheckingHealth = false;
+
+    function renderHealthStatusUI(state, message, data = null) {
+      healthMonitorState = state;
+      agentStatusEl.replaceChildren();
+
+      const dot = document.createElement("span");
+      dot.className = "pulse-dot";
+
+      const badge = document.createElement("span");
+      badge.style.fontSize = "0.72rem";
+      badge.style.fontWeight = "700";
+      badge.style.padding = "2px 7px";
+      badge.style.borderRadius = "4px";
+      badge.style.textTransform = "uppercase";
+      badge.style.letterSpacing = "0.04em";
+      badge.style.marginRight = "8px";
+
+      const txt = document.createElement("span");
+      txt.textContent = message;
+
+      if (state === "CONNECTED") {
+        dot.style.backgroundColor = "var(--tier-green)";
+        dot.style.boxShadow = "0 0 10px rgba(16, 185, 129, 0.4)";
+        badge.style.backgroundColor = "var(--tier-green-bg)";
+        badge.style.color = "var(--tier-green)";
+        badge.style.border = "1px solid var(--tier-green-border)";
+        badge.textContent = "CONNECTED";
+      } else if (state === "RECONNECTING") {
+        dot.style.backgroundColor = "var(--tier-yellow)";
+        dot.style.boxShadow = "0 0 10px rgba(245, 158, 11, 0.4)";
+        badge.style.backgroundColor = "var(--tier-yellow-bg)";
+        badge.style.color = "var(--tier-yellow)";
+        badge.style.border = "1px solid var(--tier-yellow-border)";
+        badge.textContent = "RECONNECTING";
+      } else {
+        dot.style.backgroundColor = "var(--tier-red)";
+        dot.style.boxShadow = "none";
+        badge.style.backgroundColor = "var(--tier-red-bg)";
+        badge.style.color = "var(--tier-red)";
+        badge.style.border = "1px solid var(--tier-red-border)";
+        badge.textContent = "OFFLINE";
+      }
+
+      agentStatusEl.appendChild(dot);
+      agentStatusEl.appendChild(badge);
+      agentStatusEl.appendChild(txt);
+
+      if (state === "DISCONNECTED") {
+        const retryBtn = document.createElement("button");
+        retryBtn.id = "btn-agent-health-retry";
+        retryBtn.type = "button";
+        retryBtn.className = "btn-reset";
+        retryBtn.style.padding = "2px 8px";
+        retryBtn.style.fontSize = "0.72rem";
+        retryBtn.style.marginLeft = "10px";
+        retryBtn.textContent = "Retry Now";
+        retryBtn.addEventListener("click", () => {
+          healthRetryCount = 0;
+          checkAgentHealth(true);
+        });
+        agentStatusEl.appendChild(retryBtn);
+      }
+    }
+
+    async function checkAgentHealth(isManual = false) {
+      if (isCheckingHealth) return;
+      isCheckingHealth = true;
+      if (healthTimer) {
+        clearTimeout(healthTimer);
+        healthTimer = null;
+      }
+
+      try {
+        const data = await agentRequest("/api/agent/health", {}, 3000);
+        healthRetryCount = 0;
+        const noteStatus = data.external_notifications_enabled || data.external_notifications ? 'Alerts: LIVE' : 'Alerts: SIMULATED';
+        renderHealthStatusUI(
+          "CONNECTED",
+          `Agent API Active (127.0.0.1:8081) — ${noteStatus} — ${data.valid_forecast_records ? data.valid_forecast_records + ' valid records' : 'Ready'}`,
+          data
+        );
+        healthTimer = setTimeout(() => checkAgentHealth(false), HEALTH_CHECK_INTERVAL_MS);
+      } catch (err) {
+        healthRetryCount++;
+        if (healthRetryCount <= MAX_HEALTH_RETRIES) {
+          const backoff = Math.min(16000, Math.round(INITIAL_RECONNECT_BACKOFF_MS * Math.pow(1.5, healthRetryCount - 1)));
+          renderHealthStatusUI(
+            "RECONNECTING",
+            `Reconnecting to Agent API (Attempt ${healthRetryCount}/${MAX_HEALTH_RETRIES}) in ${Math.round(backoff / 1000)}s...`
+          );
+          healthTimer = setTimeout(() => checkAgentHealth(false), backoff);
+        } else {
+          renderHealthStatusUI(
+            "DISCONNECTED",
+            `Agent API offline on 127.0.0.1:8081. Start with 'python src/dashboard/agent_api.py'`
+          );
+        }
+      } finally {
+        isCheckingHealth = false;
+      }
+    }
+
+    /* Duplicate Submission Protection Helper */
+    async function withButtonBusy(button, busyLabel, asyncFn) {
+      if (!button || button.disabled || button.getAttribute("aria-busy") === "true") return;
+      const originalContent = button.innerHTML;
+      button.disabled = true;
+      button.setAttribute("aria-busy", "true");
+      button.innerHTML = `<span class="spinner" style="width:14px; height:14px; border-width:2px; display:inline-block; vertical-align:middle; margin-right:6px;"></span><span>${escapeHtml(busyLabel)}</span>`;
+      try {
+        await asyncFn();
+      } finally {
+        button.disabled = false;
+        button.removeAttribute("aria-busy");
+        button.innerHTML = originalContent;
+      }
+    }
+
+    async function runAgentScenario() {
+      agentResultsEl.replaceChildren();
+      const loadBox = document.createElement("div");
+      loadBox.className = "advisory-box";
+      loadBox.innerHTML = `
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div class="spinner" style="width:20px; height:20px; border-width:2px;"></div>
+          <span>Simulating ${escapeHtml(agentScenarioEl.value)} scenario across 3,859 hexagons...</span>
+        </div>
+      `;
+      agentResultsEl.appendChild(loadBox);
+
+      try {
+        const data = await agentRequest("/api/agent/scenario", {
+          method: "POST",
+          body: JSON.stringify({
+            scenario: agentScenarioEl.value,
+            cooling_centres: Number(agentCountEl.value),
+            water_points: Number(agentCountEl.value)
+          })
+        });
+
+        agentResultsEl.replaceChildren();
+        comparisonStripEl.style.display = "grid";
+        announceToScreenReader(`Scenario ${String(data.scenario || agentScenarioEl.value).toUpperCase()} simulation complete. Multiplier: ${formatNumber(data.scenario_multiplier, 2)}x.`);
+        document.getElementById("comp-scenario-name").textContent = String(data.scenario || agentScenarioEl.value).toUpperCase();
+        document.getElementById("comp-multiplier").textContent = `${formatNumber(data.scenario_multiplier, 2)}x`;
+        document.getElementById("comp-hex-count").textContent = Number(data.total_hexagons || 3859).toLocaleString("en-IN");
+        document.getElementById("comp-underserved-count").textContent = Number(data.underserved_hexagons || 0).toLocaleString("en-IN");
+
+        // Render Priority Areas
+        renderPrioritySection(agentResultsEl, "Cooling-Centre Priorities", data.cooling_centre_priorities, Number(agentCountEl.value));
+        renderPrioritySection(agentResultsEl, "Water-Point Priorities", data.water_point_priorities, Number(agentCountEl.value));
+
+        if (Array.isArray(data.warnings) && data.warnings.length) {
+          const warnBox = document.createElement("div");
+          warnBox.className = "advisory-box";
+          warnBox.style.borderLeftColor = "var(--tier-orange)";
+          warnBox.innerHTML = `<strong>Simulation Warnings:</strong> ${escapeHtml(data.warnings.join(" | "))}`;
+          agentResultsEl.appendChild(warnBox);
+        }
+      } catch (err) {
+        agentResultsEl.replaceChildren();
+        const errBox = document.createElement("div");
+        errBox.className = "banner banner-error";
+        errBox.innerHTML = `<strong>Simulation Error:</strong> ${escapeHtml(err.message)}`;
+        agentResultsEl.appendChild(errBox);
+      }
+    }
+
+    function renderPrioritySection(container, title, items, count) {
+      const heading = document.createElement("h3");
+      heading.className = "section-title";
+      heading.style.fontSize = "1.05rem";
+      heading.style.marginTop = "20px";
+      heading.textContent = title;
+      container.appendChild(heading);
+
+      if (!Array.isArray(items) || items.length === 0) {
+        const empty = document.createElement("p");
+        empty.style.color = "var(--text-muted)";
+        empty.textContent = "No priority areas returned for this configuration.";
+        container.appendChild(empty);
+        return;
+      }
+
+      const grid = document.createElement("div");
+      grid.className = "agent-card-grid";
+
+      items.slice(0, count).forEach((item, idx) => {
+        const card = document.createElement("article");
+        card.className = "agent-priority-card";
+
+        const riskCat = String(item.risk_category || "UNKNOWN").toUpperCase();
+        let catColor = "var(--tier-yellow)";
+        if (riskCat.includes("SEVERE") || riskCat.includes("VERY HIGH")) catColor = "var(--tier-red)";
+        else if (riskCat.includes("HIGH")) catColor = "var(--tier-orange)";
+        else if (riskCat.includes("LOW")) catColor = "var(--tier-green)";
+
+        card.innerHTML = `
+          <div class="agent-priority-header">
+            <span class="agent-priority-title">#${idx + 1} · ${escapeHtml(item.h3_id || "H3 Area")}</span>
+            <span class="badge-tier" style="background:rgba(255,255,255,0.06); color:${catColor};">${escapeHtml(riskCat)}</span>
+          </div>
+          <div style="font-size:0.84rem; display:grid; gap:4px; font-family:'JetBrains Mono', monospace;">
+            <div>Risk Score: <strong>${formatNumber(item.risk_score, 3)}</strong></div>
+            <div>Vulnerable Pop: <strong>${formatNumber(item.vulnerable_population, 0)}</strong></div>
+            <div>Nearest Cooling Walk: <strong>${formatNumber(item.nearest_cooling_walk_m, 0)} m</strong></div>
+            <div style="color:var(--text-muted); font-size:0.75rem;">Status: ${escapeHtml(item.access_status || "Standard")}</div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      container.appendChild(grid);
+    }
+
+    // --- Phase 3 Enhanced Advisory, Planning Outputs, and Alert Log Logic ---
+    let cachedTreeData = [];
+    let cachedTeamData = [];
+    let activePlanningTab = "trees"; // "trees" or "teams"
+    let planningPage = 1;
+    const PLANNING_PAGE_SIZE = 10;
+    let planningSearch = "";
+    let planningSort = "default";
+    let alertLogEntries = [];
+
+    // Bilingual Advisory Localization Dictionary
+    const ADVISORY_I18N = {
+      en: {
+        draftBadge: "DRAFT ONLY — NOT OFFICIAL WARNING",
+        panelTitle: "Precautionary Advisory Panel",
+        safeguardBadge: "Draft Only — Anti-Fabrication Safeguard",
+        noAdvisoryYet: "No advisory generated yet. Click \"Generate Advisory\" above to synthesize scenario guidance.",
+        generating: "Generating precautionary advisory via ClimateGuard AI Agent...",
+        scenarioLabel: "Scenario",
+        langLabel: "Lang",
+        priorityHexLabel: "Priority Hexagons",
+        guidanceBadge: "Demonstration Guidance",
+        announcementPrefix: "Precautionary advisory generated for scenario",
+        announcementSuffix: "Status: DRAFT ONLY.",
+        cards: [
+          {
+            title: "💧 Hydration & Public Water Stations",
+            bullets: [
+              "Deploy clean drinking water points to priority hexagons ({hexes}).",
+              "Encourage frequent hydration with cool water and electrolytes before thirst onset (Screening guidance).",
+              "Prioritize shaded hydration kiosks and misting facilities near transit nodes and market clusters."
+            ]
+          },
+          {
+            title: "🛑 Labor & Physical Activity Safeguards",
+            bullets: [
+              "Schedule structured rest intervals in shaded recovery zones during peak thermal hours.",
+              "Reschedule non-emergency municipal roadwork and heavy manual labor away from peak solar intensity.",
+              "Shift unshaded outdoor assemblies and athletic events to cooler morning or evening periods."
+            ]
+          },
+          {
+            title: "❄️ Cooling Shelter Mobilization",
+            bullets: [
+              "Activate designated civic cooling shelters equipped with reliable power and cross-ventilation.",
+              "Conduct proactive community outreach for heat-vulnerable seniors, infants, and informal settlement residents.",
+              "Distribute heat-protective accessories and hydration supplies to frontline sanitation and traffic personnel."
+            ]
+          },
+          {
+            title: "🚑 Clinical Surveillance & Triage",
+            bullets: [
+              "Equip Urban Primary Health Centres (UPHCs) with Oral Rehydration Salts (ORS) and cold compresses.",
+              "Strengthen frontline triage protocols for early recognition of heat exhaustion and cramps.",
+              "Maintain rapid transport coordination for emergency medical transfers of suspected heatstroke cases."
+            ]
+          }
+        ],
+        officialRefTitle: "🏛️ Official Weather & Public-Health Instructions",
+        officialRefDesc: "Content shown here is illustrative biometeorological simulation output for urban planning evaluation. It is <strong>not</strong> an official warning or clinical guidance. Direct citizens and responders to current official directives:",
+        imdName: "India Meteorological Department (IMD)",
+        tndsmaName: "Tamil Nadu State Disaster Management Authority (TNDSMA)",
+        ndmaName: "National Disaster Management Authority (NDMA)",
+        dphName: "Directorate of Public Health & Preventive Medicine (TN DPH)",
+        limitationsTitle: "Scientific Advisory & Anti-Fabrication Limitations:",
+        limitationsBody: "Estimates displayed above are model-derived screening assessments based on Open-Meteo numerical weather predictions (13.0827°N, 80.2707°E) and H3 spatial vulnerability indices. They are <strong>not</strong> real-time ground weather station measurements, <strong>not</strong> personalized clinical diagnosis, and <strong>not</strong> statutory disaster warnings. Official emergency directives must be obtained from IMD and TNDSMA."
+      },
+      ta: {
+        draftBadge: "வரைவு மட்டுமே — அதிகாரப்பூர்வ எச்சரிக்கை அல்ல",
+        panelTitle: "முன்னெச்சரிக்கை ஆலோசனைக் குழு",
+        safeguardBadge: "வரைவு மட்டுமே — போலித் தடுப்புப் பாதுகாப்பு",
+        noAdvisoryYet: "இன்னும் ஆலோசனை உருவாக்கப்படவில்லை. சூழ்நிலை வழிகாட்டுதலை உருவாக்க மேலே உள்ள \"Generate Advisory\" பொத்தானை அழுத்தவும்.",
+        generating: "ClimateGuard AI ஏஜென்ட் மூலம் முன்னெச்சரிக்கை ஆலோசனை உருவாக்கப்படுகிறது...",
+        scenarioLabel: "சூழ்நிலை",
+        langLabel: "மொழி",
+        priorityHexLabel: "முன்னுரிமை அறுகோணங்கள்",
+        guidanceBadge: "மாதிரி வழிகாட்டுதல்",
+        announcementPrefix: "சூழ்நிலைக்கான முன்னெச்சரிக்கை ஆலோசனை உருவாக்கப்பட்டது:",
+        announcementSuffix: "நிலை: வரைவு மட்டுமே.",
+        cards: [
+          {
+            title: "💧 நீரேற்றம் மற்றும் பொது குடிநீர் நிலையங்கள்",
+            bullets: [
+              "முன்னுரிமை அறுகோணங்களுக்கு ({hexes}) சுத்தமான குடிநீர் விநியோக மையங்களை அமைக்கவும்.",
+              "தாகம் எடுப்பதற்கு முன்பே குளிர்ந்த நீர் மற்றும் எலக்ட்ரோலைட்டுகளை அருந்துவதை ஊக்குவிக்கவும் (திரையிடல் வழிகாட்டுதல்).",
+              "போக்குவரத்து முனையங்கள் மற்றும் சந்தை பகுதிகளில் நிழலுடன் கூடிய நீர் மையங்கள் மற்றும் தெளிப்பான் வசதிகளுக்கு முன்னுரிமை அளிக்கவும்."
+            ]
+          },
+          {
+            title: "🛑 உழைப்பு மற்றும் உடல் செயல்பாட்டு பாதுகாப்பு",
+            bullets: [
+              "உச்ச வெப்ப நேரங்களில் நிழலான மீட்புப் பகுதிகளில் முறையான ஓய்வு இடைவெளிகளை திட்டமிடவும்.",
+              "அவசரமற்ற நகராட்சி சாலை பணிகள் மற்றும் கடுமையான உடலுழைப்பு பணிகளை உச்ச வெயில் நேரத்திலிருந்து மாற்றியமைக்கவும்.",
+              "நிழலற்ற வெளிப்புற பொதுக்கூட்டங்கள் மற்றும் விளையாட்டு நிகழ்வுகளை குளிர்ந்த காலை அல்லது மாலை நேரங்களுக்கு மாற்றவும்."
+            ]
+          },
+          {
+            title: "❄️ குளிர்ச்சி புகலிடங்கள் ஒருங்கிணைப்பு",
+            bullets: [
+              "நம்பகமான மின்சாரம் மற்றும் காற்றோட்டம் கொண்ட பொது குளிர்ச்சி புகலிட மையங்களை செயல்படுத்தவும்.",
+              "வெப்பத்தால் எளிதில் பாதிக்கப்படக்கூடிய முதியவர்கள், குழந்தைகள் மற்றும் குடிசைப் பகுதி மக்களுக்கு விழிப்புணர்வு ஏற்படுத்தவும்.",
+              "துப்புரவு மற்றும் போக்குவரத்து முன்களப் பணியாளர்களுக்கு வெப்ப பாதுகாப்பு உபகரணங்கள் மற்றும் குடிநீர் வழங்கவும்."
+            ]
+          },
+          {
+            title: "🚑 மருத்துவ கண்காணிப்பு மற்றும் அவசர சிகிச்சை",
+            bullets: [
+              "நகர்ப்புற ஆரம்ப சுகாதார நிலையங்களில் (UPHC) ORS மற்றும் குளிர்ந்த ஒத்தடப் பொருட்களை போதிய அளவில் இருப்பு வைக்கவும்.",
+              "வெப்ப சோர்வு மற்றும் தசைப்பிடிப்பை ஆரம்பத்திலேயே கண்டறியும் முன்கள மருத்துவ நடைமுறைகளை வலுப்படுத்தவும்.",
+              "வெப்ப பக்கவாதம் (Heatstroke) பாதிக்கப்பட்டவர்களை அவசரமாக மருத்துவமனைக்கு கொண்டு செல்ல ஆம்புலன்ஸ் ஒருங்கிணைப்பை உறுதிப்படுத்தவும்."
+            ]
+          }
+        ],
+        officialRefTitle: "🏛️ அதிகாரப்பூர்வ வானிலை மற்றும் பொது சுகாதார வழிகாட்டுதல்கள்",
+        officialRefDesc: "இங்கு காட்டப்படும் தகவல்கள் நகர்ப்புற திட்டமிடல் மதிப்பீட்டிற்கான மாதிரி biometeorological உருவகப்படுத்துதல் மட்டுமே. இது <strong>அதிகாரப்பூர்வ எச்சரிக்கை அல்லது மருத்துவ ஆலோசனை அல்ல</strong>. பொதுமக்கள் மற்றும் நிவாரணக் குழுவினர் தற்போதைய அதிகாரப்பூர்வ அரசு வழிகாட்டுதல்களைப் பின்பற்றவும்:",
+        imdName: "இந்திய வானிலை ஆய்வு மையம் (IMD)",
+        tndsmaName: "தமிழ்நாடு மாநில பேரிடர் மேலாண்மை ஆணையம் (TNDSMA)",
+        ndmaName: "தேசிய பேரிடர் மேலாண்மை ஆணையம் (NDMA)",
+        dphName: "தமிழ்நாடு பொது சுகாதாரம் மற்றும் நோய் தடுப்பு மருந்து இயக்ககம் (TN DPH)",
+        limitationsTitle: "அறிவியல் ஆலோசனை மற்றும் போலித் தடுப்பு வரம்புகள்:",
+        limitationsBody: "மேலே உள்ள மதிப்பீடுகள் Open-Meteo வானிலை முன்னறிவிப்பு (13.0827°N, 80.2707°E) மற்றும் H3 இடஞ்சார்ந்த பாதிப்பு குறியீடுகளின் அடிப்படையிலான மாதிரி திரையிடல் மட்டுமே. இவை <strong>நேரடி நிலத்தடி வானிலை நிலைய அளவீடுகள் அல்ல</strong>, <strong>தனிநபர் மருத்துவ சிகிச்சை அல்ல</strong>, மற்றும் <strong>அதிகாரப்பூர்வ பேரிடர் எச்சரிக்கையும் அல்ல</strong>. அதிகாரப்பூர்வ அவசர உத்தரவுகளை IMD மற்றும் TNDSMA-விடமிருந்து மட்டுமே பெற வேண்டும்."
+      }
+    };
+
+    let currentAdvisoryLanguage = "en";
+    let cachedLastAdvisoryData = null;
+
+    function setAdvisoryLanguage(lang) {
+      if (lang !== "en" && lang !== "ta") return;
+      currentAdvisoryLanguage = lang;
+
+      const btnEn = document.getElementById("advisory-lang-en");
+      const btnTa = document.getElementById("advisory-lang-ta");
+      if (btnEn && btnTa) {
+        if (lang === "en") {
+          btnEn.classList.add("active");
+          btnEn.style.background = "var(--border-highlight)";
+          btnEn.style.color = "var(--text-primary)";
+          btnTa.classList.remove("active");
+          btnTa.style.background = "transparent";
+          btnTa.style.color = "var(--text-muted)";
+        } else {
+          btnTa.classList.add("active");
+          btnTa.style.background = "var(--border-highlight)";
+          btnTa.style.color = "var(--text-primary)";
+          btnEn.classList.remove("active");
+          btnEn.style.background = "transparent";
+          btnEn.style.color = "var(--text-muted)";
+        }
+      }
+
+      const dict = ADVISORY_I18N[lang];
+      const titleEl = document.getElementById("advisory-title-text");
+      if (titleEl) titleEl.textContent = dict.panelTitle;
+      const safeguardEl = document.getElementById("advisory-safeguard-badge");
+      if (safeguardEl) safeguardEl.textContent = dict.safeguardBadge;
+
+      if (cachedLastAdvisoryData) {
+        renderAdvisoryDOM(cachedLastAdvisoryData, lang);
+      } else {
+        const resultEl = document.getElementById("agent-advisory-result");
+        if (resultEl && (resultEl.textContent.includes("No advisory") || resultEl.textContent.includes("இன்னும் ஆலோசனை"))) {
+          resultEl.textContent = dict.noAdvisoryYet;
+        }
+      }
+    }
+
+    function renderAdvisoryDOM(data, lang) {
+      const dict = ADVISORY_I18N[lang] || ADVISORY_I18N.en;
+      agentAdvisoryResultEl.replaceChildren();
+
+      // 1. Header Row
+      const headerRow = document.createElement("div");
+      headerRow.className = "advisory-header-row";
+
+      const leftBadges = document.createElement("div");
+      leftBadges.style.display = "flex";
+      leftBadges.style.gap = "6px";
+      leftBadges.style.alignItems = "center";
+      leftBadges.style.flexWrap = "wrap";
+
+      const draftPill = document.createElement("span");
+      draftPill.className = "badge-draft";
+      draftPill.textContent = dict.draftBadge;
+      leftBadges.appendChild(draftPill);
+
+      const scenPill = document.createElement("span");
+      scenPill.className = "badge-meta-pill";
+      scenPill.textContent = `${dict.scenarioLabel}: ${String(data.scenario || agentScenarioEl.value).toUpperCase()}`;
+      leftBadges.appendChild(scenPill);
+
+      const langPill = document.createElement("span");
+      langPill.className = "badge-meta-pill";
+      langPill.textContent = `${dict.langLabel}: ${lang}`;
+      leftBadges.appendChild(langPill);
+
+      const countPill = document.createElement("span");
+      countPill.className = "badge-meta-pill";
+      countPill.textContent = `${dict.priorityHexLabel}: ${data.priority_area_count || 5}`;
+      leftBadges.appendChild(countPill);
+
+      headerRow.appendChild(leftBadges);
+      agentAdvisoryResultEl.appendChild(headerRow);
+
+      // 2. Synthesized Advisory Text Box
+      const textBox = document.createElement("div");
+      textBox.className = "advisory-text-box";
+      
+      let textContent = data.advisory || "";
+      if (lang === "ta" && (!data.language || data.language === "en")) {
+        textContent = `ClimateGuard AI: ${String(data.scenario || agentScenarioEl.value)} சூழ்நிலைக்கான முன்னெச்சரிக்கை. அதிக ஆபத்துள்ள பகுதிகளில் வசிப்பவர்கள் உள்ளூர் அதிகாரிகளின் அறிவுறுத்தல்களைப் பின்பற்றவும். போதுமான அளவு தண்ணீர் குடிக்கவும், கடுமையான வெயிலில் வெளியில் இருப்பதைத் தவிர்க்கவும். உடல்நலக் குறைவு ஏற்பட்டால் மருத்துவ உதவியை நாடவும். இந்த அறிக்கை ஆரம்பகட்ட மாதிரி தரவு அடிப்படையிலானது; அதிகாரப்பூர்வ எச்சரிக்கைக்கு மாற்றாகாது.`;
+      } else if (lang === "en" && data.language === "ta") {
+        textContent = `ClimateGuard AI precautionary advisory: ${String(data.scenario || agentScenarioEl.value)} scenario. Residents in high-priority areas should follow official local weather and public-health instructions, drink water regularly, limit strenuous outdoor activity during extreme heat, and seek medical help if symptoms of heat illness occur. This is a preliminary screening advisory, not an official warning.`;
+      }
+      textBox.textContent = (data.status && data.status !== "ok" ? `[${data.status}] ` : "") + textContent;
+      agentAdvisoryResultEl.appendChild(textBox);
+
+      // 3. Structured Recommended Precautions (Grid of 4 cards)
+      const grid = document.createElement("div");
+      grid.className = "advisory-card-grid";
+
+      const topHexPreview = Array.isArray(data.top_priority_hexagons) && data.top_priority_hexagons.length > 0
+        ? data.top_priority_hexagons.slice(0, 3).join(", ")
+        : (lang === "ta" ? "அடையாளம் காணப்பட்ட அதிக ஆபத்து மண்டலங்கள்" : "identified high-risk zones");
+
+      grid.innerHTML = dict.cards.map(card => `
+        <div class="precaution-card">
+          <div class="precaution-badge">${escapeHtml(dict.guidanceBadge)}</div>
+          <div class="precaution-card-title">${card.title}</div>
+          <ul>
+            ${card.bullets.map(b => `<li>${escapeHtml(b.replace("{hexes}", topHexPreview))}</li>`).join("")}
+          </ul>
+        </div>
+      `).join("");
+      agentAdvisoryResultEl.appendChild(grid);
+
+      // 4. Authoritative Public Health & Weather References Callout
+      const officialRefBox = document.createElement("div");
+      officialRefBox.className = "official-references-callout";
+      officialRefBox.innerHTML = `
+        <div class="official-ref-title">${dict.officialRefTitle}</div>
+        <p>${dict.officialRefDesc}</p>
+        <div class="official-ref-links">
+          <a href="https://mausam.imd.gov.in" target="_blank" rel="noopener noreferrer">${dict.imdName}</a> · 
+          <a href="https://tnsdma.tn.gov.in" target="_blank" rel="noopener noreferrer">${dict.tndsmaName}</a> · 
+          <a href="https://www.ndma.gov.in" target="_blank" rel="noopener noreferrer">${dict.ndmaName}</a> · 
+          <a href="https://nhm.tn.gov.in" target="_blank" rel="noopener noreferrer">${dict.dphName}</a>
+        </div>
+      `;
+      agentAdvisoryResultEl.appendChild(officialRefBox);
+
+      // 5. Prominent Scientific Limitations Callout
+      const limitationsBox = document.createElement("div");
+      limitationsBox.className = "advisory-limitations-box";
+      limitationsBox.innerHTML = `
+        <strong>${dict.limitationsTitle}</strong>
+        ${dict.limitationsBody}
+      `;
+      agentAdvisoryResultEl.appendChild(limitationsBox);
+
+      announceToScreenReader(`${dict.announcementPrefix} ${String(data.scenario || agentScenarioEl.value).toUpperCase()}. ${dict.announcementSuffix}`);
+    }
+
+    async function generateAgentAdvisory() {
+      agentAdvisoryResultEl.replaceChildren();
+      const dict = ADVISORY_I18N[currentAdvisoryLanguage] || ADVISORY_I18N.en;
+      const loadBox = document.createElement("div");
+      loadBox.style.display = "flex";
+      loadBox.style.alignItems = "center";
+      loadBox.style.gap = "10px";
+      loadBox.innerHTML = `
+        <div class="spinner" style="width:20px; height:20px; border-width:2px;"></div>
+        <span>${escapeHtml(dict.generating)}</span>
+      `;
+      agentAdvisoryResultEl.appendChild(loadBox);
+
+      try {
+        const data = await agentRequest("/api/agent/advisory", {
+          method: "POST",
+          body: JSON.stringify({
+            scenario: agentScenarioEl.value,
+            language: currentAdvisoryLanguage
+          })
+        });
+
+        cachedLastAdvisoryData = data;
+        renderAdvisoryDOM(data, currentAdvisoryLanguage);
+
+      } catch (err) {
+        agentAdvisoryResultEl.replaceChildren();
+        const errBox = document.createElement("div");
+        errBox.className = "banner banner-error";
+        errBox.textContent = (currentAdvisoryLanguage === "ta" ? "ஆலோசனைப் பிழை: " : "Advisory Error: ") + err.message;
+        agentAdvisoryResultEl.appendChild(errBox);
+      }
+    }
+
+    // RFC 4180 Compliant CSV Parser (fixes single quote apostrophe bug and handles escaped double quotes)
+    function parseCSV(text) {
+      if (!text || !text.trim()) return [];
+      const rows = [];
+      let currentRow = [];
+      let currentVal = "";
+      let inQuotes = false;
+      let i = 0;
+
+      while (i < text.length) {
+        const c = text[i];
+        if (inQuotes) {
+          if (c === '"') {
+            if (i + 1 < text.length && text[i + 1] === '"') {
+              currentVal += '"';
+              i += 2;
+              continue;
+            } else {
+              inQuotes = false;
+              i++;
+              continue;
+            }
+          } else {
+            currentVal += c;
+            i++;
+            continue;
+          }
+        } else {
+          if (c === '"') {
+            inQuotes = true;
+            i++;
+            continue;
+          } else if (c === ',') {
+            currentRow.push(currentVal.trim());
+            currentVal = "";
+            i++;
+            continue;
+          } else if (c === '\r' || c === '\n') {
+            currentRow.push(currentVal.trim());
+            currentVal = "";
+            if (currentRow.some(val => val.length > 0)) {
+              rows.push(currentRow);
+            }
+            currentRow = [];
+            if (c === '\r' && i + 1 < text.length && text[i + 1] === '\n') {
+              i += 2;
+            } else {
+              i++;
+            }
+            continue;
+          } else {
+            currentVal += c;
+            i++;
+            continue;
+          }
+        }
+      }
+      if (currentVal.length > 0 || currentRow.length > 0) {
+        currentRow.push(currentVal.trim());
+        if (currentRow.some(val => val.length > 0)) {
+          rows.push(currentRow);
+        }
+      }
+
+      if (rows.length < 2) return [];
+      const headers = rows[0].map(h => h.replace(/^"|"$/g, ""));
+      const records = [];
+      for (let r = 1; r < rows.length; r++) {
+        const row = rows[r];
+        const record = {};
+        headers.forEach((h, idx) => {
+          record[h] = row[idx] !== undefined ? row[idx] : "";
+        });
+        records.push(record);
+      }
+      return records;
+    }
+
+    // RFC 4180 Compliant Client-side CSV Exporter
+    function exportToCSV(filename, records, headers = null) {
+      if (!records || !records.length) {
+        alert("No records available to export.");
+        return;
+      }
+      const fieldnames = headers || Object.keys(records[0]);
+      const csvLines = [];
+      // Header row
+      csvLines.push(fieldnames.map(f => `"${String(f).replace(/"/g, '""')}"`).join(","));
+      // Data rows
+      for (const row of records) {
+        const rowVals = fieldnames.map(f => {
+          const val = row[f] === undefined || row[f] === null ? "" : String(row[f]);
+          return `"${val.replace(/"/g, '""')}"`;
+        });
+        csvLines.push(rowVals.join(","));
+      }
+      const blob = new Blob([csvLines.join("\r\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    async function loadPlanningData() {
+      try {
+        if (!cachedTreeData.length) {
+          const resTrees = await fetch("/data/chennai_tree_planting_priority.csv");
+          if (resTrees.ok) {
+            const text = await resTrees.text();
+            cachedTreeData = parseCSV(text);
+          }
+        }
+        if (!cachedTeamData.length) {
+          const resTeams = await fetch("/data/chennai_emergency_team_placement.csv");
+          if (resTeams.ok) {
+            const text = await resTeams.text();
+            cachedTeamData = parseCSV(text);
+          }
+        }
+      } catch (e) {
+        console.warn("Could not preload CSV planning data:", e);
+      }
+    }
+
+    async function checkAgentOutputs() {
+      const pillsContainer = document.getElementById("agent-output-status-pills");
+      if (pillsContainer) {
+        pillsContainer.replaceChildren();
+        const loadingPill = document.createElement("span");
+        loadingPill.className = "badge-meta-pill";
+        loadingPill.textContent = "Checking outputs...";
+        pillsContainer.appendChild(loadingPill);
+      }
+
+      try {
+        const data = await agentRequest("/api/agent/outputs");
+        if (pillsContainer) {
+          pillsContainer.replaceChildren();
+          const outputs = Array.isArray(data.outputs) ? data.outputs : [];
+          outputs.forEach((entry) => {
+            String(entry).split(/\r?\n/).forEach((line) => {
+              if (line.trim()) {
+                const pill = document.createElement("span");
+                pill.className = "badge-meta-pill";
+                pill.style.borderColor = "var(--border-focus)";
+                pill.style.color = "var(--text-primary)";
+                pill.textContent = line.trim();
+                pillsContainer.appendChild(pill);
+              }
+            });
+          });
+        }
+      } catch (err) {
+        if (pillsContainer) {
+          pillsContainer.replaceChildren();
+          const errPill = document.createElement("span");
+          errPill.className = "badge-meta-pill";
+          errPill.style.color = "var(--tier-orange)";
+          errPill.textContent = "Agent output check offline: " + err.message;
+          pillsContainer.appendChild(errPill);
+        }
+      }
+
+      await loadPlanningData();
+      renderPlanningOutputs();
+    }
+
+    function renderPlanningOutputs() {
+      agentOutputResultEl.replaceChildren();
+
+      const isTrees = (activePlanningTab === "trees");
+      const rawData = isTrees ? cachedTreeData : cachedTeamData;
+      const downloadHref = isTrees ? "/data/chennai_tree_planting_priority.csv" : "/data/chennai_emergency_team_placement.csv";
+      const downloadName = isTrees ? "chennai_tree_planting_priority.csv" : "chennai_emergency_team_placement.csv";
+      const totalCount = rawData.length;
+
+      // Filter
+      let filtered = rawData;
+      if (planningSearch) {
+        const q = planningSearch.toLowerCase();
+        filtered = filtered.filter(row => {
+          return (row.h3_id && row.h3_id.toLowerCase().includes(q)) ||
+                 (row.assigned_site_name && row.assigned_site_name.toLowerCase().includes(q)) ||
+                 (row.assigned_site_type && row.assigned_site_type.toLowerCase().includes(q)) ||
+                 (row.ranking_status && row.ranking_status.toLowerCase().includes(q));
+        });
+      }
+
+      // Sort
+      if (planningSort === "risk_desc") {
+        filtered = [...filtered].sort((a, b) => Number(b.risk_score || 0) - Number(a.risk_score || 0));
+      } else if (planningSort === "risk_asc") {
+        filtered = [...filtered].sort((a, b) => Number(a.risk_score || 0) - Number(b.risk_score || 0));
+      } else if (planningSort === "pop_desc") {
+        filtered = [...filtered].sort((a, b) => Number(b.pop_vulnerable || 0) - Number(a.pop_vulnerable || 0));
+      } else if (planningSort === "dist_asc" && !isTrees) {
+        filtered = [...filtered].sort((a, b) => Number(a.straight_line_distance_km || 0) - Number(b.straight_line_distance_km || 0));
+      } else if (planningSort === "cost_asc" && isTrees) {
+        filtered = [...filtered].sort((a, b) => Number(a.estimated_cost_inr || 0) - Number(b.estimated_cost_inr || 0));
+      } else if (planningSort === "rank_asc" && isTrees) {
+        filtered = [...filtered].sort((a, b) => Number(a.rank || 0) - Number(b.rank || 0));
+      }
+
+      // Pagination
+      const totalPages = Math.ceil(filtered.length / PLANNING_PAGE_SIZE) || 1;
+      if (planningPage > totalPages) planningPage = totalPages;
+      if (planningPage < 1) planningPage = 1;
+      const startIdx = (planningPage - 1) * PLANNING_PAGE_SIZE;
+      const pageRows = filtered.slice(startIdx, startIdx + PLANNING_PAGE_SIZE);
+
+      // 1. Toolbar
+      const toolbar = document.createElement("div");
+      toolbar.className = "output-toolbar";
+
+      const leftControls = document.createElement("div");
+      leftControls.style.display = "flex";
+      leftControls.style.gap = "10px";
+      leftControls.style.alignItems = "center";
+      leftControls.style.flexWrap = "wrap";
+
+      // Search Box
+      const searchInput = document.createElement("input");
+      searchInput.type = "text";
+      searchInput.placeholder = isTrees ? "Search H3 hex or status..." : "Search H3 or hospital name...";
+      searchInput.value = planningSearch;
+      searchInput.style.background = "var(--bg-input)";
+      searchInput.style.border = "1px solid var(--border-subtle)";
+      searchInput.style.color = "var(--text-primary)";
+      searchInput.style.padding = "6px 10px";
+      searchInput.style.borderRadius = "6px";
+      searchInput.style.fontSize = "0.82rem";
+      searchInput.style.minWidth = "220px";
+      searchInput.addEventListener("input", (e) => {
+        planningSearch = e.target.value.trim();
+        planningPage = 1;
+        renderPlanningOutputs();
+      });
+      leftControls.appendChild(searchInput);
+
+      // Sort Select
+      const sortSelect = document.createElement("select");
+      sortSelect.style.background = "var(--bg-input)";
+      sortSelect.style.border = "1px solid var(--border-subtle)";
+      sortSelect.style.color = "var(--text-primary)";
+      sortSelect.style.padding = "6px 10px";
+      sortSelect.style.borderRadius = "6px";
+      sortSelect.style.fontSize = "0.82rem";
+
+      if (isTrees) {
+        sortSelect.innerHTML = `
+          <option value="default">Default Order</option>
+          <option value="rank_asc" ${planningSort === 'rank_asc' ? 'selected' : ''}>Rank (1 to ${totalCount})</option>
+          <option value="risk_desc" ${planningSort === 'risk_desc' ? 'selected' : ''}>Risk Score (High to Low)</option>
+          <option value="pop_desc" ${planningSort === 'pop_desc' ? 'selected' : ''}>Vulnerable Pop (High to Low)</option>
+          <option value="cost_asc" ${planningSort === 'cost_asc' ? 'selected' : ''}>Est. Cost (Lowest First)</option>
+        `;
+      } else {
+        sortSelect.innerHTML = `
+          <option value="default">Default Order</option>
+          <option value="risk_desc" ${planningSort === 'risk_desc' ? 'selected' : ''}>Risk Score (High to Low)</option>
+          <option value="dist_asc" ${planningSort === 'dist_asc' ? 'selected' : ''}>Distance (Shortest First)</option>
+          <option value="pop_desc" ${planningSort === 'pop_desc' ? 'selected' : ''}>Vulnerable Pop (High to Low)</option>
+        `;
+      }
+      sortSelect.addEventListener("change", (e) => {
+        planningSort = e.target.value;
+        planningPage = 1;
+        renderPlanningOutputs();
+      });
+      leftControls.appendChild(sortSelect);
+
+      const countBadge = document.createElement("span");
+      countBadge.className = "badge-meta-pill";
+      countBadge.textContent = `Showing ${filtered.length.toLocaleString('en-IN')} of ${totalCount.toLocaleString('en-IN')} records`;
+      leftControls.appendChild(countBadge);
+
+      toolbar.appendChild(leftControls);
+
+      // Right-side button group with Download Full CSV and Export Filtered CSV
+      const rightBtns = document.createElement("div");
+      rightBtns.style.display = "flex";
+      rightBtns.style.alignItems = "center";
+      rightBtns.style.gap = "8px";
+      rightBtns.style.flexWrap = "wrap";
+
+      const exportFilteredBtn = document.createElement("button");
+      exportFilteredBtn.type = "button";
+      exportFilteredBtn.className = "btn-secondary";
+      exportFilteredBtn.style.fontSize = "0.78rem";
+      exportFilteredBtn.style.padding = "6px 12px";
+      exportFilteredBtn.innerHTML = `
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Export Filtered (${filtered.length.toLocaleString('en-IN')})</span>
+      `;
+      exportFilteredBtn.addEventListener("click", () => {
+        const outName = `${isTrees ? 'chennai_tree_planting_filtered' : 'chennai_emergency_team_filtered'}_${filtered.length}.csv`;
+        exportToCSV(outName, filtered);
+      });
+      rightBtns.appendChild(exportFilteredBtn);
+
+      const downloadBtn = document.createElement("a");
+      downloadBtn.href = downloadHref;
+      downloadBtn.download = downloadName;
+      downloadBtn.className = "btn-download";
+      downloadBtn.innerHTML = `
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Download CSV (${isTrees ? '207 KB' : '550 KB'})</span>
+      `;
+      rightBtns.appendChild(downloadBtn);
+
+      toolbar.appendChild(rightBtns);
+      agentOutputResultEl.appendChild(toolbar);
+
+      // 2. Data Table
+      const scrollBox = document.createElement("div");
+      scrollBox.className = "output-table-scroll table-responsive";
+
+      const table = document.createElement("table");
+      table.className = "output-data-table";
+
+      if (isTrees) {
+        table.innerHTML = `
+          <thead>
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">H3 Hexagon ID</th>
+              <th scope="col">Priority Score</th>
+              <th scope="col">Risk Score</th>
+              <th scope="col">Vulnerable Pop</th>
+              <th scope="col">Tree Fraction</th>
+              <th scope="col">Planting Area (ha)</th>
+              <th scope="col">Est. Cost (INR)</th>
+              <th scope="col">Verification Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${pageRows.map(r => `
+              <tr>
+                <td><strong>#${escapeHtml(r.rank)}</strong></td>
+                <td><code style="color:var(--tier-yellow); font-family:'JetBrains Mono',monospace;">${escapeHtml(r.h3_id)}</code></td>
+                <td>${formatNumber(r.prototype_priority_score, 4)}</td>
+                <td><strong>${formatNumber(r.risk_score, 2)}</strong></td>
+                <td>${formatNumber(r.pop_vulnerable, 1)}</td>
+                <td>${(Number(r.tree_frac || 0) * 100).toFixed(1)}%</td>
+                <td>${formatNumber(r.estimated_planting_area_ha, 2)} ha</td>
+                <td>₹${Number(r.estimated_cost_inr || 0).toLocaleString('en-IN', {maximumFractionDigits:0})}</td>
+                <td style="color:var(--text-muted); font-size:0.75rem;">${escapeHtml(r.ranking_status)}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        `;
+      } else {
+        table.innerHTML = `
+          <thead>
+            <tr>
+              <th scope="col">H3 Hexagon ID</th>
+              <th scope="col">Risk Score</th>
+              <th scope="col">Vulnerable Pop</th>
+              <th scope="col">Total Pop</th>
+              <th scope="col">Assigned Emergency Facility</th>
+              <th scope="col">Facility Type</th>
+              <th scope="col">Distance (km)</th>
+              <th scope="col">Distance Disclaimer</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${pageRows.map(r => `
+              <tr>
+                <td><code style="color:var(--tier-yellow); font-family:'JetBrains Mono',monospace;">${escapeHtml(r.h3_id)}</code></td>
+                <td><strong>${formatNumber(r.risk_score, 2)}</strong></td>
+                <td>${formatNumber(r.pop_vulnerable, 1)}</td>
+                <td>${formatNumber(r.pop_total, 1)}</td>
+                <td><strong>${escapeHtml(r.assigned_site_name || "Emergency Centre")}</strong></td>
+                <td><span class="badge-tier" style="background:rgba(255,255,255,0.06);">${escapeHtml(r.assigned_site_type || "Hospital")}</span></td>
+                <td>${formatNumber(r.straight_line_distance_km, 2)} km</td>
+                <td style="color:var(--text-muted); font-size:0.75rem;">${escapeHtml(r.distance_type)}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        `;
+      }
+      scrollBox.appendChild(table);
+      agentOutputResultEl.appendChild(scrollBox);
+
+      // 3. Pagination Bar
+      const paginationBar = document.createElement("div");
+      paginationBar.className = "pagination-bar";
+
+      const pageInfo = document.createElement("span");
+      pageInfo.textContent = `Page ${planningPage} of ${totalPages} (${filtered.length} total filtered items)`;
+      paginationBar.appendChild(pageInfo);
+
+      const navBtns = document.createElement("div");
+      navBtns.style.display = "flex";
+      navBtns.style.gap = "6px";
+
+      const prevBtn = document.createElement("button");
+      prevBtn.className = "btn-tab";
+      prevBtn.textContent = "Previous";
+      prevBtn.disabled = (planningPage <= 1);
+      prevBtn.addEventListener("click", () => {
+        if (planningPage > 1) {
+          planningPage--;
+          renderPlanningOutputs();
+        }
+      });
+      navBtns.appendChild(prevBtn);
+
+      const nextBtn = document.createElement("button");
+      nextBtn.className = "btn-tab";
+      nextBtn.textContent = "Next";
+      nextBtn.disabled = (planningPage >= totalPages);
+      nextBtn.addEventListener("click", () => {
+        if (planningPage < totalPages) {
+          planningPage++;
+          renderPlanningOutputs();
+        }
+      });
+      navBtns.appendChild(nextBtn);
+
+      paginationBar.appendChild(navBtns);
+      agentOutputResultEl.appendChild(paginationBar);
+    }
+
+    async function loadAlertLog() {
+      try {
+        const res = await fetch("/data/climateguard_alerts.jsonl");
+        if (res.ok) {
+          const text = await res.text();
+          const lines = text.trim().split(/\r?\n/).filter(Boolean);
+          alertLogEntries = lines.map(l => {
+            try { return JSON.parse(l); } catch { return null; }
+          }).filter(Boolean).reverse(); // latest first
+          renderAlertLog();
+        }
+      } catch (e) {
+        console.warn("Could not load alert log:", e);
+      }
+    }
+
+    function renderAlertLog() {
+      const listEl = document.getElementById("alert-log-list");
+      const badgeCount = document.getElementById("badge-alert-count");
+      const filterEl = document.getElementById("alert-scenario-filter");
+      if (!listEl) return;
+
+      const filterVal = filterEl ? filterEl.value : "ALL";
+      let filtered = alertLogEntries;
+      if (filterVal !== "ALL") {
+        filtered = filtered.filter(item => String(item.scenario || "").toLowerCase() === filterVal.toLowerCase());
+      }
+
+      if (badgeCount) {
+        badgeCount.textContent = `${alertLogEntries.length} Recorded Incidents`;
+      }
+
+      listEl.replaceChildren();
+
+      if (!filtered.length) {
+        const empty = document.createElement("div");
+        empty.style.padding = "14px";
+        empty.style.color = "var(--text-muted)";
+        empty.style.fontSize = "0.82rem";
+        empty.textContent = "No recorded incidents found matching this filter.";
+        listEl.appendChild(empty);
+        return;
+      }
+
+      filtered.forEach((item) => {
+        const row = document.createElement("div");
+        row.className = "alert-feed-item" + (item.isNew ? " newly-added" : "");
+
+        row.innerHTML = `
+          <div><code style="font-family:'JetBrains Mono',monospace; color:var(--text-secondary);">${escapeHtml(item.timestamp_utc ? item.timestamp_utc.replace("T", " ").slice(0, 19) + " UTC" : "Timestamp")}</code></div>
+          <div><span class="badge-meta-pill">${escapeHtml(String(item.scenario || "Baseline").toUpperCase())}</span></div>
+          <div><span style="color:var(--text-muted); font-size:0.75rem;">${escapeHtml(item.audience || "response_team")}</span></div>
+          <div><span class="badge-tier" style="color:var(--tier-orange); background:rgba(245,158,11,0.12);">${escapeHtml(item.status || "SIMULATED_NOT_SENT")}</span></div>
+          <div style="font-size:0.78rem; color:var(--text-secondary); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${escapeHtml(item.advisory || "")}">
+            ${escapeHtml(item.advisory || "Simulation record logged.")}
+          </div>
+        `;
+        listEl.appendChild(row);
+      });
+    }
+
+    async function logAgentAlert() {
+      agentAlertResultEl.textContent = "Logging simulated alert...";
+      try {
+        const data = await agentRequest("/api/agent/alert", {
+          method: "POST",
+          body: JSON.stringify({
+            scenario: agentScenarioEl.value,
+            audience: "response_team"
+          })
+        });
+
+        // Exact preserved text for backward compatibility & tests
+        agentAlertResultEl.textContent = `Status: ${data.status || "SIMULATED_NOT_SENT"}. External notification sent: ${data.external_notification_sent ? "Yes" : "No (Demonstration Only)"}.${data.log_file ? " Local Log: " + data.log_file : ""}`;
+
+        // Prepend new incident to live log table
+        const newEntry = {
+          timestamp_utc: new Date().toISOString(),
+          audience: data.audience || "response_team",
+          scenario: agentScenarioEl.value,
+          status: data.status || "SIMULATED_NOT_SENT",
+          advisory: `ClimateGuard AI precautionary advisory: ${agentScenarioEl.value} scenario logged for demonstration.`,
+          priority_hexagons: [],
+          isNew: true
+        };
+        alertLogEntries.unshift(newEntry);
+        renderAlertLog();
+        announceToScreenReader("Simulated alert logged locally. Status: SIMULATED_NOT_SENT.");
+
+      } catch (err) {
+        agentAlertResultEl.textContent = "Alert Log Error: " + err.message;
+      }
+    }
+
+    document.getElementById("agent-run").addEventListener("click", () => withButtonBusy(document.getElementById("agent-run"), "Simulating...", runAgentScenario));
+    document.getElementById("agent-advisory").addEventListener("click", () => withButtonBusy(document.getElementById("agent-advisory"), "Generating...", generateAgentAdvisory));
+    document.getElementById("agent-outputs").addEventListener("click", () => withButtonBusy(document.getElementById("agent-outputs"), "Inspecting...", checkAgentOutputs));
+    document.getElementById("agent-alert").addEventListener("click", () => withButtonBusy(document.getElementById("agent-alert"), "Logging...", logAgentAlert));
+
+    tierFilterEl.addEventListener("change", applyFilters);
+    dateFilterEl.addEventListener("change", applyFilters);
+    btnResetFiltersEl.addEventListener("click", () => {
+      tierFilterEl.value = "ALL";
+      dateFilterEl.value = "ALL";
+      applyFilters();
+    });
+
+    function formatNumber(val, digits = 1) {
+      if (val === undefined || val === null || isNaN(val)) return "N/A";
+      return Number(val).toFixed(digits);
+    }
+
+    function escapeHtml(str) {
+      if (!str) return "";
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    // Tab Switching for Spatial Planning Outputs
+    const tabTrees = document.getElementById("tab-btn-trees");
+    const tabTeams = document.getElementById("tab-btn-teams");
+    if (tabTrees && tabTeams) {
+      tabTrees.addEventListener("click", () => {
+        activePlanningTab = "trees";
+        tabTrees.classList.add("active");
+        tabTrees.setAttribute("aria-selected", "true");
+        tabTeams.classList.remove("active");
+        tabTeams.setAttribute("aria-selected", "false");
+        planningPage = 1;
+        planningSearch = "";
+        renderPlanningOutputs();
+      });
+      tabTeams.addEventListener("click", () => {
+        activePlanningTab = "teams";
+        tabTeams.classList.add("active");
+        tabTeams.setAttribute("aria-selected", "true");
+        tabTrees.classList.remove("active");
+        tabTrees.setAttribute("aria-selected", "false");
+        planningPage = 1;
+        planningSearch = "";
+        renderPlanningOutputs();
+      });
+    }
+
+    const reloadOutputsBtn = document.getElementById("btn-reload-outputs");
+    if (reloadOutputsBtn) {
+      reloadOutputsBtn.addEventListener("click", () => withButtonBusy(reloadOutputsBtn, "Refreshing...", checkAgentOutputs));
+    }
+
+    const alertFilterEl = document.getElementById("alert-scenario-filter");
+    if (alertFilterEl) {
+      alertFilterEl.addEventListener("change", renderAlertLog);
+    }
+
+    // Bilingual Advisory Language Toggle Listeners
+    const btnLangEn = document.getElementById("advisory-lang-en");
+    const btnLangTa = document.getElementById("advisory-lang-ta");
+    if (btnLangEn) {
+      btnLangEn.addEventListener("click", () => setAdvisoryLanguage("en"));
+    }
+    if (btnLangTa) {
+      btnLangTa.addEventListener("click", () => setAdvisoryLanguage("ta"));
+    }
+
+    // Startup
+    initTheme();
+    initSidebar();
+    fetchReport();
+    checkAgentHealth();
+    loadPlanningData().then(() => {
+      checkAgentOutputs();
+    });
+    loadAlertLog();
+  </script>
+</body>
+</html>

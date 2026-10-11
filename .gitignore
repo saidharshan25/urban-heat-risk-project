@@ -1,28 +1,62 @@
-# Python virtual environments
-.venv/
-venv/
-ENV/
-env/
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.aws/
+.aws-sam/
+.aws-sso/
+credentials
+config
 
-# Byte-compiled / cache files
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-.ipynb_checkpoints/
-**/.ipynb_checkpoints/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
 
-# Cache directories
-cache/
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Nested repository metadata
+/Agent/aws-agent/.git/
+
+# Nested repository and its metadata backup
+/Agent/aws-agent/
+/Agent/aws-agent-git-backup/
+
+# Local caches and generated files
+/cache/
+/scratch/
+**/__pycache__/
+**/.pytest_cache/
 **/cache/
-*.part
 
-# Data directories (raw and processed datasets)
-data/raw/
-data/processed/
-**/data/raw/
-**/data/processed/
-*.tif
+# Backup files
+*.bak
+*.before-*
+*.backup
 
-# Environment and sensitive keys
-.env
-*.pem
+# Local Python environments
+.venv/
+venv/
+
+# Generated datasets and historical snapshots
+/data/processed/backup_*/
+data/processed/*.before_*
+data/processed/*_audit.csv
+
+# Accidental shell-redirection artifacts
+
+# Accidental files with unusual names
+/rcdashboard*
+/.py*

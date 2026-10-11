@@ -1,0 +1,5 @@
+risk_category,hexagons,mean_risk,vulnerable_population
+Low,2879,1.1400335448028998,632023.3
+Moderate,959,7.998197610419253,437569.4
+High,21,15.875031633646865,14689.8
+Very High,0,,0.0

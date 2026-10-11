@@ -36,11 +36,21 @@ class TestForecastHeatHazardService(unittest.TestCase):
         self.assertEqual(meta["valid_records_count"], 168)
         self.assertEqual(meta["invalid_records_count"], 0)
 
-        # Verify hourly records
+        # Verify hourly records contract: 168 hourly records, valid timestamps, monotonic ordering, 1-hour intervals
+        from datetime import datetime, timedelta
         records = payload["hourly_forecast_hazard_records"]
         self.assertEqual(len(records), 168)
-        self.assertEqual(records[0]["time"], "2026-10-10T00:00")
-        self.assertEqual(records[-1]["time"], "2026-10-16T23:00")
+        for i in range(len(records)):
+            t_curr = datetime.fromisoformat(records[i]["time"])
+            if i > 0:
+                t_prev = datetime.fromisoformat(records[i - 1]["time"])
+                self.assertGreater(t_curr, t_prev, f"Record {i} timestamp must be strictly greater than record {i-1}")
+                self.assertEqual(t_curr - t_prev, timedelta(hours=1), f"Record {i} must be exactly 1 hour after record {i-1}")
+
+        # Verify start and end timestamps match source forecast cache
+        raw_cache = self.service.load_raw_forecast()
+        self.assertEqual(records[0]["time"], raw_cache["hourly"]["time"][0])
+        self.assertEqual(records[-1]["time"], raw_cache["hourly"]["time"][-1])
 
         # Verify alert tier counts exist
         tier_counts = meta["alert_tier_distribution"]

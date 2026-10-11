@@ -1,0 +1,2619 @@
+facility_id,type,name,lat,lon,in_city
+node/248420920,hospital,Kalaignar Karunanidhi Nagar,13.0386493,80.2052158,True
+node/248559397,clinic,Koyambedu,13.0720236,80.1980375,True
+node/248560797,hospital,Kasimedu,13.122775,80.2960584,True
+node/258978416,hospital,Amrit Hospital,13.0922007,80.2792912,True
+node/258978417,hospital,Vikram Hospital,13.0985007,80.2796178,True
+node/262452334,hospital,City Tower Hospitals,13.08438,80.2160862,True
+node/289486820,hospital,"Apollo Hospitals, Tondiarpet",13.1289367,80.2905623,True
+node/295544111,hospital,K.H.M. Hospital,13.0844992,80.2130591,True
+node/295552091,hospital,Sundaram Medical Foundation,13.08217,80.2069819,True
+node/295552092,hospital,Sri Devi Speciality Hospial,13.0887983,80.1994692,True
+node/300467984,school,New Prince Higher Secondary,12.9853147,80.2029459,True
+node/300468062,school,St. Marks School,12.9868373,80.206505,True
+node/303590777,hospital,Corporation Hospital,13.0336624,80.2572467,True
+node/308811614,hospital,"Hindu Mission Health Services, Kanchipuram",12.9787682,80.1846471,True
+node/310015097,hospital,Military Hospital,13.0194622,80.1972947,False
+node/310504820,hospital,"Tamil Nadu Government Dental College & Hospital, Chennai",13.084889,80.2826483,True
+node/310732936,hospital,Kilpauk Medical College,13.0785984,80.2433369,True
+node/310909754,hospital,Hariharan Hospital,12.9847145,80.1905906,True
+node/310910945,hospital,BM Hospital,12.9887616,80.1904116,True
+node/311429396,hospital,K.F. Hospital,12.973463,80.1841397,True
+node/312000326,hospital,Cancer Institute,13.0061338,80.239884,True
+node/312014519,school,Brilliant Matriculation School,12.9704142,80.186583,False
+node/312015795,school,Mowbray's Matriculation Higher Secondary School,12.985101,80.1894583,True
+node/313027868,hospital,Sri Ramachandra Medical Centre and Hospital,13.0380979,80.1428047,True
+node/317227997,library,மாவட்ட மைய நூலகம்,13.0584619,80.2582334,True
+node/317228740,library,British Council Library,13.0596742,80.2577957,True
+node/319500497,library,Dr Swaminathan Iyer Library,12.9911735,80.263951,True
+node/320275820,hospital,Govt Maternity Hospital,13.0720996,80.2589871,True
+node/320275824,hospital,Institute of Child Health,13.0735496,80.257025,True
+node/320275839,hospital,Institute of Obstetrics and Gynaecology dd,13.0735431,80.2591463,True
+node/325200225,park,Alandur,12.9943729,80.1942837,True
+node/325787792,school,Shri Sakthi Vidyalaya,12.8861992,80.2460833,True
+node/347356350,school,Balalok Matriculation Higher Secondary School,13.0542557,80.1943992,True
+node/347362882,school,JaiGopal Garodia Girls High school,13.0530994,80.1967081,True
+node/360359352,library,USIS Library,13.0523258,80.2520265,True
+node/364650995,hospital,MIOT International,13.0211808,80.1858412,True
+node/367795605,hospital,St. Thomas Hospital,13.0122733,80.196428,False
+node/370967673,hospital,,13.009781,80.1949734,False
+node/375668400,hospital,Venkataeswara Hospitals,13.0293624,80.2440921,True
+node/417776186,school,Olcott Memorial HSS,13.0034528,80.2677285,True
+node/432468197,library,,12.9490235,80.1411895,False
+node/442508332,hospital,Sarswathi Hospital,12.9653846,80.2067733,True
+node/459635161,hospital,Apollo Clinic & Pharmacy,13.05244,80.2041657,True
+node/459641978,school,LaClarence Matriculation Higher Secondary Schoolt,13.0542712,80.2036334,True
+node/459648701,hospital,Vijaya Heart Centre,13.0483819,80.2070144,True
+node/459652832,school,Thai Sathia School,13.0438348,80.1981602,True
+node/473396856,school,Starlight Abacus School,13.0074771,80.2613841,True
+node/540658116,hospital,B.M.Orthopaedic Hospital,13.1181104,80.1499411,True
+node/560231368,school,NSN School,12.9426246,80.1416397,False
+node/591555028,hospital,skandan nursing home,12.9447938,80.1405596,False
+node/595654418,school,Government Boys Higher Secondary School,12.953827,80.1368303,False
+node/595657131,school,Chinmaya Vidyalaya,13.060167,80.1937294,True
+node/595706154,hospital,"Vasan Eye Care Hospital, Vadapalani",13.0495316,80.211027,True
+node/595735861,school,St. John's Matriculation Higher Secondary School,13.0474865,80.1873415,True
+node/597590621,hospital,JJ Hospital,13.0571293,80.1942138,True
+node/612546126,school,Kanmani Montessori School,13.0735855,80.2088301,True
+node/614436617,school,Ambal Metriculation School,13.0734099,80.2062046,True
+node/747616456,school,Akshaya,12.9787977,80.2224844,True
+node/761949200,school,Christ King School,12.9214424,80.1869452,False
+node/934859077,school,La Chatlaine,13.0442984,80.1853388,True
+node/941467495,school,Kolla Perumal (KPVCSS),13.0745115,80.2139192,True
+node/941471945,hospital,Appasamy Hospital,13.0750445,80.2151198,True
+node/941611681,hospital,Appasamy Hospital,13.073239,80.2148826,True
+node/941621037,hospital,Appolo Clinic,13.0892073,80.2178866,True
+node/1003378082,school,Bala Saravana Matriculation School,12.9831591,80.2104214,True
+node/1015568367,school,Assisi School,13.0301954,80.1774604,True
+node/1015571498,hospital,Srm Speciality Hospital,13.0331325,80.1810857,True
+node/1015571601,hospital,SRM Dental Hospital,13.0321291,80.1801201,True
+node/1015578645,school,PSBB School,13.0397071,80.1996798,True
+node/1015585631,school,Sri Krishna Swamy Mat. Hr. Sec. School,13.0382542,80.1976842,True
+node/1044780333,school,German School Chennai,12.9515892,80.2606515,True
+node/1069491369,school,SSV Hr Sec School,13.0885001,80.2777394,True
+node/1069491576,school,AB Parekh Hr Sec School,13.0883355,80.2772191,True
+node/1127285905,hospital,Aakash Fertility Centre & Hospital,13.0554597,80.2118365,True
+node/1127295227,school,Janaki Ramachandran Matriculation Scool,13.0538146,80.2143813,True
+node/1152858038,hospital,Rajan Eye Care Hospital,13.0508335,80.2434416,True
+node/1306385769,school,Amrita Vidyalaya,13.0247563,80.189912,True
+node/1315895438,hospital,sree dhanalakshmi family clinic,13.0583046,80.211745,True
+node/1329321951,school,St Peters School,12.9284826,80.2024966,True
+node/1329326250,school,Bharatha Vidhyalaya School,12.9079132,80.2016416,False
+node/1329334515,library,Semmozhi Tamil Library,12.9051087,80.2108997,False
+node/1329336746,school,Pallikarani Govt Higher Secondary School,12.9242267,80.1982298,True
+node/1330443392,school,Asan Memorial College,12.9253386,80.2003719,True
+node/1446415367,hospital,Bhadra Homeo,12.9663879,80.2474724,True
+node/1446841958,school,Govt School,13.0542995,80.2028196,True
+node/1446842407,school,Barathi Vidayala School - Block 1,13.0543125,80.2059776,True
+node/1446842408,school,Barathi Vidayala School - Block 2,13.0538945,80.2061707,True
+node/1472969165,hospital,Amma Hospital,13.0626045,80.2305209,True
+node/1474055555,hospital,Right Hospitals,13.0787952,80.2405731,True
+node/1560720462,hospital,Vasan Eye Care Hospital,13.0015307,80.2552541,True
+node/1596154407,school,Lets do Something - Activity center,12.9758373,80.221575,True
+node/1597151538,hospital,,13.0584072,80.2011738,True
+node/1621240490,school,Maha Ganesa Vidyalaya,13.1195338,80.1549408,True
+node/1621246558,hospital,Ashwini Eye Care,13.1187083,80.1572422,True
+node/1636170540,school,Pon Vidhyashram School,12.9667572,80.2155154,True
+node/1636171309,school,SAN Academy,12.9757851,80.2123879,True
+node/1636178008,school,Vailankanni Silver Jubilee Matriculation Higher Secondary School,12.9579014,80.1928829,True
+node/1653993044,school,"Chinmaya Vidhyalaya, Anna Nagar",13.0916188,80.2075894,True
+node/1672262615,school,St.Johns English School,13.0017,80.266308,True
+node/1760694106,school,Prince Matric Hr Sec School,12.9694641,80.1944308,True
+node/1760696030,community_centre,Karthikeyapuran Co-operative Community Hall,12.9622746,80.193572,True
+node/1760907465,school,Thandai Periyar Govt High School,12.9705025,80.1970465,True
+node/1764133439,water,,12.9712545,80.2156062,True
+node/1764136003,park,Government Park,12.9706821,80.2149946,True
+node/1789987574,hospital,Prime Care Nursing Home,12.9799192,80.2044922,True
+node/1825978766,school,FES Matriculation Higher Secoundary School,13.1355943,80.2515179,True
+node/1836798405,school,,12.9156126,80.1872129,False
+node/1926709450,school,Jawaharlal Nehru Government Boys School,12.9862277,80.1855109,True
+node/1948616260,hospital,Apollo Free Emergency Clinic,13.0677233,80.2050055,True
+node/1955943159,hospital,Agarwal Hospital,13.0385656,80.2165845,True
+node/1957903721,hospital,Senthil Nursing Home,13.0849671,80.2004752,True
+node/1957904106,hospital,I K Hospital,13.0868667,80.1991661,True
+node/1993266486,hospital,Ortho clinic,12.9800456,80.2286587,True
+node/2053800293,school,Himayam Matric School,12.9454618,80.1945713,False
+node/2059560611,school,Dhanraj Baid Jain College,12.9459767,80.239775,True
+node/2064178200,school,CL Baid Metha College Of Pharmacy,12.9456616,80.2395863,True
+node/2071087259,school,CL Baid Metha College of Pharmacy,12.9456667,80.2395755,True
+node/2071090050,school,CL Baid Sishya School;Cromā,12.9494627,80.2404649,True
+node/2072479943,hospital,JK Hospital,13.0358564,80.1644897,True
+node/2086712181,school,Goverment school,12.956025,80.1850444,False
+node/2086712439,hospital,,12.9559409,80.1855637,False
+node/2115851259,school,Vael's Bilabong School,12.9215926,80.2488853,True
+node/2117666024,school,KCG College of Technology,12.9214372,80.2416769,True
+node/2117671390,school,National Institute of Management Studies,12.9177981,80.2410536,True
+node/2120763195,hospital,SP Hospital,12.9933638,80.2009134,True
+node/2123575602,school,Chettinadu A School,12.9530789,80.2446878,True
+node/2124725682,school,Akshara School,12.9334921,80.2365085,True
+node/2124734395,hospital,Fourtts India Laboratories,12.9321684,80.2337388,True
+node/2124849459,school,YMCA SCHOOL,12.9766406,80.2505858,True
+node/2124854755,school,Global Institute Of Gaming And Animation,12.9554398,80.2482807,True
+node/2126461371,hospital,Rotary Central Margaret Sidney Hospital,12.9837958,80.1932105,True
+node/2127107074,school,St.Pius school,12.9647302,80.2433123,True
+node/2145405955,hospital,Sri Chakra Hospital,12.9786524,80.1850278,True
+node/2162769565,clinic,RA Usha's clinic,12.918328,80.187629,False
+node/2162770047,clinic,SV clinic,12.917927,80.187478,False
+node/2162771723,clinic,SV Lab,12.917897,80.187416,False
+node/2162771900,clinic,V-Care Clinic,12.917246,80.1873,False
+node/2163785044,clinic,KK clinic,12.886344,80.188974,False
+node/2210024243,school,Sithalapakkam Government High School,12.8961318,80.1828607,False
+node/2210056220,hospital,Rajan Hospital,12.8928496,80.1835976,False
+node/2253336342,library,Ranga Lending Library,12.9873291,80.1852636,True
+node/2253361647,hospital,Dr. Janardhanan Multispeciality Dental Clinic,12.9842586,80.1886083,True
+node/2270331348,park,Panagal Park,13.0410311,80.2332635,True
+node/2270545837,library,,13.0626145,80.2141145,True
+node/2296731456,hospital,Dr Venugopals' Sundaram Clini,13.076782,80.268345,True
+node/2296731781,hospital,Dr Kabir's Clinic,13.0768734,80.2678381,True
+node/2296732187,hospital,Dr Sridhars'Clinic,13.0764345,80.2672427,True
+node/2296733697,school,Dhanakoti Middle School,13.0756063,80.2720867,True
+node/2296734281,school,Kalyanam Girls High School,13.0755096,80.2722477,True
+node/2296735136,school,Kalyanam Girls Higher Secondary School,13.0763065,80.2719607,True
+node/2296736065,school,Chintadripet Boys Higher Secondary School,13.075008,80.2732159,True
+node/2296737988,library,,13.0747757,80.2719446,True
+node/2296738343,library,,13.076168,80.2669127,True
+node/2296739472,school,சென்னை மாநகராட்ச்சி பள்ளி-சிந்தாரிபேட்டை,13.076586,80.2666606,True
+node/2296744654,school,Chintadripet Middle School,13.0736154,80.2678488,True
+node/2296745323,school,Rao Bahadur Calavala Cunnan Chetty Middle School,13.074522,80.2694716,True
+node/2339219755,water,,13.0110884,80.2359984,True
+node/2485567524,hospital,Vepery Hospital,13.0921812,80.2594411,True
+node/2517035812,school,King's Matric Hr Sec School,12.9657555,80.1970157,True
+node/2517035814,hospital,Vasan Eye care,12.9658002,80.191882,True
+node/2559180846,hospital,Jaws Dental Foundation,13.0929667,80.2236256,True
+node/2583555357,school,Revoor Padmanabha Chetty Matriculation Higher Secondary School,13.1511436,80.2987442,True
+node/2587530810,hospital,Chennai Skin Foundation,13.0205681,80.2594702,True
+node/2669702938,hospital,Sukrthi Nursing Home,12.9710287,80.2082964,True
+node/2676678607,clinic,24 Hours Hospital,13.024235,80.2231706,True
+node/2728294977,school,Infant jesus high school,12.9298318,80.2045907,True
+node/2779907360,school,Padma Seshadri Bala Bhavan Higher Secondary School,13.054758,80.2412002,True
+node/2794348661,hospital,A.N.N Hospital,13.0405941,80.1784622,True
+node/2966142809,hospital,Appolo Speciality Hospital Vanagram,13.0705042,80.150612,False
+node/3071893249,school,Sreevatsa Viswanathan Vivekananda Vidhyalaya,12.928648,80.1453706,False
+node/3097012397,school,Chennai School (Corporation),12.926285,80.1978774,True
+node/3118864398,hospital,Kauvery Hospital,13.0381705,80.2573008,True
+node/3149264021,school,St. Christopher Nursery And Primary School,13.02092,80.1692038,True
+node/3372786283,hospital,Velachery SABA Hospital,12.9862735,80.2298924,True
+node/3397750866,clinic,Dr. Reddi's Poly Clinic,13.022387,80.2230108,True
+node/3397754749,school,Diana Nursery & Primary School,13.0231287,80.2180065,True
+node/3453302329,clinic,Sugam Poly Clinic,13.0248543,80.2208806,True
+node/3453328189,clinic,24 Hours Health care centre,13.0248243,80.2203784,True
+node/3500408322,water,,13.0227927,80.2258368,True
+node/3500410407,water,,13.0222611,80.2242404,True
+node/3538450204,water,,13.0777871,80.2606399,True
+node/3664004950,hospital,Chellam Hospital,12.9012946,80.1583761,False
+node/3680482049,clinic,"Sri Meenakshi Nursing Home, Chennai",13.041711,80.2285827,True
+node/3687711447,hospital,Kaya Skin clinic,12.9767775,80.2223505,True
+node/3702797921,hospital,Madras Medical Mission Hospital - Institute of Cardio Vascular Diseases,13.0859961,80.1870589,True
+node/3736313474,clinic,Ramana Children's Hospital,12.9519172,80.136095,False
+node/3744461963,community_centre,Mahal,13.0281256,80.2192144,True
+node/3750671376,community_centre,Mars Marriage Hall,12.9705654,80.1446668,False
+node/3800594925,water,,13.0044514,80.2388892,True
+node/3872545455,school,Government Higher Secondary School,13.035796,80.2028029,True
+node/3872547380,school,Chennai Higher Secondary School,13.0342805,80.2023362,True
+node/3910184069,water,,13.004217,80.23856,True
+node/3910184071,water,,13.004392,80.237248,True
+node/3953071146,water,,13.0538139,80.2768781,True
+node/3982078512,hospital,Pavithra Hospital,13.1260907,80.2488406,True
+node/3998858427,school,தென் இந்திய இந்தி பரப்புரை கூட்டமைப்பு,13.0348934,80.238973,True
+node/4035159042,school,Soundara Pandiya Nadar School,13.0977041,80.2285669,True
+node/4090239218,school,Rajkumar Sulochana Matric Higher Secondary School,12.968849,80.1920857,True
+node/4148799190,community_centre,Jai Nagar Community Hall,13.0723326,80.2068718,True
+node/4153810890,school,Oxford Matriculation Higher Secondary School,13.0286604,80.2243406,True
+node/4213294489,school,Good Shepherd Matriculation School,13.0504588,80.1798944,True
+node/4221573903,hospital,JKCN Complex (Sankara Nethralaya),13.0642564,80.2497746,True
+node/4231249091,school,Alpha Arts and Science College,13.045989,80.1422888,True
+node/4238565190,community_centre,Madras United Club,13.0856146,80.2814171,True
+node/4262044189,community_centre,Andhra Social Club,13.0438561,80.2429363,True
+node/4271007589,community_centre,Ramlakshmi Paradise,13.1463058,80.2182801,True
+node/4290851202,school,PANIMALAR POLYTECHNIC COLLEGE,13.0679752,80.2242291,True
+node/4294274187,school,Chennai Primary School,12.9801464,80.2320468,True
+node/4300667140,school,Chennai Higher Secondary School,12.9852163,80.218948,True
+node/4310590233,school,St Mark's School,12.9510813,80.1488697,False
+node/4315323191,school,St.Johns MHSS,13.0352427,80.1609081,True
+node/4317992694,library,"Chennai District Branch Library, Mandaiveli",13.0292058,80.2668965,True
+node/4317992695,library,"Branch Library, Kotturpuram",13.01679,80.24424,True
+node/4317992696,library,"Branch Library, CIT Nagar",13.03115,80.23608,True
+node/4317992697,library,"District Branch Library, Shastri Nagar",13.000761,80.261102,True
+node/4317995091,library,"District full-time library, Velachery",12.97964,80.22611,True
+node/4317995092,library,"District Circle Library, Ashok Nagar",13.03194,80.2142,True
+node/4317995093,library,Devaneya Pavanar Library,13.05823,80.25803,True
+node/4317995094,library,"District Branch Library, Kasturiba Gandhi Hospital, Triplicane",13.06002,80.27862,True
+node/4317995095,library,"District Branch Library, Velachery",12.98618,80.20917,True
+node/4317995096,library,"District Branch Library, Venkatapuram, Saidapet",13.012979,80.225677,True
+node/4317999495,library,"Full time branch library, Tiruvanmiyur",12.98614,80.25974,True
+node/4317999496,library,"District branch library, Saidapet",13.02473,80.21833,True
+node/4317999497,library,"District Branch Library, Triplicane",13.0588,80.27561,True
+node/4317999498,library,"Circle Library, Gandhi Nagar",13.00942,80.257219,True
+node/4317999499,library,"District Branch Library, Indira Nagar",12.994974,80.252574,True
+node/4317999500,library,"District Branch Library, Vellala Teynampet",13.047209,80.250404,True
+node/4317999501,library,"District Branch Library, Choolai",13.090803,80.263713,True
+node/4318010193,library,Eloor Private Library,13.04174,80.24422,True
+node/4318010194,library,Dr. Kedadas Ethirajulu Indrani Branch Library,13.02823,80.24565,True
+node/4318010197,library,"District Branch Library, Triplicane",13.04882,80.27181,True
+node/4318010198,library,"District Branch Library, Kilpauk",13.08001,80.234452,True
+node/4318010199,library,"District Branch Library, St. Mary's Road, Mylapore",13.0301109,80.2601446,True
+node/4318020390,library,"District Branch Library, Mylapore",13.032611,80.266444,True
+node/4318020391,library,Agaram Then panchayat Library,12.88531,80.15174,False
+node/4318020392,library,Ranade Library,13.0372553,80.2653486,True
+node/4318020393,library,"District Branch Library, Saligramam",13.05282,80.20358,True
+node/4318020394,library,"Part Time Library, Vadapalani Police Quarters",13.04657,80.20947,True
+node/4318020395,library,District Branch Library,13.06094,80.27771,True
+node/4318020396,library,"District Branch Library, Tiruvateeswaranpet, Triplicane",13.0590698,80.2761661,True
+node/4318020397,library,"District Branch Library, Todhunter Nagar, Saidapet",13.022781,80.230394,True
+node/4318020398,library,"Branch Library, Saidapet",13.020074,80.216302,True
+node/4318020399,library,"Part Time Library, Teynampet",13.048869,80.249049,True
+node/4318020400,library,"Part Time Library, Kilpauk",13.081761,80.240987,True
+node/4318020493,library,"District Branch Library, Arcot Road",13.05138,80.21682,True
+node/4318020494,library,"District Branch Library, Triplicane",13.04553,80.27572,True
+node/4318020495,library,"District Branch Library, Ashok Nagar",13.0413611,80.2192915,True
+node/4318020496,library,"District Branch Library, West Mambalam",13.028998,80.222318,True
+node/4318020497,library,"District Branch Library, T Nagar",13.05279,80.23769,True
+node/4318026292,library,"District Branch Library, Royapettah",13.05081,80.26464,True
+node/4318026293,library,"Part Time Library, West Mambalam",13.038996,80.223169,True
+node/4318026590,library,"District Branch Library, Mylapore",13.04005,80.26519,True
+node/4318026591,library,Chennai District Circle Library,13.03509,80.25051,True
+node/4318026594,library,"District Branch Library, Jafferkhanpet",13.02857,80.21529,True
+node/4318026595,library,"District Branch Library, Kodambakkam",13.05387,80.21951,True
+node/4318026596,library,"Branch Library, Puliyur",13.0515,80.22301,True
+node/4318026597,library,Madras University Library,13.06686,80.28347,True
+node/4318029590,library,"District Branch Library, Royapettah",13.05139,80.26934,True
+node/4318029591,library,"Mahatma Gandhi Library, Gandhi Mandapam",13.00618,80.23833,True
+node/4318030290,library,"District Branch Library, Maduvankarai",12.9995812,80.2142541,True
+node/4318030291,library,Panuval Book Shop,12.98746,80.25695,True
+node/4318030292,library,"Full Time Library, Triplicane",13.06072,80.27572,True
+node/4318030293,library,"Rajaji Memorial Library, Adyar",13.00591,80.23889,True
+node/4318030294,library,"District Branch Library, Choolai",13.089999,80.259066,True
+node/4318041990,library,"Branch Library, T nagar",13.0397632,80.2356071,True
+node/4318041991,library,"District Branch Library, Pudupakkam",13.06124,80.27017,True
+node/4318043189,library,"District Branch Library, Royapettah",13.05799,80.2697,True
+node/4329387869,hospital,Srinivasan Rajalakshmi Memorial Hospital,12.9733792,80.187599,True
+node/4338124699,water,GOVT FREE WATER,13.026096,80.2197106,True
+node/4338130031,community_centre,MOHANAMBAL KALYANA MANDABAM,13.0241341,80.2175909,True
+node/4351216397,school,RJR Middle School,13.1185939,80.2792156,True
+node/4358935393,school,,13.0270459,80.1819043,True
+node/4377440092,school,Target soft solution,13.0372385,80.2334005,True
+node/4377440093,school,,13.0371111,80.2333714,True
+node/4383204790,school,KYM,13.0784245,80.282892,True
+node/4411778295,school,Sivasakthi Matriculation School,12.9875802,80.2185153,True
+node/4411841291,school,,13.0234374,80.1816259,True
+node/4411841796,clinic,,13.0286757,80.183588,True
+node/4411852991,community_centre,,13.0105608,80.1957762,False
+node/4411853996,clinic,,13.0278142,80.1832579,True
+node/4411855589,hospital,,13.026489,80.1829882,True
+node/4411855591,clinic,,12.9745585,80.2201536,True
+node/4415974019,water,,13.012393,80.2433135,True
+node/4421925894,school,,13.0654103,80.2336977,True
+node/4421926391,clinic,,13.0672454,80.2496008,True
+node/4421948894,school,,13.0681334,80.2491591,True
+node/4447008637,school,Aathichudy Special School,13.0048641,80.252718,True
+node/4447073028,school,Grace Matriculation Higher Secondary School,13.0404737,80.1545457,True
+node/4447298329,school,Gill Adarsh Matriculation Higher Secondary School,13.0502159,80.2699958,True
+node/4450536979,school,St Antony School,12.9767972,80.226075,True
+node/4455385690,clinic,,13.0594837,80.1694976,True
+node/4486583996,hospital,Chennai Medical Centre Hospital,13.0380047,80.1889685,True
+node/4488082604,hospital,SRM Institutes For Medical Science,13.0515961,80.2114304,True
+node/4488387389,clinic,,13.0327786,80.2526813,True
+node/4517223590,school,,13.1232153,80.169752,True
+node/4580687657,clinic,Siva clinic,13.0313209,80.2247278,True
+node/4604870491,school,,13.1101564,80.2431365,True
+node/4623114495,community_centre,,12.9790011,80.2003464,True
+node/4633798289,school,,13.1128208,80.2388201,True
+node/4672611189,community_centre,Sree Amruthaa Palace,12.9111841,80.1610274,False
+node/4707360804,community_centre,,13.037191,80.265593,True
+node/4720481590,community_centre,AG-DMS Metro,13.0455148,80.2484363,True
+node/4721759030,park,,12.9811584,80.1806607,True
+node/4740540121,community_centre,,13.0735338,80.2010076,True
+node/4763211059,water,,13.0308417,80.2674464,True
+node/4764302980,hospital,HEALTH,13.0135999,80.2395364,True
+node/4783864424,clinic,,12.9001585,80.1422301,False
+node/4813324323,hospital,,13.1133021,80.2905249,True
+node/4816004524,water,,13.0379352,80.1928509,True
+node/4841198517,library,Nallasivan library,13.0358316,80.2409631,True
+node/5087492830,clinic,Vani Nursing Home,12.9224213,80.1503389,False
+node/5087493227,hospital,Dr. KK eye care center,12.9220657,80.1381329,False
+node/5087493324,hospital,Be Well Hospital,12.9220102,80.1417788,False
+node/5087493921,clinic,CMC poly clinic,12.9227777,80.1484099,False
+node/5090924223,school,,12.9239351,80.1583508,False
+node/5090924224,hospital,Chellam Super Speciality Center,12.9237851,80.1589529,False
+node/5090926024,hospital,New Life Hospital,12.9225168,80.1522357,False
+node/5198867202,library,Madras Literary Society,13.0681798,80.2506465,True
+node/5225756935,school,Zion matriculation higher secondary school,12.9360597,80.1609096,False
+node/5226289023,school,Saviour Jesus Matriculation Higher Secondary School,12.9428412,80.1502698,False
+node/5234697499,school,Shikshaa Matriculation Higher Secondary School,12.9404891,80.1561516,False
+node/5234697512,library,Public Library,12.9239485,80.1486863,False
+node/5234772945,library,Public Library,12.9359168,80.1571001,False
+node/5258898323,community_centre,,12.9167242,80.1445979,False
+node/5258898326,community_centre,,12.9105302,80.1433321,False
+node/5258976324,hospital,Government Health Center,12.885562,80.151595,False
+node/5259008321,hospital,Annai Therasa Hospital,12.8917407,80.1412614,False
+node/5259088422,hospital,Government Veterinary Hospital,12.8855161,80.1522823,False
+node/5259088434,school,,12.8839707,80.1524806,False
+node/5259129922,hospital,,12.9207467,80.1437903,False
+node/5259141323,hospital,,12.9201133,80.1443788,False
+node/5263563022,hospital,,13.1131363,80.2429369,True
+node/5302938624,hospital,Kottakkal Arya Vaidhyasala,12.9203722,80.1443905,False
+node/5302949922,school,St Mark matric school,12.9223303,80.1429628,False
+node/5306596304,clinic,Neuro Clinic,13.0862108,80.2048268,True
+node/5306605011,community_centre,Kalyan Kendra Community Hall,13.0873874,80.2046738,True
+node/5318562365,clinic,Dr. Ram's Diabetes & Endocrine Clinic,13.0860731,80.1983714,True
+node/5318565084,clinic,Heart Care Clinic,13.0856328,80.1983243,True
+node/5320053509,school,செ.தெ நாயகம் தியாகராய நகர் மேனிலைப் பள்ளி,13.0361057,80.2365642,True
+node/5332419164,school,St. Joseph Higher Secondary School,12.938573,80.2528173,True
+node/5336398867,school,St. John Williams Matriculation School,13.1031947,80.2093113,True
+node/5336542921,hospital,The Cresent Hospital,13.0527235,80.2727336,True
+node/5338508432,clinic,Swami Eye Clinic & Surgi Center,13.1058085,80.2077881,True
+node/5346397021,school,மணிஸ் நர்சரி மற்றும் பிரைமரி பள்ளி,13.0557408,80.2719053,True
+node/5367950021,hospital,Biocosmo Healthcare,13.0590329,80.2375326,True
+node/5372752957,clinic,Anbu Dental Implant & Maxillofacial Clinic,13.0855051,80.192537,True
+node/5474584419,community_centre,Square space,13.081808,80.1798957,True
+node/5487610049,community_centre,,13.0555141,80.2712694,True
+node/5489143545,clinic,Keerthi clinic,13.0200088,80.1422946,False
+node/5492573024,hospital,VSR Hospital,13.0799682,80.1805593,True
+node/5492577281,hospital,New Life Family Hospitals,13.0800478,80.1804976,True
+node/5500158687,hospital,Vijaya Group of Hospital,13.0497391,80.2083222,True
+node/5547728024,hospital,ஹிபா சிறப்பு மருத்துவமனை,13.0615207,80.275747,True
+node/5570522545,hospital,ARK Hospital,12.9856999,80.2293536,True
+node/5570545748,school,,12.9853379,80.2277188,True
+node/5631872265,clinic,Viji Clinic,13.0298741,80.2217057,True
+node/5631872266,hospital,Annamalai Hospital,13.031147,80.2228983,True
+node/5631872277,hospital,Ezhil Hospital,13.0319539,80.2207913,True
+node/5714912700,library,Ambedkar Bhagat Singh DYFI Library,12.9751923,80.2406039,True
+node/5714955340,library,Kallukuttai Community Network Centre,12.9713637,80.233645,True
+node/5714965849,community_centre,Kallukuttai Community Network Place II,12.9698305,80.2330226,True
+node/5715499085,library,பாரதி அறிவுடைமை பொது நூலகம்,12.8629191,80.2145177,True
+node/5724412721,community_centre,இக்சா அரங்கம்,13.0683427,80.2565851,True
+node/5756218859,community_centre,Community Network Possible Places,12.8710918,80.2055283,False
+node/5792664046,hospital,"Qure Ortho Clinic, Physiotherapy, X Ray & Pharmacy",12.9794,80.2043658,True
+node/5850471689,community_centre,ராணி மஹால்,12.9397977,80.2563514,True
+node/5875330425,school,Govt.Hr secondary school,13.0278146,80.2444728,True
+node/5992069281,school,Rajiv School of Excellence Matriculation & Higher Secondary,13.0383691,80.1628252,True
+node/6036590821,school,Singaram Pillai Girls High School,13.1084682,80.208451,True
+node/6036687186,clinic,GK Clinic,13.1055632,80.2098688,True
+node/6057943093,clinic,Diabetes and Heart Care Clinic,13.0291736,80.2474284,True
+node/6131954385,clinic,,13.0199102,80.2697182,True
+node/6167503411,clinic,BK ENT care,13.057865,80.2362823,True
+node/6167503412,clinic,Suman Clinic,13.055823,80.2348714,True
+node/6185882385,hospital,Nivas Skin Clinic,13.0289663,80.2085951,True
+node/6187367787,clinic,,13.0723143,80.2530089,True
+node/6274366189,library,,13.066593,80.2737816,True
+node/6276760785,water,,12.9839239,80.1662237,True
+node/6324654184,clinic,Aryan Clinic,13.0464568,80.2457288,True
+node/6356479646,school,Bala Mandir Kamaraj Trust,13.0490522,80.2465644,True
+node/6498143421,library,Bhagat Singh Library,12.9802723,80.2520954,True
+node/6681271185,clinic,,13.0708359,80.2657441,True
+node/6886285320,hospital,Apollo Cancer Centres,13.0337515,80.2451004,True
+node/6914280086,hospital,Raju Hospitals,13.0329888,80.230346,True
+node/6914280087,clinic,"Raju Nursing Home, Chennai",13.1193228,80.2254523,True
+node/6914280093,hospital,Rakshith Hospitals,13.042307,80.177473,True
+node/6914280100,clinic,"Raj Nursing Home, Tiruvallur",13.0844879,80.1876882,True
+node/6914764645,hospital,Dr. A. L. Annamalais Ent Care Centre,12.9439622,80.1388438,False
+node/6914764653,hospital,Sri Kalyan Hospital,13.0063976,80.2507134,True
+node/6914767985,hospital,A G Chrompet Health And Maternity Centre,12.9504411,80.1438314,False
+node/6914767986,clinic,Sundaravadanan Nursing Home,13.0793555,80.2560469,True
+node/6914768001,hospital,Sen Hospital,13.1105649,80.2418775,True
+node/6914768012,clinic,"Angel Nursing Home, Washermenpet",13.1116559,80.2847452,True
+node/6914768046,hospital,Billroth Hospitals,13.0757435,80.2272588,True
+node/6914768063,hospital,Cauvery Trust Hospital,13.1026603,80.2112943,True
+node/6914768069,hospital,Kedar Hospital,13.0229098,80.1670808,True
+node/6914768085,hospital,Srinivas Eye Hospital,13.0829726,80.1796965,True
+node/6914768086,hospital,Soundarapandian Bone and Joint Hospital Research Institute Pvt. Ltd.,13.0838202,80.2156412,True
+node/6914768088,hospital,Dr. U. Mohan Rau Memorial Hospital - Chennai,13.079494,80.2572808,True
+node/6914880505,clinic,Vijaya Institute Of Trauma and Orthopadics,13.0477799,80.2065495,True
+node/6914880538,hospital,Chennai Cancer Care,13.0762935,80.234026,True
+node/6914880539,hospital,Chennai Eye Care Hospital,12.9789449,80.2246302,True
+node/6914880540,hospital,Chennai Heart Centre,13.0917939,80.2410534,True
+node/6914880546,hospital,Chennai Kaliappa Hospital,13.0268492,80.2558082,True
+node/6914880552,hospital,Mots Hospital,13.0833606,80.2341561,True
+node/6914880558,clinic,"Mother and Child Care Clinic, Chennai",13.0223545,80.2042052,True
+node/6914880574,clinic,"Mohan Nursing Home, Tiruvallur",13.1025336,80.2090412,True
+node/6914880584,hospital,Vasanthi Orthopaedic Hospital,13.0723588,80.2157642,True
+node/6914894005,clinic,Mina Nursing Home,13.0074586,80.206874,True
+node/6914896192,clinic,R.M.D. Nursing Home,13.0440054,80.2355951,True
+node/6914896212,hospital,R.K. Gynaec And Maternity Hospital,13.0788127,80.2481786,True
+node/6914896213,clinic,"R.K. Nursing Home, Kanchipuram",12.945698,80.1416239,False
+node/6914896214,hospital,R.G. Stone Urological Research Institute,13.0240792,80.2278288,True
+node/6914896215,hospital,R. K. Eye Centre,13.0485912,80.2311788,True
+node/6914896269,hospital,Psymed Hospiyal,13.0714757,80.2317998,True
+node/6914896280,clinic,"Priya Nursing Home, Perambur",13.1122071,80.2496512,True
+node/6914896281,clinic,"Priya Nursing Home, Chennai",13.1192888,80.2889456,True
+node/6914911759,hospital,Vanaja Hospital,13.1990395,80.1760313,False
+node/6914911764,hospital,"Vasanthram Hospital (P) Ltd.,",13.0433091,80.2187696,True
+node/6914927162,hospital,Vadapalani Multispeciality Hospital,13.0516559,80.2133146,True
+node/6914937617,hospital,Sri Ramachandra Hospital,13.0378713,80.1402023,False
+node/6914937645,clinic,Sri Ramana Eye Center,13.0425395,80.2430315,True
+node/6914937661,clinic,Sri Sai Sankara Dental Clinic And Orthodontic Cent,13.1173689,80.2315973,True
+node/6914937681,clinic,Sri Sayee Poly Clinic,13.0422887,80.2665116,True
+node/6914981225,clinic,Prakriti Ayurvedic Center,13.0224512,80.2639461,True
+node/6915117046,hospital,"M N Eye Hospital Private Limited, Tondiarpet",13.1232306,80.2876528,True
+node/6915134068,hospital,Doctor Rexs Hospitals,13.0838812,80.2502386,True
+node/6915201226,hospital,Helios Hospital Pvt Ltd,12.9855882,80.2189144,True
+node/6915211726,clinic,Sriram Dental Clinic and Orthodontic Centre,12.9850289,80.1891057,True
+node/6915218991,hospital,Deepam Muthu Hospital,13.0995855,80.2605303,True
+node/6915219120,hospital,LK Hospitals,12.9701347,80.1480083,False
+node/6915222815,clinic,M.K. Nursing Home,13.1217763,80.2858047,True
+node/6915231638,hospital,Devibala Maternity,12.971439,80.1378152,False
+node/6915323752,clinic,Padmini Nursing Home,13.0727703,80.2343653,True
+node/6915463333,hospital,Malligai Hospital,13.1238765,80.2899749,True
+node/6915804195,clinic,Raja Annamalai Puram Dispensary No.6,13.0213249,80.2596237,True
+node/6915813496,clinic,Joseph Eye Clinic,13.0813437,80.2588713,True
+node/6915836812,hospital,Huma Specialists Hospital and Research Centre Pvt Ltd,13.0282655,80.235353,True
+node/6915842017,clinic,Dr Radha Rajendran Nursing Home Pvt Ltd,13.0057455,80.2044077,True
+node/6915850074,clinic,Regina Nursing Home,13.0863886,80.2339844,True
+node/6916036301,clinic,The Surgical Clinic and Nursing Home,13.028161,80.2681853,True
+node/6916036803,hospital,Divya Hospital,12.9644392,80.187601,False
+node/6916164281,clinic,Balaji Nursing Home - Chennai,12.9959072,80.2586031,True
+node/6916178396,hospital,Noor`S Hospital,13.1418442,80.2485046,True
+node/6916205172,hospital,"Vasan Eye Care Hospital, Perambur",13.1177888,80.2287099,True
+node/6925987220,clinic,Getwel Dental Clinic,13.0247168,80.1493795,True
+node/6926045316,clinic,Ramana Clinic And Nursing Home,12.9815305,80.2207484,True
+node/6926045326,hospital,Sri Sai Krs Hospital,13.0379757,80.2162984,True
+node/6926049961,hospital,"Gowri Nursing Home, Kanchipuram",12.9779713,80.1883923,True
+node/6926049968,clinic,Gopalapuram Dispensary,13.0490968,80.2576214,True
+node/6926055600,hospital,Satish Eye Hospital,13.0813959,80.2469972,True
+node/6926055919,clinic,Uma Eye Clinic Pvt.Ltd,13.0854776,80.2034474,True
+node/6926055920,hospital,"A.K. Hospital, Chennai",13.0741442,80.220515,True
+node/6926055922,hospital,Ammayi Eye Hospital,13.0331935,80.2159045,True
+node/6926055923,hospital,K.M. Speciality Hospital,13.0379671,80.2013517,True
+node/6926060954,hospital,Subha Hospital,13.1113868,80.2923493,True
+node/6926072169,clinic,Apollo Cosmetic Clinic,13.0177421,80.2712363,True
+node/6926082101,hospital,I Care Eye Care Eye Institute,12.943659,80.1437791,False
+node/6926107781,hospital,Radhatri Nethralaya,13.0339283,80.2394965,True
+node/6926118208,hospital,"S M Hospital, Chennai",13.0400969,80.2044211,True
+node/6926173267,hospital,Cu Shah Sankara Netralaya,13.0012687,80.2001283,False
+node/6926176409,clinic,Subiksha Nursing Home,13.1118191,80.2419198,True
+node/6926280322,hospital,Aashiana Hospital,13.0924039,80.2090184,True
+node/6926368877,clinic,SMV Nursing Home,13.0473231,80.2127641,True
+node/6926411928,hospital,"Ayesha Hospital, Kilpauk",13.0847009,80.2498054,True
+node/6926421019,clinic,Fathima Nursing Home,13.1272912,80.2461,True
+node/6926437405,hospital,Frontline Eye Hospital,13.0323531,80.2517212,True
+node/6926437416,hospital,Fousiya Hospital,13.0477722,80.2744473,True
+node/6926437428,hospital,Hande Hospital,13.0764653,80.2274586,True
+node/6926437438,clinic,Halsted Surgical Clinic,13.0780413,80.2415872,True
+node/6926437454,hospital,Dr Gurusekaran Hospital Pvt Ltd,13.0374924,80.2381137,True
+node/6926437460,clinic,Guindy Dispensary,13.010217,80.2217737,True
+node/6926437476,hospital,Grace Multipeciality Hospital,12.9569773,80.1867561,False
+node/6926494055,hospital,G. R. Hospital & Fertility Centre,12.9952982,80.2068955,True
+node/6926494067,hospital,G K M Hospital Pvt Ltd,13.0899919,80.2585199,True
+node/6926808792,hospital,Starlight Hospitals Pvt Ltd,12.9864526,80.2601581,True
+node/6926953017,hospital,Kaliappa Renal Center,13.0274616,80.2566481,True
+node/6926953024,hospital,K P Childrens Hospital And Neuro Centre,12.9911179,80.1986745,True
+node/6927267098,hospital,Ayur Kshetra ( A Unit Of Institute Of Ayurvedic Research Pvt Ltd),13.0760812,80.2107431,True
+node/6927292449,hospital,Krishna Eye And Ent Hospitals,13.0343985,80.2339764,True
+node/6927308315,hospital,Vishnu Eye Clinic and Laser Foundation,13.0842894,80.2230605,True
+node/6927326555,clinic,Fathimah Eye Clinic,13.0290932,80.2775791,True
+node/6927380447,hospital,"Santhigiri Ayurveda and Siddha Hospital, Chennai",13.0476871,80.2646568,True
+node/6927647007,hospital,Vijaya Heart Foundation - Vijaya Hospital,13.054729,80.2110462,True
+node/6927769046,hospital,Santosh Hospital Pvt Ltd,12.995229,80.2691898,True
+node/6928042666,hospital,"Dr.Agarwal's Eye Hospital Ltd., Anna Nagar",13.0847414,80.2219681,True
+node/6928094720,hospital,Athipathi Hospital and Research Centre,12.9762711,80.2222002,True
+node/6928167787,hospital,Girishwari Hospital Pvt Ltd,13.0349787,80.2519137,True
+node/6928327073,hospital,Sri Kumaran Multi Speciality Hospital,13.1152895,80.2923614,True
+node/6928330859,hospital,Dr. Arvind Vision Care,13.0840124,80.1691809,True
+node/6928384708,hospital,Dr. K Ravi Eye Care,13.0407013,80.2618016,True
+node/6928444701,hospital,"SKS Hospital, Chennai",13.0896987,80.1877418,True
+node/6928481484,hospital,Dr. K.K. Surgical and Paediatric Centre Pvt Ltd,12.9220372,80.1382443,False
+node/6928727073,hospital,Madras Ent Research Foundation,13.0268688,80.2541439,True
+node/6928752799,hospital,Dr. Mohans Mv Diabetes Specialities Centre - Chennai,13.0541946,80.257671,True
+node/6928752800,clinic,Dr. Meera Nursing Home,13.086608,80.2468979,True
+node/6928779096,hospital,Chettinad Super Speciality Hospital,12.9109406,80.228211,True
+node/6928800365,hospital,Dr.Bhats Eye Hospital,13.1185204,80.1523131,True
+node/6928859584,clinic,Nivaren Maternity Clinic,13.0828407,80.1800171,True
+node/6928878284,hospital,Lifeline Rigid Hospital,13.0780204,80.2336988,True
+node/6928899364,hospital,Dr. Seshiah Diabetes Research Institute and Dr. Balaji Diabetes Care Centre,13.0748591,80.2299839,True
+node/6928920472,hospital,Dr.Kamakshi Memorial Hospital,13.0022187,80.2520867,True
+node/6928920473,hospital,Dr.Duraiswami Eye Hospital,13.034051,80.2279374,True
+node/6928936148,hospital,Dr.Agarwals Eye Hospital,12.9832681,80.2176077,True
+node/6928936149,hospital,"Dr.Agarwal's Eye Hospital Ltd, Nanganallur",12.9827844,80.1891661,True
+node/6928936160,hospital,Dr. Udhaya Rajas Dental Centre,13.0465492,80.2422899,True
+node/6929234791,clinic,Voluntary Health Services Medical Centre,13.0027257,80.2469087,True
+node/6929250392,hospital,Dhanvantari Eye Care,13.0973284,80.1942193,True
+node/6929255218,hospital,Sri Bala Nursing Home,13.1183119,80.2318051,True
+node/6929257550,hospital,"Anand Hospital, Chennai",13.1638346,80.2581659,True
+node/6929259906,hospital,Lakshmi Hospital,13.0314888,80.2218689,True
+node/6929264393,clinic,Aarthi Priyas Tooth Care Clinic,12.9743958,80.2200463,True
+node/6929266356,hospital,நந்தினி மருத்துவமனை,12.9327959,80.2315475,True
+node/6929359056,hospital,B.M. Silver Jubilee Multi Speciality Hospital,12.9646856,80.1522294,False
+node/6929359057,hospital,Bharathirajaa Hospital and Research centre,13.0480981,80.245015,True
+node/6929359073,hospital,Bethany Health Care Centre,13.0699812,80.2444142,True
+node/6929359074,hospital,Bethesda Hospital and Child Care Centre,12.9217796,80.1450997,False
+node/6929359084,hospital,Bhagwan Mahaveer Eye Hospital,13.1105084,80.2917197,True
+node/6929372894,clinic,Bharani Nursing Home,13.1102609,80.2376792,True
+node/6929372896,hospital,Bharath Hospital,12.9823277,80.1937835,True
+node/6929398895,hospital,Trinity Acute Care Hospital - Chennai,13.0382607,80.2582785,True
+node/6929592168,hospital,Balakrishna Eye Hospital,13.0274436,80.2269866,True
+node/6929592183,clinic,Balagandhara Varma Nursing Home and Research Center,12.9378832,80.2082151,True
+node/6929592184,clinic,Bagdi Nursing Home,13.0533846,80.2374941,True
+node/6929599461,hospital,Dr Rabindran's Health Care Center,13.1190773,80.1504859,True
+node/6929625895,hospital,B.S.S. Hospital,13.026013,80.2655232,True
+node/6929625900,hospital,B.S. Hospital,12.9343227,80.1384374,False
+node/6929625901,hospital,B.R.S. Hospital Pvt. Ltd.,13.0519442,80.2454831,True
+node/6929731466,hospital,Harvey Healthcare Limited,13.037303,80.2558136,True
+node/6929737121,hospital,Chitra's Ent Laser Hospital,13.0518247,80.2476483,True
+node/6929922974,clinic,Das Nursing Home,12.9893694,80.1422824,False
+node/6929969774,hospital,Kottakkal Arya Vaidya Sala,13.0395483,80.2313016,True
+node/6930010121,clinic,C.U. Shah Clinic And Diagnostic Center,13.0863304,80.2583543,True
+node/6930080547,hospital,"Rohit Hospital, Tiruvallur",13.1512288,80.2998984,True
+node/6930163091,hospital,Je Nesam Hospital,13.0405732,80.2146873,True
+node/6930163175,hospital,Chennai Meenakshi Multispeciality Hospital Ltd,13.0376198,80.2619625,True
+node/6930188138,hospital,Chennai Skin Foundation and Yesudian Research Institute,13.0210394,80.2592924,True
+node/6930467954,hospital,Dr.Mu.Va.Hospital,13.0743327,80.228278,True
+node/6930489015,hospital,Cholayil Sanjeevanam Ayurveda,13.0844527,80.1798642,True
+node/6931010523,hospital,"Vandana Hospital, Tiruvallur",13.1456863,80.2927141,True
+node/6931435323,clinic,Dr.Kumar'S Ortho Clinic,12.9512606,80.1384495,False
+node/6931566251,hospital,Mysaan Hospital,13.0641326,80.2705644,True
+node/6931658649,hospital,V H M Hospitals Pvt Ltd,13.0462892,80.1979979,True
+node/6931772821,clinic,Ritherdon Nursing Home,13.0815684,80.2587748,True
+node/6931772941,hospital,Robin and Robin Health Care,13.0807741,80.1989025,True
+node/6932068862,hospital,West Madras Medical Centre,13.0850496,80.215956,True
+node/6932077905,clinic,Rathina Clinic,13.1098612,80.2909854,True
+node/6932103990,hospital,"Kauvery Hospital, Chennai",13.0390564,80.2568208,True
+node/6932138889,hospital,Rathi Med Speciality Hospital,13.0916495,80.2179844,True
+node/6932142269,clinic,Rathenam Nursing Home,13.1113476,80.284929,True
+node/6932203729,hospital,Santhi Hospital,12.9507835,80.255186,True
+node/6932706544,clinic,Suraksha Ent Care Centre,13.0331886,80.258056,True
+node/6932740110,hospital,Sunder Eye Hospital,13.08497,80.2159721,True
+node/6932938089,hospital,Laksha Hospital,13.0435469,80.2636349,True
+node/6932938090,hospital,"Lake View Hospital, Tiruvallur",13.1368213,80.2087516,True
+node/6932966221,hospital,Narayanaa Hospital,13.0893773,80.2547595,True
+node/6932966227,clinic,Lakshmi Clinic,12.9574752,80.1859635,False
+node/6933010451,hospital,Janamma Hospital,13.0269457,80.2623196,True
+node/6933010456,clinic,Janaki E.N.T. Nursing Home,13.0970567,80.2821958,True
+node/6933016136,hospital,"Noble Hospital, Chennai",13.0821536,80.253244,True
+node/6933038486,hospital,"J.K. Hospital, Chennai",13.1354513,80.2934799,True
+node/6933038519,clinic,Ishwarya Nursing Home,13.1129411,80.2822602,True
+node/6933038566,hospital,Indira Eye Hospital,13.0222055,80.2622388,True
+node/6933038567,hospital,Indian Hospitals,13.0766658,80.2057502,True
+node/6933105884,clinic,Sheeba Multi Speciality Clinic,13.1168517,80.2279428,True
+node/6933130958,hospital,Diabetes Research Centre and M.V.Hospital For Diabetes,13.1119458,80.2952072,True
+node/6933279103,hospital,"Vasan Eye Care Hospital, Neelankarai",12.9504267,80.2551001,True
+node/6933334832,clinic,Sarathy Nursing Home,12.9926586,80.20008,True
+node/6933370913,hospital,Apollo First Medical Foundation,13.0776912,80.2459216,True
+node/6933510835,clinic,Jyothsana Nursing Home,12.9461162,80.1399234,False
+node/6933510845,clinic,Julian Nursing Home,13.1063124,80.2506946,True
+node/6933510851,hospital,Josephs Nursing Home,13.0739408,80.2357346,True
+node/6933510862,hospital,Jip Diabetic and Heart Care Centre,12.9548325,80.141636,False
+node/6933510877,hospital,Jayam Polyclinc,12.9958562,80.2603345,True
+node/6933510882,clinic,Jayam Nursing Home,13.122272,80.2894968,True
+node/6933514287,hospital,Jayadev Polyclinic Hospital,13.0778545,80.2415295,True
+node/6933514307,clinic,Jaya Eye Clinic,13.0265892,80.2699743,True
+node/6933514323,clinic,Janani Nursing Home Pvt Ltd,12.9194987,80.1388706,False
+node/6933522070,hospital,Kummaran Eye Speciality Centre,13.0600349,80.2302911,True
+node/6933523232,hospital,Kvt Health Centre,13.1282303,80.2421558,True
+node/6933621323,clinic,Maya Nursing Home Pvt Ltd,13.0313072,80.2097064,True
+node/6933737012,hospital,Ezhil Hospital,13.1302259,80.2916855,True
+node/6933746497,clinic,Eswari Nursing Home,13.1165682,80.2263898,True
+node/6933757130,hospital,Premier Health Center,13.0842489,80.220851,True
+node/6933794368,hospital,Vasantha Subramanian Hospitals Pvt Ltd,13.0731975,80.2527237,True
+node/6933802716,hospital,"Vasan Eye Care Hospital, Tondiarpet",13.1109009,80.2812195,True
+node/6933828333,hospital,Madras Poly Clinic and R.R. Scan,13.0461063,80.2220044,True
+node/6933831617,hospital,"Vasan Eye Care Hospital, Valasaravakkam",13.0411063,80.1747546,True
+node/6933833912,clinic,Lister Nursing Home,13.0644964,80.2730508,True
+node/6933833922,clinic,"Lifeline Cliniq , Adyar",13.0007709,80.2575208,True
+node/6933833923,hospital,Life Medhospital,13.0535505,80.2576911,True
+node/6933869777,hospital,"K.M. Hospitals, Chennai",13.0884107,80.2421169,True
+node/6933875088,hospital,Zubeda Hospitals Ltd.,13.0741955,80.2357775,True
+node/6933881025,clinic,Sree Narayana Nursing Home,13.1089757,80.2481371,True
+node/6933910999,hospital,RR Multispeciality Hospital,13.0584745,80.2740124,True
+node/6933998001,hospital,Dr.Manju Kulkarni Hospital,13.0743836,80.2367672,True
+node/6934017797,clinic,Sri Hanu Nursing Home,13.0395058,80.1712127,True
+node/6934018732,clinic,Sri Ganesa Eye Clinic,13.0455758,80.1854472,True
+node/6934018827,clinic,Vaman Clinic Eye and Ent Care,13.0388943,80.2137016,True
+node/6934018868,hospital,S.V. Bone And Joint Hospital,13.0473239,80.2241461,True
+node/6934018874,clinic,S.S Nursing Home,12.969346,80.2573344,True
+node/6934031649,hospital,Sri G.M. Hospital,12.9652266,80.1927643,True
+node/6934036697,hospital,Sri Eshodha Hospital,13.0981213,80.2362643,True
+node/6934061609,hospital,Srichakara Multispeciality Hospital,12.97853,80.1851381,True
+node/6934089837,clinic,"Peoples Nursing Home, Chennai",13.0696298,80.2159499,True
+node/6934098007,hospital,Abhijay Hospital,13.1160177,80.2328438,True
+node/6934139598,hospital,Arvind Sai Eye Hospital,12.9731392,80.1371252,False
+node/6934146446,hospital,"Sinus And Nose Hospital - Mylapore, Chennai",13.0350623,80.2778479,True
+node/6934155951,hospital,Sindu Hospital,12.9206582,80.1434009,False
+node/6934163318,hospital,Sibi Hospital,12.9697917,80.1904562,True
+node/6934172291,clinic,"Shyamala Nursing Home, Chennai",13.1101185,80.2819745,True
+node/6934186203,hospital,Sri Venkateshwara`s C.M. Hospital,12.9857914,80.185987,True
+node/6934246102,hospital,Srinivas Priya Hospital (P) Ltd,13.1100467,80.2466847,True
+node/6934270989,hospital,Anjakha Hospital,12.9637407,80.1880047,False
+node/6934271042,hospital,M.S.M. Skin and Hair Care Clinic,12.9521441,80.1438126,False
+node/6934271069,hospital,"M.R. Hospital, Chennai",13.0725279,80.2195783,True
+node/6934271075,hospital,M. N. Orthopaedic Hospital,13.0810328,80.2336653,True
+node/6934271086,clinic,M.L Dental Clinic,13.0452205,80.1861023,True
+node/6934271106,hospital,M V Hospital For Diabetes Pvt Ltd,13.1121574,80.2956927,True
+node/6934271111,hospital,M N Eye Hospital,12.996767,80.2603599,True
+node/6934301423,hospital,"A.V. Hospital, Chennai",13.1170802,80.2864189,True
+node/6934325847,clinic,N.K Clinic,12.998194,80.2079885,True
+node/6934325848,hospital,N.R. Hospital,13.1122162,80.2309737,True
+node/6934325849,hospital,N.R. Medical Home Private Limited,13.0965878,80.2597135,True
+node/6934325866,hospital,Nagamani Hospitals Private Limited,13.117412,80.289427,True
+node/6934325876,hospital,Nalamm Hospital Pvt Ltd,13.1184216,80.2610184,True
+node/6934325881,clinic,Nambi Nursing Home and Research Centre,13.0576423,80.2723642,True
+node/6934325882,hospital,Nandalala Medical Foundation,13.0328516,80.2615173,True
+node/6934326572,hospital,Sri Kumaran Health Centre,13.1308907,80.2138799,True
+node/6934340587,clinic,Nandambakkam Dispensary,13.0154215,80.1932403,False
+node/6934340601,hospital,Nandhini Hospital,12.9784706,80.2247932,True
+node/6934340623,hospital,Navasuja Sankara Nethralaya,13.0265108,80.2607878,True
+node/6934340638,hospital,Neomed Hospital - Chennai,13.083452,80.2030747,True
+node/6934340658,hospital,"New Balaji Hospital, Chennai",13.0316469,80.2311185,True
+node/6934340659,hospital,New Hope Indian Specilaity Hospital,13.0777579,80.2414826,True
+node/6934340664,hospital,New Hope Medical Centre Pvt. Ltd,13.0776821,80.2415201,True
+node/6934340665,hospital,Nichani Health Centre,13.111251,80.2940284,True
+node/6934340684,clinic,Nungambakkam Dispensary CandB Block,13.0666173,80.2481747,True
+node/6934340710,hospital,Om Shakthi Hospital,13.1184222,80.1507749,True
+node/6934340749,hospital,Orthopedic and Specialities Hospital,13.0390564,80.2086724,True
+node/6934340750,clinic,Padma Clinic And Nursing Home,13.0768865,80.2351539,True
+node/6934340766,hospital,Padmapriya Hospital Pvt. Ltd.,12.9996223,80.2537027,True
+node/6934340781,hospital,Palani Balaji Fertility Centre,13.0122123,80.2235084,True
+node/6934340782,hospital,Pallava Hospital,13.0420391,80.2126005,True
+node/6934340783,clinic,P&G Nursing Home,13.0479576,80.2124181,True
+node/6934340789,hospital,Pankajam Memorial Hospital,12.9801472,80.1835965,True
+node/6934347087,hospital,Apollo Childrens Hospital,13.060131,80.2523656,True
+node/6934347093,hospital,Anuradha Maternity Centre,13.0356881,80.2337551,True
+node/6934407803,hospital,Shri Balaji Hospital - Chennai,13.0919709,80.2511633,True
+node/6934477070,clinic,Shivas Eye Care,13.0939374,80.2008538,True
+node/6934610015,clinic,Shepherd Nursing Home,13.1255776,80.2260934,True
+node/6934689509,clinic,Perambur Dispensary,13.0976393,80.2594614,True
+node/6934768345,clinic,K. H. Nursing Home,12.9512004,80.1475489,False
+node/6934897845,hospital,Tamil Nadu Urological Research Centre,13.0710341,80.222632,True
+node/6934903332,hospital,Sss Hospital,13.1577727,80.3018933,True
+node/6934912413,clinic,Vhs Diabeted Research Centre,13.0029165,80.2463347,True
+node/6935067323,clinic,Ponraj Eye Clinic,12.9892035,80.2554783,True
+node/6935159758,hospital,Thirimoorthys Heart Care Hospital,12.9673347,80.1867983,False
+node/6935224404,hospital,"Thulasi Krishna Nursing Home, Kodambakkam",13.0517176,80.2300054,True
+node/6935224405,hospital,"Sugam Hospital, Tiruvallur",13.1652175,80.3032967,True
+node/6935248992,clinic,Star Bone Joint Center,13.0633102,80.2743041,True
+node/6935272552,hospital,Dr. Agarwal's Eye Hospital,13.074266,80.2382156,True
+node/6935274089,hospital,Selvarangam Hospital,13.0850183,80.2244673,True
+node/6936134766,hospital,,12.9498348,80.1690781,False
+node/6936134771,hospital,"Sankara Nethralaya, Chennai",13.0670837,80.2505444,True
+node/6936147552,clinic,Akn Nursing Home,13.0836428,80.2462569,True
+node/6936147848,clinic,Sampat Nursing Home,13.0365779,80.2728282,True
+node/6936149808,clinic,Rrase Nursing Home,12.953421,80.1411398,False
+node/6936244762,hospital,Royal Hospital - Chennai,13.0449677,80.1846506,True
+node/6936264375,hospital,Viganesh Hospital,13.0309126,80.1715896,True
+node/6936271569,hospital,Sri Lakshmi Multi Speciality Hospital Pvt Ltd,12.9640779,80.2461429,True
+node/6936275517,hospital,Dr Agarwal Eye Hospital Ltd,13.1135903,80.2270764,True
+node/6936294078,hospital,Karthik Hospital,13.1665521,80.3043053,True
+node/6936315219,hospital,Spandana Surgical Centre,13.0834455,80.1749497,True
+node/6936316468,hospital,Tosh Hospitals Private Limited,13.0827016,80.2424652,True
+node/6936324681,clinic,Dr Vas Dental Clinic,13.0341895,80.2325615,True
+node/6936328118,clinic,Sri Vaishnavi Nursing Home,13.1164154,80.146014,True
+node/6936339695,hospital,Sundaram Cancer Centre,13.07604,80.2366224,True
+node/6936339711,hospital,R.R. Eye Instutute and Laser Foundation,13.0483992,80.2040416,True
+node/6936339747,clinic,Rajalakshmi Nursing Home,13.084629,80.2247456,True
+node/6936339822,hospital,Avm Medical Ent Research Foundation Pvt Ltd,13.0441485,80.2637114,True
+node/6936356289,hospital,"Aditya Hospital, Chennai",13.0806801,80.2486159,True
+node/6936359923,hospital,Laser and Laparascopic Hospital,13.0430125,80.2371521,True
+node/6936359934,clinic,Lalitha Nurshing Home,13.0477067,80.185183,True
+node/6936359940,hospital,Lakshmi Maternity Hospital,12.9938673,80.2528444,True
+node/6936359972,hospital,Kumaran Hospital Pvt.Ltd.,13.0790289,80.2490893,True
+node/6936359992,clinic,Kts Nursing Home,13.1225671,80.224244,True
+node/6936369001,hospital,D R J Hospital P. Ltd.,13.1217887,80.1996361,True
+node/6936386662,hospital,"Dr Agarwals Eye Hospital Ltd, Chennai",13.0381353,80.1619336,True
+node/6936391765,hospital,Apollo Specialty Hospitals Private Limited,13.0177957,80.2711008,True
+node/6936395127,clinic,Darshan Eye Clinic,13.0883153,80.2162363,True
+node/6936411410,hospital,Amalya Eye Hospital,13.0877615,80.2423476,True
+node/6936415699,hospital,Dr. A. Ramachandran's Diabetes Hospital,13.0685338,80.2579902,True
+node/6936434314,hospital,"Srushti Hospital, Ramapuram",13.0353484,80.1822808,True
+node/6936469837,hospital,Veecare Eye Hospital,13.0843952,80.2182426,True
+node/6936488132,clinic,Sanjeevini Nursing Home,13.1169712,80.2883984,True
+node/6936663153,hospital,Velachery K S Hospital,12.9763914,80.2114016,True
+node/6936663164,clinic,Vasantha Nursing Home,13.1168268,80.2876957,True
+node/6936669886,hospital,K.J. Hospital,13.0790015,80.25267,True
+node/6936681265,hospital,Sathya Physiotherapy Centre,13.0440365,80.2336198,True
+node/6936681271,clinic,Sri Balaji Ent And Maternity Clinic,13.0257935,80.2227634,True
+node/6936684311,hospital,Kensington Hospital,13.0788382,80.2469368,True
+node/6936684328,hospital,Ponmalligai Hospital Pvt Ltd,12.9925116,80.2061465,True
+node/6936684391,hospital,Pdr Othopaedic Hospital,13.0389519,80.2290894,True
+node/6936695116,clinic,"Durga Nursing Home, Tiruvallur",13.1252733,80.141872,False
+node/6936695126,hospital,E V Kalyani Medical Centre,13.0427786,80.2706811,True
+node/6936695137,clinic,Vijay's Nursing Home,13.0266147,80.2283525,True
+node/6936695143,clinic,Vinayak Clinic,13.1584009,80.301336,True
+node/6936695172,hospital,Yogi Vedha Kumari Hospital,13.0269877,80.2631588,True
+node/6936695177,hospital,Xcellent Care Superspeciality Hospital,12.9833895,80.2181782,True
+node/6936695178,hospital,Women and Children Foundation,13.0478465,80.2329075,True
+node/6936695215,hospital,சுபிக்ஷா மருத்துவமனை,12.9740991,80.1387607,False
+node/6936695225,clinic,Sucha Eye Cure,13.0390577,80.1931438,True
+node/6936695226,hospital,"Sudha Hospital, Chennai",13.0791504,80.2541493,True
+node/6936696196,hospital,V.K. Hospital,13.0816938,80.2522811,True
+node/6936696229,hospital,U.K. Hospitals Pvt. Ltd.,13.0838857,80.2252632,True
+node/6936696239,hospital,"Trust Hospital, Chennai",13.0892193,80.2415402,True
+node/6936696240,hospital,Titan Eye,13.082343,80.2076291,True
+node/6936708005,hospital,Sai Ortho Care Hospital,13.0332775,80.2371645,True
+node/6936708989,hospital,Sooriya Hospital,13.0481888,80.2035199,True
+node/6936709005,clinic,Amruth Siddha and Ayurvedic Clinic,13.097668,80.2415751,True
+node/6936709049,clinic,Siva Sakthi Nursing Home,13.0607823,80.2217676,True
+node/6936709086,hospital,Centre For Blood Disorders,13.0496502,80.2410582,True
+node/6936709093,clinic,Csm Nursing Home,13.037934,80.2170509,True
+node/6936738654,hospital,Roselin Gandhi Hospital,13.1166714,80.2803303,True
+node/6936854953,clinic,Sree Sai Krishna Poly Clinic Hospital,13.0838165,80.236031,True
+node/6936874933,hospital,Paterson Cancer Center / Vijaya Health Centre Premises,13.0475826,80.2069719,True
+node/6936891601,clinic,Aarthi Scans,13.0346684,80.2576784,True
+node/6936953154,hospital,Fertility Research Centre,13.0558855,80.2481343,True
+node/6936976871,hospital,Spot Hospital,13.047269,80.2187347,True
+node/6936994823,hospital,B B Hospital,13.1184203,80.204346,True
+node/6937025938,clinic,Sri Visa Clinic,13.0312145,80.2321847,True
+node/6937055902,hospital,Appasamy Krishna Hospital and Medical Research Centre,12.9758647,80.2205016,True
+node/6937067452,hospital,"Medindia Hospitals, Chennai",13.0606718,80.2432201,True
+node/6937109075,hospital,"Aakash Hospital, Tiruvallur",13.1694824,80.304324,True
+node/6937111102,hospital,K.M. Multi Speciality Hospital,13.1450072,80.2398249,True
+node/6937320470,hospital,Rudhra-Chella Clinicare`N`Cure Services,13.1228878,80.293498,True
+node/6937351599,hospital,K.K.R. ENT Hospital and Research Institute(P) Ltd,13.0781955,80.2452886,True
+node/6937390213,clinic,Sri Hari Clinic,13.0352086,80.2164307,True
+node/6937398987,hospital,Roy's Heart Foundation,13.0345893,80.1836944,True
+node/6937434309,hospital,"Srinivasa Hospital P P N, Chennai",13.0503377,80.2299377,True
+node/6937467152,hospital,Gastro Cre Hospital,13.0394065,80.2507684,True
+node/6937478253,clinic,Dr. A.G. Arumugam Nursing Home,13.0768382,80.2354315,True
+node/6937497904,hospital,Aaditya Kamaraja Eye Hospital,13.0463676,80.1865241,True
+node/6937550378,clinic,Surya Physiotherapy Clinic,12.9513926,80.1463768,False
+node/6937570093,clinic,Dr Ravishankars Eye Clinic and Nursing Home,13.0872141,80.2596062,True
+node/6937594692,clinic,Seethapathy Nursing Home,13.0489087,80.2645898,True
+node/6945677921,community_centre,OMR Activists Collective,12.9532329,80.2334136,True
+node/6950278739,clinic,S.G.S. Nursing Home,12.9460718,80.146928,False
+node/6950288001,hospital,Sahishnatha Indtitute Of Maternal And Child Health,12.9531897,80.2541614,True
+node/7006350087,community_centre,,13.0770675,80.2634442,True
+node/7053805485,school,,12.9097665,80.249499,True
+node/7130307898,park,,13.1716669,80.2588396,True
+node/7136008687,school,National Public School,13.0494342,80.2581387,True
+node/7136010486,school,ஸ்ரீ சாரதா பள்ளி,13.0499352,80.2566304,True
+node/7136028385,school,D.A.V Boys Higher Secondary School,13.0502398,80.2566442,True
+node/7159775653,library,CDC 5 Library,12.9059699,80.2227719,True
+node/7159775660,library,CDC 5 Learning Centre,12.9052532,80.2226975,True
+node/7177259686,water,,12.9747904,80.193881,True
+node/7179391785,water,,12.9747491,80.1931877,True
+node/7181579342,clinic,Adyar Dispensary,12.991685,80.2533312,True
+node/7181684162,hospital,Siva E N T Hospital,13.0619796,80.2741693,True
+node/7181711080,hospital,"Vinayagam Laser Hospital, Chennai",13.0476113,80.2650954,True
+node/7181721033,hospital,"Dr Agarwals Eye Hospital, Triplicane",13.0524884,80.2736449,True
+node/7181722911,hospital,"Dr.Agarwal's Eye Hospital Ltd., Gopala Puram",13.0432085,80.259169,True
+node/7181734862,clinic,Dr. M. Mohamed Meeran Clinic,13.1216418,80.2436035,True
+node/7181744123,clinic,Ramarau Polyclinic,13.0782438,80.2456386,True
+node/7181748147,hospital,Bharani Hospital,13.0380111,80.2013205,True
+node/7181795816,hospital,Vasantha Hospital,13.1738112,80.294082,True
+node/7181812928,clinic,K.K. Nagar Dispensary and Polyclinic,13.0368,80.2079107,True
+node/7185733585,community_centre,SRS திருமண மண்டபம்,13.0606876,80.1378102,False
+node/7210895386,hospital,Tamil Nadu Urological Research Centre Best Kidney Stone Clinic,13.0748708,80.2147555,True
+node/7210899888,hospital,Sree Sanjeevi Rayan Hospital,13.1992282,80.1786155,False
+node/7210911300,hospital,Sri Ranga Hospitals,13.0290525,80.2636265,True
+node/7210948177,hospital,Chamiers Day Care Center,13.0297278,80.2446245,True
+node/7213394742,hospital,London Harley Street Women And Fertility Centre,12.9609724,80.2421492,True
+node/7213449202,hospital,Gas Hospital,13.003026,80.2540981,True
+node/7213449203,clinic,Adyar Ortho Clinic,13.0017764,80.2518544,True
+node/7213449204,clinic,Siloam Hospital,13.0012776,80.2498239,True
+node/7213449205,clinic,Dr VK Jayalakshmi - Vishnu Fertility Centre,13.0015495,80.2497784,True
+node/7213492568,hospital,Dr.Bala Subramanian,13.0465056,80.2423799,True
+node/7252136539,community_centre,Royapuram Brahma Theertham,13.1086733,80.2920414,True
+node/7252256159,clinic,Shri Pooja Maternity Clinic,13.1308512,80.2517777,True
+node/7252256160,clinic,Urban Health Poly Clinic,13.18013,80.302246,True
+node/7252256177,hospital,Swasthik Health Care center,13.1297134,80.2506039,True
+node/7252256184,hospital,NRV Hospital,13.13468,80.243196,True
+node/7252256194,hospital,Sugam Hospital,13.1685958,80.3042862,True
+node/7252333314,hospital,Govt Kilpauk Medical College Hospital,13.07832,80.243753,True
+node/7252333316,clinic,Sakthi Nursing Home,13.0583373,80.2012267,True
+node/7252333318,hospital,Rasi Hospital,13.12038,80.285818,True
+node/7252333320,hospital,Government Maternity And Child Hospital,13.0991743,80.2301988,True
+node/7252333321,hospital,Cloudnine Hospital - Chennai,13.0433937,80.2461174,True
+node/7252333330,hospital,Shifa Hospital And Reasearch Centre,13.061988,80.2745135,True
+node/7252333333,clinic,Siva Sakthi Nursing Home,13.0605437,80.2217663,True
+node/7252333337,hospital,Govt. Stanley Hospital,13.10618,80.286804,True
+node/7252333341,hospital,Subam Specialities Hospitals,13.0469783,80.1895003,True
+node/7252333343,clinic,Kts Nursing Home,13.12222,80.223972,True
+node/7252333346,hospital,Srisaihospital With Matrinity Facility,13.0692631,80.1799109,True
+node/7252333347,hospital,Govt Peripheral Hospital Periyar Nagar,13.1153048,80.2233851,True
+node/7252333349,hospital,Be Well Hospital,13.0431134,80.2453103,True
+node/7252333352,hospital,Hera Hospital,13.0508643,80.1922458,True
+node/7252333353,clinic,SBS Hospital Nursing Home,13.05943,80.194729,True
+node/7252333354,hospital,Government Unani Hospital,13.1129012,80.2957982,True
+node/7252333356,hospital,Meenakshi Hospital & Childrens Hospital,13.0586646,80.2428501,True
+node/7252333360,clinic,Subam Clinic,13.05774,80.273916,True
+node/7252333369,hospital,Tanker Dialysis Foundation Unit,13.09041,80.175293,True
+node/7252333371,hospital,Hiba Hospital,13.0616195,80.275793,True
+node/7252333372,hospital,A.R.A Hospital For Women,13.0508818,80.2735131,True
+node/7252333375,hospital,Priyas Medical Centre,13.0594024,80.1954415,True
+node/7252333378,hospital,Dr. Rai Memorial Medical Centre,13.044837,80.2475507,True
+node/7252333380,hospital,Medway Hospitals,13.0535971,80.2275376,True
+node/7252333381,hospital,Seven Wells Hospital,13.0993782,80.2825418,True
+node/7252333383,hospital,Government Hospital,13.068807,80.2672078,True
+node/7252333384,clinic,Ranga Nursing Home,13.1192346,80.2857643,True
+node/7252333388,hospital,Standard Hospital,13.0524675,80.1898468,True
+node/7252333389,hospital,Chennai Corporation Hospital,13.1142928,80.2844517,True
+node/7252333390,hospital,Guru Raghavendra Hospital,13.0410091,80.1964532,True
+node/7252333391,clinic,RIDA Physiotherapy Clinic,13.0621485,80.2745047,True
+node/7252333394,hospital,Seethapathy clinic & Hospital,13.0487028,80.2645448,True
+node/7252333396,hospital,Kvt Health Speciality Hospital,13.1267531,80.2489796,True
+node/7252333397,hospital,Sakthi Hospital &Reasearch Centre Helath Care Organization,13.0572714,80.2757357,True
+node/7252333398,hospital,Women And Children Foundation Hospitals T-Nagar,13.0480821,80.2329957,True
+node/7252333402,hospital,Annai multispeciality hospital,13.0538856,80.1927125,True
+node/7252333403,hospital,Firm Hospital,13.0916464,80.2139939,True
+node/7252333406,hospital,The Best Hospital Private Ltd,13.0535089,80.2195494,True
+node/7252333407,hospital,Chennai Corporation Hospital,13.0887,80.256712,True
+node/7252333409,hospital,Triplicane Government Hospital,13.060986,80.2747981,True
+node/7252333413,clinic,Hemakamal Nursing Home,13.1069544,80.2796126,True
+node/7252333416,hospital,Government Hospital For Ladies And Children,13.0590564,80.1928218,True
+node/7254940229,clinic,Dr. Premkumar's Orthopedic Clinic,13.0566709,80.2350491,True
+node/7255706468,hospital,SIMS Hospital,13.0561828,80.2478331,True
+node/7257289060,hospital,Tagore Medical College Hospital,12.8601332,80.1358744,False
+node/7257289067,clinic,Vani Nursing Home,12.9222915,80.1501746,False
+node/7257289080,clinic,Janani Nursing Home,12.9114903,80.1438428,False
+node/7257289123,hospital,Suraj Hospital,12.9107782,80.1967559,False
+node/7257415985,community_centre,,13.0819511,80.243808,True
+node/7257421531,clinic,Shree Chakra Maternity Clinic and Nursing Home,13.0348047,80.2246285,True
+node/7257421536,clinic,Kavitha Clinic,13.0340836,80.2419057,True
+node/7257421540,hospital,Sunrays Laproscopic Centre,13.0319129,80.2099892,True
+node/7257421541,clinic,Hirsh Nursing Home,13.0298958,80.1911357,True
+node/7257421543,clinic,Acharya Clinic,12.9854281,80.192207,True
+node/7257421544,hospital,Sriramachandra Hospital,13.0374439,80.1444537,True
+node/7257421549,hospital,Chinna Porur Government Hospital,13.0369528,80.169935,True
+node/7257421555,hospital,Arun Hospital,12.9408644,80.1828683,False
+node/7257421557,hospital,Motherhood Hospital,13.0312006,80.2511993,True
+node/7257421559,hospital,"Government Hospital, Adyar",12.9979497,80.2562121,True
+node/7257421563,hospital,Shree Eye & Maternity Hospital,12.9521921,80.1442251,False
+node/7257421569,hospital,Gunasekaran Hospitals Pvt.Ltd,13.0374624,80.2389389,True
+node/7257421582,hospital,Vijayam Hospital & Fertility Centre,12.95866,80.187198,False
+node/7257421583,hospital,Kumaran Specialities Hospital,13.03968,80.21204,True
+node/7257421586,hospital,Arokiya hospital,13.0374234,80.190944,True
+node/7257421589,hospital,Parvathy Hospital,13.036525,80.1567342,True
+node/7257421593,hospital,Genesis Womens Hospital,13.034922,80.2465468,True
+node/7257421596,hospital,Radhatri Nethralaya,13.0342203,80.2398192,True
+node/7257421601,hospital,Kavery Hospital,13.038362,80.2572398,True
+node/7257421602,hospital,Kanamapet Government Hospital,13.0298989,80.2261208,True
+node/7257421607,clinic,Agash Nursing Home,12.9488228,80.1376942,False
+node/7257421613,hospital,Government Hospital Alandur,13.0048164,80.2025432,True
+node/7257421615,hospital,Janani Hospital,13.0313233,80.1909256,True
+node/7257421619,hospital,T.K.R. Hospital,12.9342227,80.1807557,False
+node/7257421620,clinic,Ram Skin Clinic,12.9771173,80.2040772,True
+node/7320948885,hospital,,13.0753606,80.21879,True
+node/7320949185,community_centre,,13.0757587,80.2131901,True
+node/7592381392,school,,13.051694,80.2108108,True
+node/7602598775,park,park,13.0668847,80.2414517,True
+node/7652449746,hospital,Malar Clinic,12.9645886,80.1958518,True
+node/7723762942,school,Peace Academy Chennai,13.039242,80.2563567,True
+node/7796477468,water,Ambattur Industrial Estate Bus Stop,13.0994583,80.1702657,True
+node/7818702355,clinic,Memisa Skin Clinic,13.1534531,80.2533929,True
+node/7818702356,clinic,Sri Jayakala Clinic,13.167576,80.246488,True
+node/7818702357,hospital,Prasad Multispeciality Hospital,13.156154,80.301391,True
+node/7818702358,hospital,Uma Hospital,13.1345397,80.2058879,True
+node/7818702359,clinic,Maaya Nursing Home,13.131644,80.2121709,True
+node/7818702362,clinic,M.A. Nursing Home,13.1523024,80.3007588,True
+node/7818702364,clinic,Gowtham Clinic,13.1521212,80.3009641,True
+node/7818702365,clinic,Acharya Tulsi Clinic,13.1651744,80.2098306,True
+node/7818702367,hospital,Suman Hospital,13.1503301,80.2984201,True
+node/7818702368,clinic,Mahalakshmi Clinic,13.1724224,80.200226,True
+node/7818702369,clinic,Dr. Anupama Roshan Skin Specialist,13.1517568,80.3012914,True
+node/7818702370,clinic,Sri Kannan Clinic,13.170706,80.199551,True
+node/7818702376,clinic,Dr. Ezhilarasi Clinic,13.1327627,80.2073327,True
+node/7818702384,clinic,Dr. Merwin Clinic,13.1520648,80.3012826,True
+node/7818702386,clinic,Ropheka Polyclinic,13.1463416,80.2978175,True
+node/7818702389,clinic,Kvm Physiotherapy Clinic,13.1625945,80.2594403,True
+node/7818702391,clinic,Srs Healthcare Clinic,13.1675158,80.247696,True
+node/7818702393,hospital,Sankara Eye Hospital,13.165259,80.25871,True
+node/7818702395,hospital,G S Hospital,13.1537616,80.3006482,True
+node/7818702399,hospital,Md Hussain Hospital,13.1702776,80.193567,True
+node/7818702406,hospital,Esha Hospital,13.1521728,80.3002146,True
+node/7818702409,hospital,Annai Hospital,13.1486276,80.2982812,True
+node/7818702411,clinic,Prasad ENT,13.156041,80.3009519,True
+node/7818702413,clinic,Dr. Saravana's Ortho Clinic,13.1358049,80.2092573,True
+node/7818702414,clinic,Sri Malar Clinic,13.1621341,80.205369,True
+node/7818702418,clinic,GK Shree Health Clinic,13.1711581,80.2000625,True
+node/7818702419,hospital,Sekar Hospital,13.1523333,80.2998808,True
+node/7818702420,hospital,St. Anthony's Hospital,13.161861,80.204431,True
+node/7818702423,clinic,Sri Vishnu Clinic,13.1602832,80.2584421,True
+node/7819840745,hospital,Kannimaram Hospital,13.0471845,80.184358,True
+node/7819840746,clinic,Yagnyaa Diabetes Clinic,13.0471927,80.1814527,True
+node/7819840748,hospital,Vasanthi Dental Hospital,13.0401817,80.1803453,True
+node/7819840750,clinic,Maf Clinic,13.0456848,80.1858062,True
+node/7819840755,clinic,Sri Venkatesvara Physio and Obesity Centre,13.0447838,80.1844199,True
+node/7819840766,clinic,Latha Ravichandran Clinic,13.0456183,80.1820026,True
+node/7819840769,clinic,Jeevan Women Care Clinic,13.0442533,80.184247,True
+node/7819840786,clinic,Udhaya Sai Clinic,13.0382058,80.1807184,True
+node/7819840797,hospital,Meenakshi Mission Hospital,13.0472622,80.1815603,True
+node/7819840806,hospital,Shanthi Hospital,13.0470409,80.1841129,True
+node/7821906816,clinic,Sri Brinda Clinic,12.937008,80.139316,False
+node/7821906820,hospital,Dr. Sathish Kumar Institute Of Child Health and Hospital for Children,12.937277,80.1390208,False
+node/7821906867,clinic,Dr. Kayal Subburam Health Clinic,12.9315748,80.14016,False
+node/7821906875,clinic,Herbal Clinic,12.9297534,80.1390785,False
+node/7821906877,clinic,A K Clinic,12.9347115,80.1400661,False
+node/7821906880,clinic,Dr. Pradeep Ortho Clinic,12.936992,80.142459,False
+node/7821906882,clinic,Shivam Clinic,12.9302553,80.1393013,False
+node/7821906890,clinic,Lakshmi Nursing Home,12.9356447,80.142515,False
+node/7821906903,hospital,Manimegalai Hospital,12.9370716,80.1394473,False
+node/7822259982,clinic,Radha Nantha Homeo Clinic,12.9146216,80.1945162,False
+node/7822259983,clinic,Orange Physiotherapy and Pain Relief Clinic,12.9151632,80.1790739,False
+node/7822259984,hospital,Deepam Rehabilitation Centre,12.9163865,80.1789307,False
+node/7822259985,clinic,Sri Kumaran Clinic,12.9428602,80.2370143,True
+node/7822259986,hospital,HCL Health Care,12.9044723,80.216804,True
+node/7822259987,hospital,Ganesh Hospital,12.9082585,80.1570082,False
+node/7822259988,hospital,Subasree Hospital,12.916822,80.1940932,False
+node/7822259989,clinic,Jayadeva Fertility Centre and Women's Hospital,12.9347551,80.2327258,True
+node/7822259990,clinic,GV's Good Health Centre,12.9458692,80.2361968,True
+node/7822259991,clinic,Kanmani Children Clinic,12.9178805,80.1874461,False
+node/7822259992,hospital,Centre For Vision and Eye Surgery,12.8948311,80.2233057,True
+node/7822259994,clinic,Jaya ENT Clinic,12.9110988,80.1564526,False
+node/7822259995,hospital,Shri Sai Children's Hospital and Dental Clinic,12.912214,80.229384,True
+node/7822259996,clinic,Sara Skin Clinic,12.933657,80.233537,True
+node/7822259997,clinic,Anto Speciality Clinic,12.9163132,80.1902143,False
+node/7822259998,clinic,Eashwar Multispeciality Clinic,12.9338927,80.2355344,True
+node/7822259999,clinic,Homeopathic Clinic,12.9142526,80.1823512,False
+node/7822260000,clinic,Rithika Netralaya Eye Clinic,12.9131433,80.1918203,False
+node/7822260001,hospital,Sri Balaji Hospital,12.9178242,80.190331,False
+node/7822260002,clinic,Santhosh Family Clinic,12.9145269,80.1538261,False
+node/7822260003,clinic,Lakshminarayan Clinic,12.9153721,80.1530485,False
+node/7822260004,hospital,S.V. Hospital,12.9069075,80.2026845,False
+node/7822260005,hospital,Bethel Hospital,12.9114303,80.1563114,False
+node/7822260006,clinic,Tharamai Child Care Clinic,12.9020392,80.2326608,True
+node/7822260007,hospital,Sai Babaji's Accupuncture Centre,12.9186472,80.1712083,False
+node/7822260009,hospital,SV Hospital,12.9319677,80.2326252,True
+node/7822260010,clinic,Apollo Clinic,12.9337566,80.2331464,True
+node/7822260011,hospital,Shanthi General Hospital,12.9233066,80.153003,False
+node/7822260012,clinic,Dr. Nithiya Clinic,12.8994432,80.228171,True
+node/7822260013,clinic,Vishwapraja Clinic,12.9255834,80.1495551,False
+node/7822260015,clinic,Lakshana Ortho Centre,12.924333,80.151639,False
+node/7822260016,hospital,Karthick Children's Hospital,12.9123221,80.192466,False
+node/7822260017,hospital,Arun Hospital,12.9149784,80.1948032,False
+node/7822260018,hospital,Radial Ortho Speciality Hospital,12.9131978,80.1915965,False
+node/7822260020,clinic,Rayar Clinic,12.9424446,80.2397616,True
+node/7822260021,hospital,Jayam Hospital,12.9498749,80.2381651,True
+node/7822260022,clinic,Dr. Hema's Skin and Hair Clinic,12.9164281,80.1939427,False
+node/7822260024,clinic,U.P. Clinic,12.9144308,80.194535,False
+node/7822260025,hospital,Maternity and Child Care Hospital,12.9164866,80.1896622,False
+node/7822260026,clinic,Green Land Heart Care Clinic,12.9162677,80.1921012,False
+node/7822260027,hospital,Sanjeevi's Ayurveda Therapy Centre,12.9087161,80.1571623,False
+node/7822260028,clinic,H.K. Clinic,12.9334179,80.2344666,True
+node/7822260030,clinic,Jeevan Clinic,12.9095,80.156688,False
+node/7822260032,hospital,Shri Balaji Diabetes Hospital,12.9150069,80.1929516,False
+node/7822260033,hospital,Dhanvantri Multi Speciality,12.9402236,80.2412342,True
+node/7822260034,clinic,Ramana Siddha Clinic,12.912552,80.161282,False
+node/7822260038,hospital,Annai Teresa Hospital,12.9184999,80.1892056,False
+node/7822260039,clinic,Dr. Kamakshi Multi Speciality Clinic,12.9188404,80.1874984,False
+node/7822260040,hospital,Government Hospital,12.9073656,80.1571273,False
+node/7822260043,hospital,Prayoga Hospital,12.918236,80.1525123,False
+node/7822260044,hospital,Swaram Hospital and Speciality Clinic,12.9011793,80.2286,True
+node/7822260046,clinic,Angel Child Clinic,12.9330206,80.2345155,True
+node/7822260047,clinic,"Neurologist, Praveen Chander Clinic",12.9161405,80.1903834,False
+node/7822260048,clinic,Cure and Care Family Clinic,12.9136451,80.2321791,True
+node/7822260051,hospital,C-Dot Hospital,12.9072738,80.2027359,False
+node/7822260055,hospital,Mugavari Eye Hospital and Research Institute,12.9167105,80.1921463,False
+node/7822260056,hospital,Global Hospital,12.9060064,80.2072713,False
+node/7822260057,clinic,Jeeva Clinic,12.9176778,80.170739,False
+node/7822543395,hospital,Avinash Ortho Hospital,12.9383762,80.1725401,False
+node/7822543396,clinic,Swathi Clinic,12.9497553,80.1426332,False
+node/7822543397,clinic,Dr. Kengadevi Nambiraj Clinic,12.9473369,80.1467822,False
+node/7822543398,clinic,Om Sakti Clinic,12.9388007,80.1792831,False
+node/7822543399,hospital,Kavitha Ortho and Multi Speciality Hospital,12.9502691,80.1513316,False
+node/7822543403,clinic,Sri Vinayaga Clinic,12.9208368,80.2015489,True
+node/7822543404,clinic,Dr. Tamilarasan Clinic,12.9575583,80.1394665,False
+node/7822543408,clinic,The Perima Clinic,12.9586767,80.1439954,False
+node/7822543409,clinic,Meena Clinic,12.9370245,80.1820574,False
+node/7822543411,clinic,S.M Clinic,12.9308777,80.2078664,True
+node/7822543412,clinic,Dr. Sujatha Accupuncture Clinic,12.951173,80.146919,False
+node/7822543413,clinic,Cuticle Skin Care Clinic,12.928255,80.202681,True
+node/7822543415,clinic,Radial Ortho Clinic,12.934049,80.203583,True
+node/7822543416,hospital,Sri Santhanakrishna Padmavati Health Care and Research Centre,12.9462077,80.1399766,False
+node/7822543417,clinic,Triveni Nursing Home,12.957374,80.1453708,False
+node/7822543420,clinic,Bethany Physiotherapy Centre,12.928455,80.2026963,True
+node/7822543421,clinic,Dr. Shakuntala Venkatesh Nursing Home,12.935226,80.183132,False
+node/7822543422,clinic,Janya Child Clinic,12.9287243,80.2008099,True
+node/7822543424,hospital,Dr. Velmurugan Hospital,12.9296419,80.2029589,True
+node/7822543425,clinic,Shree's Women Speciality Clinic,12.926507,80.2017237,True
+node/7822543427,clinic,Premalatha Clinic,12.9583302,80.1360407,False
+node/7822543429,hospital,Kidney Hospital and Diagnostic Centre,12.952496,80.137893,False
+node/7822543430,hospital,AM Hospital,12.9344546,80.1819961,False
+node/7822543431,clinic,Al-Aafiyah Clinic,12.9280018,80.2051951,True
+node/7822543433,hospital,HCG Cancer Centre,12.9575434,80.143138,False
+node/7822543434,hospital,Sayee Hospitals,12.9521949,80.1432074,False
+node/7822543436,clinic,Ganga Devi Clinic,12.9485087,80.1469443,False
+node/7822543438,hospital,Inbam Hospital,12.9339688,80.2041509,True
+node/7822543439,hospital,Thanushika Hospital,12.9503116,80.1513212,False
+node/7822543440,clinic,Kiruba Clinic,12.928347,80.202855,True
+node/7822543444,hospital,Hindusthan Hospital,12.9393514,80.1806898,False
+node/7822543445,clinic,Sneham Clinic,12.935996,80.204033,True
+node/7822543446,clinic,Mother's Clinic,12.9349376,80.1825784,False
+node/7822543447,clinic,Hima Bindhu Maternity Clinic,12.9505932,80.1446637,False
+node/7822543448,hospital,Puthur Kattu,12.9478556,80.1370503,False
+node/7822543450,clinic,Minks Homeo Clinic,12.9547249,80.1447551,False
+node/7822543452,hospital,RKP Hospital,12.9379829,80.1799993,False
+node/7822543454,clinic,KP Clinic,12.9438692,80.1550612,False
+node/7822543455,hospital,Muthu Multi Speciality Hospital and Pharmacy,12.928263,80.200805,True
+node/7822543458,clinic,Dr. Bharati Eye Clinic,12.9347158,80.1825728,False
+node/7822543459,hospital,Kokila Siddha Hospital,12.960669,80.139703,False
+node/7822543460,clinic,Shyam Child Care Clinic,12.9521469,80.1443271,False
+node/7822543461,clinic,Dr. S.K Naturals,12.9522733,80.1432799,False
+node/7822543463,clinic,Ambe Clinic,12.9519542,80.1450975,False
+node/7822543464,clinic,Suji Siddha Clinic,12.947995,80.136977,False
+node/7822543466,clinic,Smriti's Clinic,12.951829,80.1380888,False
+node/7822543467,clinic,Chrompet Clinic,12.9503116,80.1382643,False
+node/7822543469,hospital,Thomas Health Care Centre,12.9544931,80.1439701,False
+node/7822543471,hospital,Raj Joty Eye Hospital,12.935221,80.181802,False
+node/7822543473,clinic,Jeyasri Physio Clinic,12.9357745,80.1444777,False
+node/7822543474,clinic,Dr. Vasunsara Devi Clinic,12.9456384,80.1474374,False
+node/7822543476,clinic,Care and Cure Physiotherapy Clinic,12.9504412,80.1458087,False
+node/7822543477,hospital,Sun Hospital,12.9537198,80.143246,False
+node/7822543478,clinic,Hariharan Clinic,12.9384139,80.1753876,False
+node/7822543481,clinic,KGS Clinic,12.95183,80.1454692,False
+node/7822543484,hospital,Apollo Hospitals,12.9520555,80.1372784,False
+node/7822543486,clinic,C.N. Clinic,12.947177,80.1467621,False
+node/7822543489,hospital,Shailaja Hospital,12.9531004,80.1440661,False
+node/7822543490,hospital,Dhanwantari Hospital,12.9452437,80.140022,False
+node/7822543492,clinic,Agasthiar Siddha Herbal Health Clinic,12.944771,80.148227,False
+node/7822543493,clinic,Shri Heart and Diabetes Care Clinic,12.9520678,80.1447664,False
+node/7822543494,clinic,Delicare Clinic,12.9384098,80.2053961,True
+node/7822543496,clinic,Dr. R. Karu Shanmuga Karthik's Bone Joint and Spine Clinic,12.9393529,80.1831056,False
+node/7822543497,clinic,Mahalakshmi Clinic,12.9513527,80.1381858,False
+node/7822543498,hospital,Venus Accupoint,12.9422406,80.1381022,False
+node/7822543500,hospital,Saraswathy Hospital,12.9425452,80.1405737,False
+node/7822543501,hospital,V Cure Hospital,12.9280452,80.199546,True
+node/7822543502,hospital,Al Elaj Accupressure and Health Centre,12.9569609,80.1424509,False
+node/7822543504,clinic,Thyrocare,12.9453804,80.1360825,False
+node/7822543505,hospital,V.S. Hospital,12.933726,80.1811973,False
+node/7822543508,clinic,Child Care Clinic. Dr. Krithika,12.9358348,80.1636984,False
+node/7822543509,clinic,Sathish Clinic,12.934834,80.213342,True
+node/7822543510,hospital,Daisy Hospitals,12.9576893,80.1429026,False
+node/7822543512,clinic,Gayatri ENT Clinic,12.942584,80.140286,False
+node/7823212556,clinic,Mother And Child Care Centre,12.9733615,80.1387424,False
+node/7823212557,clinic,Al Shifa Cupping Clinic,12.9686121,80.1454769,False
+node/7823212559,hospital,Shakthi Hospital,12.9753651,80.2543198,True
+node/7823212562,hospital,JIP Hospital,12.9719872,80.1407516,False
+node/7823212565,clinic,Dani Physio Clinic,12.9728845,80.2604704,True
+node/7823212567,hospital,Dr. Habeb Child Care Hospital,12.9668133,80.144778,False
+node/7823212570,hospital,Hale and Healthy Hospitals,12.9757686,80.2590077,True
+node/7823212571,clinic,Noble Super Speciality Clinic,12.9752589,80.2594925,True
+node/7823212572,clinic,Turiya Care,12.9753853,80.2555078,True
+node/7823212573,hospital,Rathna Hospital,13.0087475,80.1937172,True
+node/7823212576,hospital,S.S. Hospital,13.0036449,80.2030844,True
+node/7823212579,hospital,Dhanraj Hospital,13.0017797,80.2033269,True
+node/7823212581,hospital,Nalam Hospital,13.0164671,80.1772853,True
+node/7823212583,clinic,Women's Health Clinic,12.9699839,80.1464124,False
+node/7823212588,clinic,Healthwise Clinic,13.0154658,80.1838246,True
+node/7823212589,clinic,KS Women Wellness Centre and ENT Clinic,12.9717549,80.1420392,False
+node/7823212595,clinic,Nilaa Women's Care Clinic,12.9785202,80.1364766,False
+node/7823212598,clinic,Dr. Aleem's Homoeo Clinic,12.9653707,80.2591196,True
+node/7823212607,hospital,Promed Hospital,12.9751423,80.2582571,True
+node/7823212610,hospital,Happy Clinic Hospital,12.9693629,80.2566138,True
+node/7823212611,clinic,Dharani Clinic,12.9730521,80.1373013,False
+node/7823212613,clinic,Smiles Nature Cure,12.9726702,80.2595079,True
+node/7823212616,hospital,Shadithya Hospital,12.9718921,80.1445381,False
+node/7823212619,clinic,Sri Renga Clinic,13.036466,80.186442,True
+node/7823212622,clinic,Dr. Padam's Surgicare,12.9709386,80.1464761,False
+node/7823212623,hospital,Jaya Sri Hospital,13.0027883,80.207025,True
+node/7823212624,hospital,Kedar Hospital,13.0441663,80.1364773,True
+node/7823212629,clinic,"Dermalaya, Skin & Hair Laser Clinic",12.9785736,80.1363228,False
+node/7823212631,hospital,Kaanthi Makapperu Hospital,13.003406,80.2063632,True
+node/7823212632,clinic,Re Active Physiotherapy Clinic,12.9718026,80.1388375,False
+node/7823212633,hospital,Medforte Health Care,12.9700475,80.1499015,False
+node/7823212634,clinic,KO's Skin and Hair Clinic,12.9731545,80.1386876,False
+node/7823212640,hospital,Contonment Board General Hospital,12.97059,80.148318,False
+node/7823415015,clinic,Sri Sai Clinic,12.9829583,80.2539494,True
+node/7823415016,clinic,Shri Gurukrupa Clinic,12.9962691,80.2638132,True
+node/7823415017,clinic,Dr. Vasantha's Eye Clinic,13.0221852,80.259708,True
+node/7823415018,clinic,Synapse Pain and Spine Clinic,12.9956385,80.2660055,True
+node/7823415020,hospital,Corporation Hospital,12.9915347,80.2615046,True
+node/7823415021,hospital,Relief Dental Hospitals,12.978253,80.258947,True
+node/7823415022,clinic,RR Clinic,12.9960029,80.2630762,True
+node/7823415023,clinic,Dr. Baranee's Sukra Diabetes Care,12.9954269,80.2682429,True
+node/7823415025,clinic,Best Siddha Clinic,12.9866722,80.2622141,True
+node/7823415026,clinic,Sri Sarada Ayurveda Clinic,13.0297211,80.2606156,True
+node/7823415029,clinic,Dr. Vasantha Clinic,13.0292453,80.2602795,True
+node/7823415030,clinic,Drabaranam Pulmonology Clinic,12.9863661,80.2601508,True
+node/7823415031,clinic,Jeeva ENT Clinic,12.9796957,80.2595179,True
+node/7823415032,clinic,Dr. Vasanthi Clinic,13.0544077,80.2779849,True
+node/7823415033,hospital,Accu Hospital,13.041251,80.267354,True
+node/7823415035,clinic,Leela Eye Clinic,12.985598,80.2585613,True
+node/7823415036,clinic,The Homeo Clinic,12.9963121,80.2637162,True
+node/7823415037,hospital,Kalyani Hospital,13.0512111,80.273209,True
+node/7823415038,clinic,Dr. N. Sekar,13.0375294,80.2658475,True
+node/7823415039,clinic,Ashwath Health Care,13.0397241,80.2685888,True
+node/7823415042,clinic,Jeyam Gastro Clinc,12.9962821,80.2641614,True
+node/7823415043,clinic,Rekha Multispeciality Clinic,12.9940564,80.2694554,True
+node/7823415044,clinic,The Chennai Speciality Clinic,12.9949549,80.2629482,True
+node/7823415045,clinic,The Madras Pain Clinic,12.9790513,80.2584981,True
+node/7823415046,clinic,Sai Clinic,13.042349,80.2664963,True
+node/7823415047,clinic,Akshaya Poly Clinic,12.9964001,80.2626006,True
+node/7823415048,hospital,Triveni Hospital,13.0385371,80.2581929,True
+node/7823415049,hospital,SMK Hospital,12.986383,80.260187,True
+node/7823415050,clinic,Dr. Prema Womens Clinic,12.9969555,80.2582848,True
+node/7823415052,clinic,K.S. Subramanian Child Specialist,12.9978588,80.2585578,True
+node/7823415053,clinic,Dr. Kavitha Iyer's Orthodontics & Dental Centre,12.9832651,80.2559655,True
+node/7823415055,clinic,B.K. Clinic,13.0532206,80.2726053,True
+node/7823415056,hospital,Uma Sankaran Siddha Hospital,12.9916719,80.2624479,True
+node/7823415057,clinic,Sai Neuro Clinic,13.0318707,80.2595716,True
+node/7823415058,clinic,Vethathiri Maharishi Siddha Clinic,12.9815891,80.2643211,True
+node/7823415059,hospital,Vasantha Hospital,13.0490602,80.2747953,True
+node/7823415060,clinic,Elixir Multi Speciality Centre,13.034819,80.2580026,True
+node/7823415061,hospital,Orthomed Hospital,13.0454703,80.2668731,True
+node/7823415063,clinic,Akshi Vision Therapy,12.994316,80.2661832,True
+node/7823415064,clinic,Remedy Clinic,12.9767853,80.2587762,True
+node/7823415065,hospital,Mint Hospitals,13.0013494,80.258796,True
+node/7823415067,clinic,Sri Sai Homoeo Clinic,12.982038,80.261741,True
+node/7823415068,clinic,Sri Sai Speciality Clinic,13.0373228,80.2612955,True
+node/7823415071,clinic,Nanthini Speciality Clinic,12.9964116,80.2642007,True
+node/7823415072,clinic,Appasamy Pillai Bone Setting Clinic,12.9827116,80.2543207,True
+node/7823415073,clinic,Tharu Clinic,12.9812766,80.2638733,True
+node/7823415074,clinic,Sujetha Clinic,12.993602,80.2619646,True
+node/7823415076,clinic,Dr. K.Chandra ENT Clinic,12.9802929,80.2594242,True
+node/7823415079,clinic,Sri Saradha Eye Clinic,12.9854883,80.2590444,True
+node/7823415083,hospital,Saanvi Fertility Centre Urology and Stone Centre,13.0436591,80.2639406,True
+node/7823415084,hospital,The Crescent Hospital,13.0528771,80.2727865,True
+node/7823415085,clinic,Chennai Urology Clinic,13.0428357,80.2620778,True
+node/7823415087,hospital,Syma Hospital,13.0546321,80.2774772,True
+node/7823415088,hospital,Sri Parthasarathy Hospital,13.0547617,80.2756509,True
+node/7823415089,clinic,Children's Clinic,13.0374881,80.2678508,True
+node/7823415090,clinic,Sreehareeyam Ayurveda,12.9787624,80.2580809,True
+node/7823415091,hospital,Ashwini Hospital,12.9890173,80.2599586,True
+node/7823415092,clinic,Vijayganga Speciality Care,13.042006,80.2665,True
+node/7823415093,clinic,Homeopathy Clinic,13.0554568,80.2771022,True
+node/7823415094,clinic,Jayam Polyclinic,12.9956803,80.2692643,True
+node/7823776192,clinic,Revathi Child Care Clinic,13.056806,80.199977,True
+node/7823776193,clinic,Aishwarya Clinic,13.0398827,80.1936068,True
+node/7823776194,clinic,Spn Orthopaedic Clinic,13.052893,80.20767,True
+node/7823776196,hospital,R.S. Hospital,13.0549375,80.2068588,True
+node/7823776197,hospital,Arun Vijaya Hospitals,13.038873,80.192755,True
+node/7823776199,clinic,Pranic Health,13.0624604,80.24239,True
+node/7823776200,clinic,Lakshana Physiotherapy,13.051432,80.199068,True
+node/7823776203,clinic,Prime Health Care Clinics,13.0522176,80.2056967,True
+node/7823776205,clinic,Swathy Clinic,13.0488672,80.1938731,True
+node/7823776206,clinic,Jayanthi Skin and Bone Care Clinic,13.0463215,80.1862225,True
+node/7823776207,clinic,Anub Sivam Clinic,13.0385615,80.1959333,True
+node/7823776208,clinic,Dr. J. Sarojini Homoeopathic Clinic,13.0509757,80.2034981,True
+node/7823776209,hospital,C.M. Hospital,13.0553167,80.2012868,True
+node/7823776210,clinic,Shri Sai Skin and Eye Clinic,13.0580674,80.1990412,True
+node/7823776211,clinic,Pulmo Care,13.0489648,80.193165,True
+node/7823776212,clinic,Sucha Eye Cure,13.0393234,80.1931668,True
+node/7823776213,hospital,Shali Day & Night Hospital,13.051996,80.204702,True
+node/7823776214,clinic,Ponni Nursing Home,13.0554821,80.1995444,True
+node/7823776215,hospital,Koncept Hospitals,13.051051,80.243818,True
+node/7823776216,clinic,Sri Venkateswara Clinic,13.0484913,80.1895556,True
+node/7823776217,hospital,Diawin Multi Speciality Siddha Hospital,13.0520108,80.2076585,True
+node/7823776219,clinic,JKR Clinic,13.0510747,80.2007559,True
+node/7823776220,clinic,Skin Doctor,13.0567527,80.2462554,True
+node/7823776221,hospital,G G Hospital,13.0554543,80.2477343,True
+node/7823776222,clinic,Madhu Clinic,13.0524295,80.2073763,True
+node/7823776223,hospital,K R S Hospitals,13.0616711,80.2434943,True
+node/7823776224,clinic,Dr. Rajaram Clinic,13.0619929,80.2412336,True
+node/7823776225,hospital,Sterling Hospitals,13.0616367,80.243704,True
+node/7823776227,hospital,Lily Shantha Hospital,13.0516365,80.1939117,True
+node/7823776228,clinic,Dr. A. Aravind Clinic,13.0381951,80.1924907,True
+node/7823776229,clinic,Chitra Clinic,13.0542711,80.2078101,True
+node/7823776231,hospital,Dr. Maibbar Hospital,13.0594426,80.2459459,True
+node/7823776232,clinic,Ruban Moses Clinic,13.0486566,80.1920141,True
+node/7823776233,hospital,Swastik Hospital,13.0539266,80.1991968,True
+node/7823776234,clinic,Cura Health Plus,13.0518895,80.1919214,True
+node/7823776236,clinic,Sri Varma and Spine Care Centre,13.0422476,80.1943253,True
+node/7823776237,clinic,Sri Sai Swamy Clinic,13.0592237,80.243411,True
+node/7823776239,clinic,American Eye Care Centre,13.0417465,80.1954994,True
+node/7823776240,clinic,SV Vision & Dental Care,13.0535204,80.2036821,True
+node/7823776242,clinic,Sakthi Natural Fertility Care,13.0529876,80.2038876,True
+node/7823776243,clinic,Sakthi Nursing Home,13.0585803,80.2012135,True
+node/7823776244,clinic,N.R.G. Multispeciality Clinic,13.0542347,80.1985381,True
+node/7823776246,hospital,Standard Hospital,13.0526943,80.1899425,True
+node/7823776247,clinic,Herba Clinic,13.0554179,80.1972002,True
+node/7823776248,clinic,Vijay Anand Clinic,13.0496363,80.1895753,True
+node/7823776250,hospital,MM Hospital,13.0527721,80.191781,True
+node/7823776251,clinic,Lister Metropolis,13.0519687,80.2062705,True
+node/7823776252,clinic,Dr. R. Muthukumar ENT Surgeon,13.0519538,80.1922401,True
+node/7823776253,hospital,Arun Hospital,13.0514652,80.2031882,True
+node/7823776254,hospital,Krishna Geetham Vaidyasala,13.0538214,80.1989274,True
+node/7823776256,clinic,Ezhilarasi Clinic,13.053108,80.199343,True
+node/7823776257,clinic,D` Mas Joint & Sports Injury Clinic,13.0579005,80.2455045,True
+node/7823776258,clinic,Jayam Diabetes Speciality Clinic,13.0511518,80.1922599,True
+node/7823776260,clinic,Malar Homeopath Clinic,13.046215,80.1868077,True
+node/7824965206,hospital,Agm Hospital,13.0802093,80.2522439,True
+node/7824965208,clinic,Orient Clinics,13.0860428,80.2656345,True
+node/7824965209,hospital,Dr. Sambandam Eye Hospital,13.0886474,80.2416011,True
+node/7824965211,hospital,Sugumar Hospital,13.0828855,80.2709938,True
+node/7824965212,clinic,Dr. V.G.K Memorial Homeo Clinic,13.0881756,80.2418747,True
+node/7824965213,hospital,Ranjith Hospital,13.0888843,80.2418555,True
+node/7824965214,clinic,Akn Nursing Home,13.0885541,80.2421118,True
+node/7824965216,hospital,Mythili Hospitals,13.0704319,80.2421491,True
+node/7824965217,clinic,Metropolis Healthcare,13.07127,80.262082,True
+node/7824965218,clinic,Navakar I Care,13.0864725,80.2656477,True
+node/7824965220,clinic,Nandita's Clinic,13.0719723,80.2409391,True
+node/7824965221,hospital,Santosham Chest Hospital,13.0746638,80.2537976,True
+node/7824965222,hospital,Tune 32 Hospital,13.0715459,80.2622655,True
+node/7824965223,hospital,Pandalai Hospital,13.0771575,80.2450769,True
+node/7824965224,clinic,Premier Health Centre,13.079584,80.257578,True
+node/7824965225,hospital,Centre For Gastro Esophageal Disorders,13.0786423,80.2540859,True
+node/7824965227,hospital,Be Well Hospital,13.0807479,80.2340062,True
+node/7824965228,clinic,Padma Clinic & Nursing Home,13.076912,80.233925,True
+node/7824965229,hospital,Puttur Kattu Hospital,13.0812406,80.2506114,True
+node/7824965230,clinic,Vinayagam Clinic,13.0752787,80.2705092,True
+node/7824965231,clinic,Dr. Ilavarasan Ortho Clinic,13.074758,80.2555444,True
+node/7824965232,hospital,An-Noor Eye Hospital,13.0849581,80.2669979,True
+node/7824965233,clinic,Nalam Clinic,13.0747088,80.2688425,True
+node/7824965234,clinic,Dr. Arjun Thomas Clinic,13.0755581,80.27068,True
+node/7824965235,clinic,TMM Eye Centre,13.082126,80.263297,True
+node/7824965237,hospital,Herbzalive Ayurveda Hospital,13.0793874,80.2473996,True
+node/7824965238,hospital,Meta Hospital,13.0826737,80.2705905,True
+node/7824965239,clinic,Vardhman Multispeciality,13.090224,80.267898,True
+node/7824965240,hospital,Dr. H. Yogish Hospital,13.0737332,80.2268354,True
+node/7824965241,hospital,Neuro Hospital,13.0713435,80.2625981,True
+node/7824965243,hospital,Murugan Hospitals,13.0833684,80.234299,True
+node/7824965244,hospital,Amrit Hospital,13.0811868,80.2520834,True
+node/7824965245,hospital,Mercury Hospital,13.071832,80.260048,True
+node/7824965246,hospital,Naz Unani Hospital,13.0850158,80.2699983,True
+node/7824965247,clinic,Vembu Clinic,13.0750341,80.2684334,True
+node/7824965249,hospital,S.K. Selvam Hospital,13.0761303,80.2694819,True
+node/7824965251,clinic,Neuro Mind Care Clinic,13.079529,80.257646,True
+node/7824965252,hospital,Apollo Hospital,13.0825738,80.2710331,True
+node/7824965253,clinic,Dr. Sridharan Clinic,13.0763548,80.267103,True
+node/7824965254,hospital,Kola Saraswathi Agarwal Samaj Health Centre,13.0813334,80.2553965,True
+node/7824965255,clinic,"Psy Hub, Brain and Behaviour",13.0821498,80.2331613,True
+node/7824965256,clinic,Dr. Sukumar's Skin Clinic,13.070275,80.2407506,True
+node/7824965257,clinic,Dr. A Manivannan Clinic,13.0734625,80.2679228,True
+node/7824965258,hospital,Demo Hospital,13.0844036,80.2454945,True
+node/7824965259,hospital,Gremaltes Hospital,13.0793157,80.2290477,True
+node/7824965260,hospital,Srl Hospital,13.0814203,80.2333756,True
+node/7824965261,clinic,Dr. Sundar's Homoeopathic Clinic,13.0846937,80.2461467,True
+node/7824965262,hospital,Periyar Maniammai Hospital,13.0811497,80.2620778,True
+node/7824965264,hospital,Red Cross Hospital,13.074301,80.267569,True
+node/7824965265,clinic,Kabeer Clinic,13.0756085,80.2693127,True
+node/7824965266,hospital,Ponmalligai Hospitals,13.0768584,80.2339377,True
+node/7825002779,hospital,V S Hospital,13.1216771,80.2236766,True
+node/7825002780,clinic,Kottakkal Arya Vaidya Sala Clinic,13.1244332,80.2212904,True
+node/7825002781,hospital,Iyyappa Multi Speciality Hospitals,13.1160443,80.2454243,True
+node/7825002782,hospital,GK Hospital,13.113594,80.2394367,True
+node/7825002784,clinic,Obg Health Point,13.1161848,80.2254809,True
+node/7825009785,clinic,Spectrum Pediatric Therapy,13.1102844,80.230222,True
+node/7825009786,hospital,Dr. Kleela Hospital,13.1155627,80.2457851,True
+node/7825009787,hospital,Bluemed Healthcare,13.1297562,80.2172747,True
+node/7825009788,clinic,Hiran Eye Retina Centre,13.1178155,80.2278922,True
+node/7825009789,clinic,Annai Eye Clinic,13.1262133,80.2197712,True
+node/7825009790,hospital,St. Joseph Cluny Hospital,13.1204837,80.2243993,True
+node/7825009791,clinic,GM Nursing Home,13.116713,80.2239462,True
+node/7825009792,hospital,Dr. A C Aruldas Hospital,13.1102652,80.2418486,True
+node/7825009793,clinic,Dr. Rao's Clinic,13.1293965,80.2161334,True
+node/7825009794,clinic,Child Care Clinic,13.1224029,80.2123936,True
+node/7825009795,clinic,G.R Clinic,13.1207062,80.2251062,True
+node/7825009796,clinic,Maayi Nursing Home,13.1175414,80.2286067,True
+node/7825009797,hospital,Bharathiraja Hospitals,13.1300779,80.216941,True
+node/7825009798,hospital,Kolathur Multi Speciality and Research Centre,13.1222839,80.2160951,True
+node/7825009799,hospital,Arul Childs Hospital,13.1185,80.2258076,True
+node/7825009800,clinic,American Dental Care,13.1272226,80.2174972,True
+node/7825009801,clinic,Jaya Eye Clinic,13.116675,80.224138,True
+node/7825009803,hospital,KCK Hospital,13.129071,80.2159086,True
+node/7825009805,hospital,Sugar Hospital,13.121994,80.2236309,True
+node/7825009807,hospital,Retteri Kumaran Hospital,13.129869,80.214109,True
+node/7825009809,clinic,Elangovan ENT Surgeon,13.1171076,80.2269961,True
+node/7825009813,clinic,Cure Plus Clinic,13.1260152,80.2191464,True
+node/7825009814,clinic,Sugam Ortho Clinic,13.12251,80.2221769,True
+node/7825009815,hospital,Government Hospital,13.1093369,80.2312849,True
+node/7825009816,hospital,K.H.M. Hospital,13.129327,80.2152624,True
+node/7825009817,hospital,Sankar Eye Hospital,13.1131038,80.2404022,True
+node/7825009818,clinic,Sendoor Clinic,13.116533,80.2250502,True
+node/7825009819,hospital,Niranjana Hospital,13.1101477,80.2244516,True
+node/7825009820,hospital,Parvatham Hospital,13.1148422,80.2441515,True
+node/7825009821,clinic,Akshita Speciality Clinic,13.1277489,80.2168565,True
+node/7825009823,hospital,U.S. Hospital,13.1263043,80.2192658,True
+node/7825009824,hospital,Bharani Hospital,13.1106227,80.2374461,True
+node/7825009825,clinic,GR Clinic,13.1220895,80.2210295,True
+node/7825009826,clinic,G K Clinic,13.119731,80.218505,True
+node/7843239851,hospital,Sir Ivan Stedford Hospital,13.1247933,80.1435476,False
+node/7868260214,library,VGS Lending Library,13.1192723,80.150395,True
+node/7930758686,school,,12.9248332,80.2284843,True
+node/7953367285,hospital,,13.1183857,80.2606286,True
+node/8095515268,school,Manimegalai Vidhyalaya Nursery and Primary School,13.0260311,80.2114987,True
+node/8096237707,school,Seethalakshmi Vidhyalaya School,13.0293598,80.2068015,True
+node/8096940514,school,Chennai High School,13.0294143,80.2124208,True
+node/8099852017,library,,13.0105208,80.237449,True
+node/8099947735,hospital,K.M. Nursing Home,13.0371216,80.2013389,True
+node/8100718329,school,Apple Kids International Pre School,13.0283513,80.2091487,True
+node/8105683179,hospital,Military Hospital,13.0117736,80.1941708,True
+node/8108467017,hospital,உழைப்பாளி மருத்துவமனை,13.0487242,80.2036274,True
+node/8108591031,hospital,KS Bone and Joint Clinic - Ortho,13.026029,80.212368,True
+node/8108613662,clinic,Veekays Pet Care Clinic,13.0290009,80.2085925,True
+node/8111861614,hospital,Shens Multi-Speciality Hospital,13.0318828,80.2103124,True
+node/8197934476,hospital,Sanjeevani Ayurvedic Hospital,12.9120483,80.2489789,True
+node/8247933843,library,Little Lending Library,12.9677331,80.1915338,True
+node/8247937387,library,Public Library,12.9695685,80.1922723,True
+node/8261017892,clinic,Sham's Rheumatic Care Centre,13.0388056,80.2010012,True
+node/8594028687,clinic,Selva Maternity Clinic,12.9528734,80.1862504,False
+node/8597345825,school,Prince Srivari Vidyalaya,12.969047,80.1942822,True
+node/8597345826,school,Shri Venkateshwara Highter Secondary School,12.9694645,80.1949092,True
+node/8597641343,clinic,Progress Clinic,12.9586006,80.1868115,False
+node/8628194990,school,Holy Family Convent Matric. Hr. Sec. School,12.9602888,80.18651,False
+node/8639896900,hospital,Prashanth Hospitals,12.9784544,80.2214698,True
+node/8669165865,school,Government Higher Secondary School,12.9689235,80.1849511,False
+node/8669165867,school,Government Primary School,12.9688048,80.1844534,False
+node/8869350452,hospital,,13.0381458,80.1619363,True
+node/8935514615,hospital,Geri care hospital,13.0439323,80.2407095,True
+node/8935540225,school,Satyamurthi high school,13.0482979,80.2464292,True
+node/8979558602,clinic,Suguna Clinic,13.0946251,80.1855413,True
+node/8979558603,clinic,Mohan Clinic,13.095401,80.1814241,True
+node/9106660530,school,,13.048451,80.2801127,True
+node/9391105251,school,Nadar Sangam Matric Hr Sec School,12.9761444,80.138181,False
+node/9444720904,hospital,4 Squares Dentistry,12.9214652,80.1651302,False
+node/9502013722,clinic,Government Mini Clinic,12.9780615,80.1811597,True
+node/9567708772,library,Branch Library Alandur,13.0018884,80.2059361,True
+node/9717766098,hospital,Chamdhi Netralayam Eye Hospital,13.2086279,80.1698455,False
+node/9920582502,school,Netaji Vidyalaya School,12.9430359,80.1928444,False
+node/9924587805,library,roja muthiah research library,12.9977113,80.2463899,True
+node/9932743017,clinic,,13.1076382,80.1868929,True
+node/9980280804,hospital,Shreyas hospital,13.1266701,80.2014392,True
+node/10013621163,clinic,Trident medicare center,13.1245764,80.201478,True
+node/10208858002,clinic,Sri Lakshmi Clinic,13.0969386,80.2875876,True
+node/10261422409,hospital,Women And Children Foundation Hospital,13.1180276,80.2126037,True
+node/10271805421,hospital,Frame of Mind - SCARF Psychiatric Hospital,13.0972767,80.1982422,True
+node/10289598933,school,St. Mary's School,13.1956454,80.1801373,False
+node/10294576078,hospital,Vasantha Memorial Cancer Centre,13.040756,80.2146876,True
+node/10792844389,school,SV High School,13.0539345,80.1484837,False
+node/10933682482,clinic,Kumaran Physiotherapy & Pain Relief Clinic,13.0974459,80.2799297,True
+node/10933682616,clinic,Mahaveer Health Care Services,13.0965132,80.279272,True
+node/10933806238,clinic,G.T. Clinic,13.0958069,80.2798213,True
+node/10948434909,clinic,,13.1225226,80.209299,True
+node/10967203527,clinic,Sakthi Clinic - Dr. B. Palani,13.0974018,80.2806005,True
+node/10972886574,water,,13.0925746,80.2803713,True
+node/11162390408,hospital,Dr. Vijay's Hospital,13.0856699,80.1797716,True
+node/11253282590,school,model school,12.8948995,80.2267708,True
+node/11397678677,clinic,Apollo Emergency Medical Centre,13.0826233,80.2752345,True
+node/11428732669,clinic,,13.0061507,80.2576709,True
+node/11468740371,hospital,SMF,13.0868727,80.1697458,True
+node/11505074825,park,,13.1218717,80.2339461,True
+node/11515688969,clinic,,12.9191067,80.1956242,False
+node/11515689869,clinic,,12.9191663,80.1958552,False
+node/11521276770,community_centre,,12.9135314,80.1918796,False
+node/11679595256,hospital,Jananam Fertility Centre,12.9569147,80.2513405,True
+node/11695898569,community_centre,,12.9152689,80.1918825,False
+node/11699821870,community_centre,,12.9223656,80.1480506,False
+node/11782793599,hospital,Sugam Hospital,12.9622155,80.159938,False
+node/11804254199,hospital,Dental College & Hospital,12.8705153,80.2233736,True
+node/11805421003,school,C.S.I. Anderson Rajagopaul Girls Higher Secondary School,13.0950602,80.2892677,True
+node/11834587522,hospital,Max Hair Clinic,13.0579691,80.2457435,True
+node/11835034706,school,Venkatasubba Rao matrix Hr Secy School,13.0501982,80.2402338,True
+node/11848217940,school,Department of Computer science,12.8738339,80.2211671,True
+node/11848217941,school,Department of Electronics,12.8739157,80.2209903,True
+node/11848217942,school,Computer Science Laboratory,12.8739625,80.2208615,True
+node/11848217943,school,Department of Electrical & Electronics Engg.,12.8739858,80.2207237,True
+node/11848217944,school,Department of Mechanical Engg.,12.8737589,80.2203054,True
+node/11848217946,school,Machine Shop & Drawing Hall,12.8739875,80.2202971,True
+node/11848217947,school,Bio Medical Laboratory,12.8741787,80.2203513,True
+node/11865553974,hospital,,12.89188,80.1770557,False
+node/11917025570,school,,12.9129483,80.1918098,False
+node/12103741413,community_centre,Magizh Mahal Thirumana Mandapam,12.9581488,80.1422422,False
+node/12146055740,hospital,"Commissioner of Police office, Greater chennai Police",13.081276,80.2631177,True
+node/12192792965,school,LBEAAR Matric Hr. Sec. School,13.0719886,80.1894086,True
+node/12367559381,hospital,,13.0920988,80.2588062,True
+node/12378706312,hospital,Dr Bala's Skin clinic,12.9831959,80.2013573,True
+node/12386292156,water,,13.0828615,80.2754672,True
+node/12407599025,school,Chemical department,12.8703348,80.215186,True
+node/12458295540,community_centre,Amma Arangam,13.0825153,80.2197811,True
+node/12458643766,park,Unnamed,13.1888639,80.3147958,True
+node/12458714111,clinic,Chinnus Blood Testing,13.1889086,80.3147634,True
+node/12458725759,clinic,RG Clinic,13.1881126,80.3153353,True
+node/12458738606,community_centre,Ashok Leyland Community Hall Kasi Koil Kuppam,13.191354,80.3137518,True
+node/12458738607,water,,13.1913972,80.3137685,True
+node/12458738608,park,,13.1882202,80.3153433,True
+node/12458756392,clinic,RG Clinic Diabetologist,13.1877986,80.3150883,True
+node/12458756395,community_centre,Community Stage,13.1885268,80.3147845,True
+node/12458790380,community_centre,கே. பரசுராமன் Ex. Member Of Council கலையரங்கம்,13.1769504,80.3131363,True
+node/12513296201,community_centre,Medavakkam Cooperative Society,12.9147924,80.1922426,False
+node/12548054602,clinic,The Hive Fertility Centre,13.0728153,80.2524798,True
+node/12554273454,school,Sri Agathiar Vidhyalaya Nursery & Primary School,13.1592639,80.3031441,True
+node/12560767886,hospital,,12.9809491,80.1871116,True
+node/12568243303,clinic,Baby Child Clininc,12.8902304,80.1844991,False
+node/12568243304,clinic,Dr. S. Satish Kumar M.D.S,12.8900211,80.1845425,False
+node/12581525295,hospital,Meridian Hospitals,13.1363242,80.2157688,True
+node/12581554806,school,St Anne's School,13.132247,80.2361716,True
+node/12581645343,school,St Anne's Matriculation School,13.1320397,80.2388481,True
+node/12581658601,hospital,St Anthony's Hospital,13.1396018,80.2377389,True
+node/12581658602,school,St Anns Metric Secondary School,13.1416026,80.2366698,True
+node/12611351201,clinic,Just Kids Child Cliinc,12.9130938,80.1918435,False
+node/12619467462,hospital,Vadivelu Hospital,13.1002212,80.2400853,True
+node/12640713376,clinic,Capstone Clinic,13.0531057,80.2435995,True
+node/12708033805,park,eswaran park,13.1316491,80.2622542,True
+node/12841106702,park,ONGC Park,13.0916867,80.1925477,True
+node/12894184501,school,Zemcode Medical Coding Training,12.9156431,80.1945578,False
+node/12998369782,park,சாலையோர பூங்கா,13.0151874,80.2251225,True
+node/13096237915,hospital,Iswarya Fertility Center,13.0064894,80.2504829,True
+node/13129281204,library,Achieve your goals study hall,13.0883507,80.1828091,True
+node/13142131701,clinic,Dr Abirami's skincare clinic,13.0149516,80.2307333,True
+node/13155026101,hospital,Good Shepard hospital,12.9810842,80.2343492,True
+node/13184761701,clinic,Hariharan ENT Clinic,12.9161702,80.1921511,False
+node/13184761801,clinic,Dr. R.Suresh Child Care Clinic,12.9159912,80.1921519,False
+node/13184762001,clinic,Masila Clinic,12.9160421,80.1921398,False
+node/13348626101,library,Engineering College Hostels Library,13.0133685,80.2366967,True
+node/13348642301,library,Institute for Energy Studies Library,13.0106567,80.2324654,True
+node/13390341655,school,BrightPath Play School,12.96562,80.2149276,True
+node/13392511809,school,Orchid school,13.125858,80.1960498,True
+node/13394288611,school,Padmashree school,13.1276797,80.1974428,True
+node/13401498982,clinic,SRI CHAKRA SCANS,13.1295572,80.2145746,True
+node/13433948701,school,Rudrappasamy School,13.1169287,80.1717888,True
+node/13456132677,hospital,RMS Ropheka Multi Speciality Hospitals,13.2035123,80.2661437,True
+node/13510114228,park,SITE,13.0659898,80.1646291,True
+node/13694295601,hospital,Palaniappa Hospital,13.0275517,80.1832531,True
+node/13712036201,community_centre,சமுதாய நலக்கூடம்,12.9148633,80.192248,False
+node/13738124430,clinic,Vee Kay,13.0967132,80.2592225,True
+node/13738226108,water,,13.0844255,80.2746695,True
+node/13738226111,water,,13.0839882,80.2747817,True
+node/13738226112,water,,13.0833353,80.2749384,True
+node/13738226115,water,,13.0871665,80.2742767,True
+node/13738226126,water,,13.0878502,80.2742844,True
+node/13738226139,water,,13.0841571,80.2747603,True
+node/13738226143,water,,13.0849615,80.2745891,True
+node/13738226147,water,,13.0833419,80.2749888,True
+node/13738226148,water,,13.0857831,80.2744494,True
+node/13738226154,water,,13.0862535,80.2743827,True
+node/13738226155,water,,13.0875917,80.2742807,True
+node/13743063240,park,Chitlapakkam Park,12.9371895,80.1365687,False
+node/13765623902,clinic,Tamilmalar Homeo Clinic,12.9177723,80.1906838,False
+node/13839492368,water,,13.0325612,80.2680951,True
+node/13870488102,hospital,Bethesda Hospital & Child Care Centre,12.9196657,80.1443175,False
+node/13919194798,water,,13.0867096,80.1766748,True
+node/13928250803,school,Government School,13.0932325,80.1593062,True
+node/13931255798,community_centre,Mohana Convention Hall,12.9785576,80.2193731,True
+node/13937521708,community_centre,Shree Mat Balasanniyasi Charities - Vanniyar Kalyana Mandapam,13.0321477,80.2690809,True
+node/13987389711,community_centre,Sri Vidhur Hall,12.9547251,80.1606686,False
+node/13994416401,hospital,Deepam Medfirst Hospital,12.9316216,80.2033854,True
+node/14007810701,clinic,Sudar Medical Centre,13.0414947,80.1951197,True
+node/14045662234,clinic,Jeevan Clinic,12.9878169,80.2173524,True
+node/14049890108,clinic,Arunai Clinic,12.9899507,80.2115352,True
+node/14059867401,hospital,Sri Raghavendra Hospital (sidha),13.1241668,80.2873329,True
+node/14059898301,hospital,Ayanavaram 24 hours hospital,13.0986843,80.2336168,True
+node/14105458201,hospital,Helios Advanced Skin Hair & Laser Clinic Pvt Ltd,13.0347504,80.2547353,True
+node/14119518430,clinic,Sre Sai Speciality Clinic,13.0391737,80.2541971,True
+node/14125018027,library,Bharathi Lending Library,13.0403424,80.2490715,True
+node/14196861801,clinic,Bahola Labs,12.9957516,80.2643301,True
+way/23186292,park,Jeeva Park,13.0440022,80.2377658,True
+way/23186293,park,Ramakrishna Mission School Ground,13.0432712,80.2381145,True
+way/23186294,park,Somasundaram ground,13.0458886,80.2343274,True
+way/23186297,school,Sarada Vidyalaya Girls,13.042298,80.2315228,True
+way/23186307,park,Independence Day Park,13.0563945,80.2422282,True
+way/23186327,school,Vidyodaya Girls HSS,13.0509149,80.2417567,True
+way/23186336,school,Ramakrishna Mission Matric HSS,13.0468454,80.2311907,True
+way/23251115,school,,12.9450098,80.1429732,False
+way/23312602,park,,13.0274262,80.2452373,True
+way/23502824,park,Kotturpuram Park,13.0266155,80.2446164,True
+way/23885061,community_centre,Victoria Public Hall,13.0820074,80.2726366,True
+way/23892256,park,People's Park,13.0895456,80.2720251,True
+way/23929748,park,Nageswara Rao Park,13.0365861,80.2633923,True
+way/23929780,school,M. Ct. M Chidambaram Chettyar International School,13.0376003,80.259123,True
+way/23929941,school,St Ebbas Girls HS School,13.0438578,80.2625838,True
+way/23954915,park,Kalaignar Noorandu Poonga,13.050612,80.2540109,True
+way/23962542,school,Saint Williams High School,13.0528627,80.267902,True
+way/23970143,school,Valliammal Matriculation Higher Secondary School,13.0852301,80.2234734,True
+way/23970154,park,Bougainvilla Park,13.0917593,80.2212506,True
+way/24240071,park,Anna Nagar Tower Park,13.0866141,80.2142635,True
+way/24240072,school,Jaigopal Garodia Vivekananda Vidyalaya Matriculation Higher Secondary School,13.0894724,80.2141743,True
+way/24260624,school,NKT National Girls HSS,13.0518505,80.2748218,True
+way/24261527,school,Lady Willingdon High School,13.0484885,80.2792054,True
+way/24270339,school,Vidya Mandir SSS,13.037591,80.2687091,True
+way/24270393,school,Saint Bede's Anglo Indian Higher Secondary School,13.0341174,80.2782775,True
+way/24270394,school,Rosary Matriculation HSS,13.0352054,80.2762298,True
+way/24270411,school,CSI School for Deaf,13.03668,80.277385,True
+way/24270436,school,P. S. Senior Secondary School,13.0312706,80.266086,True
+way/24270517,school,Santhome HSS,13.0318613,80.2767882,True
+way/24339596,park,Alphonso Government play ground,13.0250485,80.2719316,True
+way/24339616,school,Raja Muthiah School,13.0224623,80.2612604,True
+way/24339617,school,Harishri Vidyalayam,13.0223655,80.2628535,True
+way/24339620,school,Chettinad Vidyashram School,13.0175726,80.2686937,True
+way/24375563,school,Good Shepherd Convent,13.0651061,80.2448873,True
+way/24375590,park,Haddows Road Park,13.0632226,80.2485809,True
+way/24375609,school,Asan Memorial Senior Secondary School,13.0642125,80.2519329,True
+way/25618840,school,Modern Senior Secondary School,12.9739295,80.1854264,True
+way/25619924,park,Independence Day Park,12.9811808,80.1858214,True
+way/25619926,school,Modern Senior Secondary School (Primary),12.9746813,80.1846588,True
+way/25808365,park,Semmozhi Poonga,13.050644,80.2515356,True
+way/26396360,park,Anna Park,13.1076254,80.2885883,True
+way/26422007,school,Corporation School,13.1384681,80.2966793,True
+way/26422044,park,MPT Ground,13.1399641,80.2898441,True
+way/26422079,park,Anna Park,13.1383394,80.2932828,True
+way/26748565,park,Mehta Nagar Ground,13.0703023,80.2275305,True
+way/27191741,park,Circular Park,13.0520617,80.225521,True
+way/27199950,school,Loyola and Fatima Matriculation Higher Secondary School,13.0501097,80.226315,True
+way/27199951,school,Kodambakkam HSS,13.0522676,80.2232472,True
+way/27199952,school,SRM NIGHTINGALE MATRICULATION HIGHER SECONDARY SCHOOL,13.0417998,80.2244498,True
+way/27311864,school,Anna High School,13.0006185,80.2682376,True
+way/27433214,school,Nirmala Girls HSS,13.0415427,80.2103041,True
+way/27433215,school,Stella Matric,13.0409326,80.2098343,True
+way/27433218,school,Kendriya Vidyalaya,13.0368462,80.2092485,True
+way/27433219,school,Govt Girls School,13.0324807,80.2139365,True
+way/27434892,park,Sector 10 Ground,13.0431227,80.1953578,True
+way/27435143,school,Thai Sathia School,13.0439936,80.1981562,True
+way/27454211,park,Gandhinagar Playground,13.0564414,80.207714,True
+way/27460554,school,General Cariappa HSS,13.0585071,80.2046161,True
+way/27483786,school,Corporation School,13.0386267,80.2511429,True
+way/27503760,park,Kalaignar Karunanidhi Park,13.0300845,80.251876,True
+way/27618336,park,,13.0812367,80.2803161,True
+way/27618339,hospital,Rajiv Gandhi Government General Hospital,13.0808972,80.2773284,True
+way/27618366,park,MMC Ground,13.0870086,80.2827765,True
+way/27642526,school,,13.0329159,80.2540545,True
+way/27643187,school,Saint Francis Xavier,13.029455,80.2507695,True
+way/27768551,school,Kendriya Vidyalaya IIT Chennai,12.9927689,80.2329275,True
+way/28068665,school,Holy Angels Convent,13.0409928,80.2414919,True
+way/28068671,school,Kesari Higher Secondary School,13.0404666,80.2459299,True
+way/28085709,school,Ramakrishna Mission HSS,13.0406478,80.2342546,True
+way/28085766,park,Natesan Park,13.0375701,80.2363965,True
+way/28085769,park,Corporation Ground,13.0371628,80.2356263,True
+way/28085789,school,T Nagar Boys Higher Secondary School,13.0361669,80.2369793,True
+way/28085862,school,Ramakrishna Higher Secondary School,13.0348263,80.2341401,True
+way/28085986,school,,13.0385835,80.251487,True
+way/28137710,park,Park 113,13.047801,80.2506784,True
+way/28151245,school,Sacred Heart Matric,13.0534088,80.2546021,True
+way/28162212,school,Maharishi Vidya Mandir,13.0745704,80.2349976,True
+way/28163137,school,St George's Anglo Indian Higher Secondary School,13.0767483,80.232009,True
+way/28262235,school,"Kendriya Vidyalaya No 1 & 2, AFS",12.913585,80.1492755,False
+way/28281732,school,The School Krishnamurti Foundation India,13.005196,80.2632835,True
+way/28296057,school,Kalki Saraswathi HSS,13.079261,80.2460699,True
+way/28318885,school,Savithri Ammal HSS,13.0402918,80.2692807,True
+way/28345285,hospital,Stanley Medical College and Hospital,13.1063871,80.2841452,True
+way/28402530,school,Ladies Sivasamy School,13.0320168,80.2714051,True
+way/28402586,school,Sir Sivasamy Kalyana,13.0326105,80.272233,True
+way/28404807,hospital,,13.005416,80.2396935,True
+way/28405012,school,The Hindu Colony Chellammal Vidyalaya Senior Secondary School,12.9785681,80.1839874,True
+way/28405027,school,New Prince Matriculation Higher Secondary School,12.9772163,80.1966351,True
+way/28405056,school,Sai Matriculation Higher Secondary School,12.9680931,80.1913509,True
+way/28405760,school,The Hindu Senior Secondary School,12.9973932,80.2535757,True
+way/28405770,park,Indira Nagar Park,12.9985165,80.2524928,True
+way/28493363,hospital,Sri Ramachandra Institute of Higher Education and Research,13.0410329,80.1425261,True
+way/28502342,school,Asan Memorial HSS,13.0621997,80.2541746,True
+way/28503858,school,Assumption HSS,13.0550804,80.2488452,True
+way/28504274,school,Little Flower School for the Blind and Deaf,13.0506551,80.2479803,True
+way/28507306,school,Guru Nanak School,12.9905975,80.2209053,True
+way/28534579,school,Marian Matriculation,13.0047269,80.1937449,False
+way/28534585,school,St Johns Matriculation,13.0038167,80.1918103,False
+way/28563208,school,Sri Sankara Senior Secondary School,13.0099118,80.2609781,True
+way/28563210,school,Avvai Home,13.0090265,80.2612144,True
+way/28563213,park,,13.0076786,80.2590892,True
+way/28563224,school,Sishya,13.0058262,80.2593114,True
+way/28564316,park,Shastri Nagar Ground,12.9998897,80.2613884,True
+way/28732095,school,Govt Hobart Girls HSS,13.0571428,80.2616819,True
+way/28747324,park,Fort Park,13.0771966,80.2877268,True
+way/28764650,school,St Peters HSS,13.1093264,80.2952174,True
+way/28764688,school,St Annes HSS,13.110479,80.2922565,True
+way/28764714,school,Kevins Anglo-Indian High School,13.1116744,80.2944667,True
+way/29044877,school,Don Bosco Matriculation Higher Secondary School,13.0705507,80.2555172,True
+way/29044902,school,Don Bosco Primary,13.0699428,80.2544888,True
+way/29046387,hospital,Tt Ranganathan Clinical Research Foundation,12.9923667,80.2550102,True
+way/29046450,park,,12.9854401,80.2539697,True
+way/29046739,school,Corporation School,12.9899172,80.2547682,True
+way/29046742,hospital,IMPCOPS Traditional Hospital,12.9930805,80.2572794,True
+way/29047565,school,Besant Theosophical High School,12.9914971,80.2643816,True
+way/29069721,school,PM Shri Kendriya Vidyalaya Island Grounds,13.077638,80.2775701,True
+way/29115468,school,Presidency Girls HSS,13.0750067,80.2529694,True
+way/29115914,school,St Anthony's Anglo Indian HSS,13.0725112,80.2616955,True
+way/29116157,hospital,Egmore Eye Hospital,13.0702235,80.2599829,True
+way/29252766,school,Bala Mandir School,13.0497847,80.2465557,True
+way/29252773,park,,13.052281,80.2411781,True
+way/30026135,school,Vanavani Matriculation Higher Secondary School,12.9981742,80.2384114,True
+way/30026139,school,,12.999392,80.2384706,True
+way/30077687,school,Bakthavachalam Vidhyashram School,13.1090843,80.1829591,True
+way/30317796,park,,12.9909977,80.2685002,True
+way/30342333,school,Thiruvanmiyur Corporation School,12.981507,80.2611061,True
+way/30342450,school,Sankara School,12.9765207,80.2599526,True
+way/30342858,school,Nellai Nadar Matric HSS,12.9729215,80.2623184,True
+way/30342859,park,,12.9746964,80.262049,True
+way/30343118,school,Sri Sankara Vidyashram HSS,12.9852776,80.2570368,True
+way/30343814,school,Corpn School,12.9932126,80.270383,True
+way/30347104,school,Saint Louis School for the Deaf and Blind,13.0121731,80.2494678,True
+way/30347107,school,Saint Michaels Academy,13.0107256,80.2503752,True
+way/30347109,school,Saint Patricks HSS,13.0122023,80.2512049,True
+way/30347113,school,Bala Vidya Mandir,13.0100106,80.2512067,True
+way/30394432,school,Corporation High School,13.0018062,80.2537825,True
+way/30394613,school,Corporation Primary School,13.0049308,80.2562415,True
+way/30394615,school,Bharath HSS,13.00166,80.2559352,True
+way/30396674,park,,13.000239,80.2516668,True
+way/30402674,school,Corporation Middle School,13.0028334,80.2626097,True
+way/30606820,school,G. K. Shetty Hindu Vidhyalaya School,12.9847793,80.2071983,True
+way/30851611,park,Thiru Vi Ka Park,13.0786272,80.225091,True
+way/30853229,park,Crescent Ground,13.0815187,80.2204206,True
+way/30890106,school,Karthikeyan Matriculation Higher Secondary School,13.055853,80.2036242,True
+way/30973308,hospital,ESI Hospital,13.0950575,80.2397713,True
+way/30977720,park,Patel Park,13.096234,80.2529357,True
+way/30978196,park,Ramanujalu Park,13.0955484,80.2574838,True
+way/30982264,school,,13.0938196,80.2643719,True
+way/31726931,park,M.G.R Memorial,13.0644246,80.2850437,True
+way/31726933,park,Anna Memorial,13.0656924,80.2848846,True
+way/31796038,school,,13.0848992,80.2601242,True
+way/32079712,park,,12.9849977,80.1848391,True
+way/32256323,park,Tholkappiar Ecological Park,13.0219442,80.2682793,True
+way/32510191,school,Padma Seshadri Bala Bhavan Senior Secondary School - PSBB KK Nagar,13.0399927,80.1998578,True
+way/32550892,park,"Jai Nagar Park, Koyambedu",13.0689835,80.2078282,True
+way/32550895,park,"Jai Nagar Park, Koyambedu",13.0692911,80.207058,True
+way/32551130,school,Kolaperumal Chetty Vaishnav School,13.0743699,80.2138581,True
+way/32575333,school,M.A.Krishnasamy Matriculation School,13.0284231,80.2046269,True
+way/32589617,school,Christ Church Anglo Indian High Secondary School,13.0660695,80.2700325,True
+way/32685727,park,Defence Colony Park,13.0274891,80.2018882,True
+way/32686279,school,Army School,13.0239605,80.1953267,False
+way/32686766,hospital,King's Institute of Preventive Medicine & Research,13.0143958,80.2172865,True
+way/32827402,school,CSI Ewarts School,13.082219,80.2565905,True
+way/32896904,hospital,Cantonment General Hospital,13.0095756,80.1950144,False
+way/32896974,school,St. Joseph School,13.0116305,80.19484,False
+way/32896988,school,RC School,13.008899,80.1952137,False
+way/33010477,school,Saint Lazarus School,13.0291499,80.273823,True
+way/33069085,school,Kathivakkam HSS,13.225311,80.3222459,True
+way/33076141,school,Government School,13.159854,80.3011837,True
+way/33076143,school,Dharam Hinduja Matric HSS,13.1589697,80.3014512,True
+way/33076157,school,Sri Ram Dayal Khemka Vivekananda Vidyalaya Junior College,13.1568904,80.3026674,True
+way/33076158,school,Our Lady's Convent,13.1550763,80.3018522,True
+way/33077485,school,Vellayan Chettiar HSS,13.1675715,80.3061768,True
+way/33267223,school,Bon Secours Convent,13.0299972,80.2510158,True
+way/33300163,school,American International School Chennai,12.9822529,80.2465338,True
+way/33622104,school,CSI Bains School,13.0827778,80.2453168,True
+way/33622438,school,Bhavans,13.0838787,80.2405025,True
+way/33744318,park,,13.0285976,80.2460367,True
+way/33744325,park,Corporation Playground,13.0282976,80.241787,True
+way/33938373,school,Government HSS,13.0273288,80.244254,True
+way/33938568,school,Boston Matriculation,13.027496,80.2433399,True
+way/34016629,park,,13.042245,80.2008972,True
+way/34016632,school,,13.0426429,80.1983611,True
+way/34019456,park,,13.0393228,80.2033581,True
+way/34019748,park,Sivan Park,13.0415963,80.2050034,True
+way/34020981,park,,13.0401276,80.1980591,True
+way/34020986,park,,13.0405708,80.1949954,True
+way/34023071,park,,13.038695,80.1946401,True
+way/34023081,school,,13.0382345,80.197693,True
+way/34023089,park,,13.0378554,80.2002616,True
+way/34023097,park,,13.0375755,80.2031102,True
+way/34026886,park,,13.043993,80.2055615,True
+way/34026888,park,,13.0431681,80.2078329,True
+way/34028125,school,Government HSS,13.0344616,80.202591,True
+way/34097016,hospital,Communicable Diseases Hospital,13.1287163,80.2925206,True
+way/34133590,school,AV Meiyappan MHSS,13.0506806,80.1979979,True
+way/34140559,school,M.R Matriculation Higher Secondary School,13.0573182,80.1814563,True
+way/34159270,school,Velammal Matriculation Higher Secondary School,13.0863632,80.1827096,True
+way/34159305,school,MGR Adarsh school,13.0828622,80.1818479,True
+way/34159306,school,,13.0833215,80.1856988,True
+way/34159548,school,Montfort Matriculation,13.0064695,80.1983139,False
+way/34159549,school,St Helens HSS,13.0068841,80.1972781,False
+way/34159550,school,Dominics Girls HSS,13.0061506,80.1972354,False
+way/34159551,school,St Thomas HSS,13.0079735,80.1982503,False
+way/34230318,school,Hindi Prachar Sabha,13.0346786,80.2389465,True
+way/34235640,park,,13.0453231,80.1524818,False
+way/34254348,park,,13.0266936,80.1864836,True
+way/34326336,school,St. Thomas Matriculation Higher Secondary School,13.0911959,80.2847705,True
+way/34552720,school,Krinshnaswamy School,13.0837844,80.211866,True
+way/34629719,school,Perunthalaivar Kamarajar Govt Girls High School,13.1184134,80.1548749,True
+way/34690676,park,,13.0834953,80.2090933,True
+way/34690677,school,,13.0834739,80.2068235,True
+way/34690678,school,,13.0836693,80.2016179,True
+way/34690679,school,,13.0835703,80.2042416,True
+way/35012895,park,CORPORATION PARK,13.0218729,80.2550668,True
+way/35014526,park,Senior Citizens Park,13.0196576,80.2432007,True
+way/35015054,school,AMM School,13.0190589,80.242,True
+way/35070068,school,Avichi School,13.0485157,80.197904,True
+way/35312695,hospital,புனித இஸ்பேல் மருத்துவமனை,13.0384509,80.2622475,True
+way/35464251,school,,13.0771021,80.2367047,True
+way/35464358,school,Madras Christian College Higher Secondary School,13.0714734,80.2368742,True
+way/35475184,school,Chennai Boys Higher Secondary School,13.025514,80.2193208,True
+way/35572295,school,Spastic Society of india,12.985188,80.2499978,True
+way/35678097,school,Vidya Vinaya Vinoda Matriculation Hr. Sec. School,12.9989601,80.266042,True
+way/35678208,park,,13.0020517,80.2702867,True
+way/39398169,school,,13.0397476,80.2703868,True
+way/43157498,school,Sir Ramaswamy Mudaliar Hr. Sec. School,13.1168767,80.1494176,True
+way/43826805,school,ayyasami school,12.9432926,80.1410436,False
+way/43826806,school,NSN school,12.9426898,80.1416877,False
+way/44034276,hospital,Parvathy Hospital,12.946075,80.1367453,False
+way/44034282,hospital,Chennai Krishna Hospital,12.9463677,80.1369815,False
+way/45871568,park,,13.0782911,80.2662789,True
+way/45977175,park,SBI colony childrens park,12.9464411,80.1447295,False
+way/47109372,school,Measi Matriculation Higher Secondary School,13.0974826,80.2914535,True
+way/47415265,school,Doctor Guruswamy HSS,13.0984059,80.2760399,True
+way/47416286,school,,13.0993397,80.2817921,True
+way/47416302,hospital,Stanley Medical College and Hospital,13.1042167,80.283195,True
+way/47473073,school,Kesari High School,13.0434177,80.2659655,True
+way/47474025,school,The Children's Garden Higher Secondary School,13.0455546,80.2693652,True
+way/47474028,school,,13.0471241,80.2719879,True
+way/47474044,school,,13.0487339,80.2751488,True
+way/47497688,park,Annie Besant Park,13.0504101,80.2805345,True
+way/47497700,school,,13.0556162,80.2708897,True
+way/47497705,school,,13.055744,80.2751646,True
+way/47497714,school,,13.0576857,80.275294,True
+way/47497721,school,Bharat Scouts and Guides,13.0554783,80.2812299,True
+way/47498761,school,,13.0599602,80.2751833,True
+way/47498772,school,,13.0639178,80.276132,True
+way/47997864,school,,13.0860811,80.2637419,True
+way/48048690,park,,13.0950069,80.262234,True
+way/48048704,school,,13.0970728,80.2588707,True
+way/48048742,school,,13.1048406,80.2652473,True
+way/48048748,school,,13.1078533,80.2627471,True
+way/48049861,school,,13.0892083,80.2593851,True
+way/48049865,school,,13.0897518,80.2631589,True
+way/48049878,park,,13.0905248,80.2638385,True
+way/48049879,school,,13.090993,80.264858,True
+way/48057016,school,,13.0900483,80.2593295,True
+way/48057022,school,,13.0869696,80.2531474,True
+way/48057024,school,,13.0898534,80.2542218,True
+way/48132807,school,,13.1045869,80.2529058,True
+way/48133615,school,,13.1071017,80.2483687,True
+way/48133638,school,,13.1036471,80.246705,True
+way/48737650,school,,13.1047945,80.2432041,True
+way/48737654,hospital,,13.0978041,80.2457004,True
+way/48738650,school,,13.0856463,80.2394411,True
+way/48741304,school,ICF Higher Secondary School,13.1027793,80.2214077,True
+way/48741330,school,ICF Vidyaniketan School,13.1004554,80.218993,True
+way/48741356,hospital,ICF Hospital,13.0998913,80.2138748,True
+way/48741372,school,ICF School,13.0995297,80.220804,True
+way/48753841,hospital,Anna Nagar Government Hospital,13.0954447,80.2197148,True
+way/48753882,park,,13.0919975,80.2302674,True
+way/51132532,school,St Joseph's Higher Secondary School,13.1088874,80.2400279,True
+way/53348317,park,Corporation Ground,13.10912,80.2428444,True
+way/53470463,school,,13.111005,80.2412523,True
+way/53470466,school,Savio School,13.1096862,80.2411617,True
+way/53470477,school,Higher Secondary School,13.1123629,80.2411788,True
+way/53473824,school,,13.1142544,80.2425634,True
+way/53473826,school,,13.1113287,80.2449433,True
+way/54584266,school,Daniel Thomas HSS,13.0745285,80.1925083,True
+way/59359967,hospital,,13.0933659,80.2403777,True
+way/85733338,school,Wesley Higher Secondary School,13.0566099,80.263521,True
+way/85860220,park,Kotturpuram Tree Park,13.0235462,80.2452803,True
+way/85933503,park,,12.9759389,80.1501416,False
+way/100857284,hospital,"அறிஞர் அண்ணா அரசு இந்திய,மருத்துவமனை,அரும்பாக்கம்,சென்னை-106",13.0772596,80.2187728,True
+way/102550222,school,"Don  Bosco Mat.Hr.Sec. School,Erukkancheri",13.1253331,80.2492854,True
+way/104677233,school,,13.0152425,80.2237755,True
+way/106356406,school,,13.0014138,80.2066514,True
+way/106356412,school,,13.0012883,80.2056884,True
+way/106356414,school,,13.00196,80.2062973,True
+way/118695817,school,Jawahar Higher Secondary School,13.0376442,80.2127136,True
+way/122063613,school,,13.0367124,80.1709592,True
+way/125180726,hospital,Govt Peripheral Hospital KK Nagar,13.034006,80.2078405,True
+way/131425316,park,,12.9647721,80.260463,True
+way/131425318,park,Thiruvalluvar Nagar Park,12.9789248,80.2622535,True
+way/131961752,school,Antony School,12.9719793,80.2552339,True
+way/131961841,hospital,Ayurveda Hospital,12.9705162,80.2601162,True
+way/131961856,park,"TANSIDCO Eco Park, Perungudi",12.9626727,80.2496419,True
+way/132063266,school,Govt School,12.9665913,80.2567007,True
+way/132063647,park,,12.9755741,80.2551851,True
+way/132065414,school,YMCA Boys Town Higher Secondary School,12.9763332,80.2506604,True
+way/132070022,park,,12.9687616,80.2621832,True
+way/132072168,park,,12.9742145,80.262899,True
+way/132073183,park,,12.9638182,80.2466616,True
+way/132073184,hospital,Apollo Hospital,12.9630574,80.2457399,True
+way/132459632,park,,12.9715148,80.2647414,True
+way/132506155,park,Chennai Corporation Park,12.970246,80.2470475,True
+way/133862451,hospital,Prashanth Hospitals,13.0695736,80.2363218,True
+way/138307630,hospital,Sir Ivan Stedford Hospital,13.1253777,80.1438996,False
+way/138307647,school,,13.1056111,80.1831878,True
+way/144877281,school,Don Bosco Higher Secondary School,13.1114072,80.2639223,True
+way/144877283,school,,13.1115714,80.2661184,True
+way/151677123,library,University Library,13.0104673,80.2378372,True
+way/151679722,park,,13.010377,80.2353438,True
+way/152586722,park,,13.0075675,80.238759,True
+way/156240637,hospital,Udhi Eye Hospitals,13.0391602,80.2571596,True
+way/156250603,hospital,Agarwal Eye Hospital,13.0460706,80.2557204,True
+way/156250608,hospital,Aswene Soundarya Hospital,13.044707,80.256162,True
+way/157547514,school,St. Johns Matriculation School,13.0248763,80.2672667,True
+way/157549275,school,St.Johns Senior Secondary School,13.0254382,80.2676865,True
+way/164933758,school,D.A.V Public School,12.9722987,80.2225998,True
+way/165273874,park,,12.9708094,80.2210787,True
+way/170104584,hospital,Global Hospitals,13.0098114,80.2515183,True
+way/177257948,park,,13.0402148,80.2605296,True
+way/178747899,hospital,Government Rsrm Lying Hospital,13.1090673,80.288719,True
+way/179246857,school,Goverment School,12.942884,80.191395,False
+way/180145742,hospital,Sree Balaji Medical College And Hospital,12.9549137,80.1381689,False
+way/181579506,hospital,Health Centre,13.0136347,80.2393232,True
+way/183882478,school,Sri Ahobila Math Oriental Higher Secondary School,13.0349671,80.2256323,True
+way/183882994,school,Sri Narayana Mission School,13.0360024,80.226848,True
+way/188010446,park,VPG Selva Nagar Park,12.9713748,80.223285,True
+way/188162845,school,Shri A. Ganesan Matriculation Higher Secondary School,12.9726497,80.2202855,True
+way/188445646,hospital,Apollo Clinic & Pharmacy,13.0360972,80.2572646,True
+way/188445647,library,Vasanta Vihar,13.0198321,80.2571135,True
+way/188704636,park,Baby Nagar Sports Park,12.9790985,80.2290737,True
+way/198142296,park,Nathan Subramaniam Colony Park,12.9683306,80.2207369,True
+way/203214270,school,A School,12.9409635,80.1987888,False
+way/203962776,social_center,,13.0225534,80.1996111,True
+way/205219589,school,Municipal Primary School,12.9877136,80.1859178,True
+way/205879101,park,,12.991309,80.2424644,True
+way/208567726,park,,13.0362429,80.2682303,True
+way/208569732,school,,13.0285552,80.2740988,True
+way/208570709,school,St Raphael's Girls HSS,13.0342613,80.2761306,True
+way/208570719,school,,13.0341048,80.2771915,True
+way/208570720,school,,13.0328819,80.2707645,True
+way/208587952,school,,13.038546,80.2707215,True
+way/208593387,park,,13.040124,80.268138,True
+way/208599158,park,Lazarus Church Road Park,13.0256949,80.2727339,True
+way/209413524,hospital,Trinity Acute Care,13.0385579,80.2578675,True
+way/209513246,park,Panagal Park,13.0414253,80.2330639,True
+way/209535315,park,,13.0521672,80.2414362,True
+way/209546207,hospital,Sankara Nethralaya,13.0667961,80.2493986,True
+way/209551264,school,D. A. V School,12.981372,80.2027284,True
+way/211260239,hospital,Apollo Hospital,13.0631198,80.2515186,True
+way/211274279,hospital,CSI Kalyani Hospital,13.0433307,80.2724017,True
+way/211423255,hospital,EV Kalyani Hospital,13.0423476,80.2709401,True
+way/211423281,hospital,Kasturibai Gandhi Hospital,13.0594053,80.2784271,True
+way/211436944,park,,13.0621256,80.283279,True
+way/211436945,park,,13.0449811,80.2802289,False
+way/211436946,park,,13.0480852,80.2806556,True
+way/211436947,park,,13.050283,80.2809487,True
+way/211436948,hospital,,13.0527537,80.280639,True
+way/211436949,park,,13.0589881,80.2825556,True
+way/211436950,park,,13.0568178,80.2820943,True
+way/211436951,park,,13.0403192,80.279426,True
+way/211436952,park,,13.0534834,80.2814742,True
+way/211531361,school,,13.0256271,80.2602387,True
+way/211751197,park,,13.0554286,80.259009,True
+way/211900028,school,Anna GEM Science Park Matriculation Higher Secondary School,13.0161095,80.2388871,True
+way/211900029,hospital,Cancer Hospital,13.0090564,80.2484946,True
+way/211900071,park,,13.0251363,80.2431114,True
+way/211900078,park,,13.0232704,80.2407162,True
+way/211900080,school,,13.0107985,80.2460166,True
+way/214188197,hospital,சைதாப்பேட்டை அரசு மருத்துவமனை,13.0204577,80.2240451,True
+way/214202947,school,,13.0351659,80.2184234,True
+way/214375582,school,,13.0551886,80.2527807,True
+way/214379309,school,Saint Mary's School,13.0253273,80.2145078,True
+way/214599859,school,,13.0286287,80.2248339,True
+way/214599861,school,,13.0131022,80.2253516,True
+way/214599873,park,,13.0626016,80.250696,True
+way/214698653,school,,13.0759011,80.2719402,True
+way/214698661,school,,13.0764819,80.271938,True
+way/214711576,park,Langs Garden Park,13.0721986,80.2671425,True
+way/214711621,park,,13.0689331,80.2677933,True
+way/215526716,school,,13.0515531,80.2212919,True
+way/215526717,school,,13.0471669,80.2177246,True
+way/215526718,park,,13.0514825,80.2204965,True
+way/215526719,school,,13.0431125,80.2177446,True
+way/215529547,school,Jawahar Senior Secondary School,13.0411917,80.2153852,True
+way/215529552,park,,13.0395817,80.2133298,True
+way/215529553,school,,13.0403183,80.2142775,True
+way/215762564,school,,13.0324798,80.2170155,True
+way/217637692,school,Chennai Corporation School,13.1084478,80.2720023,True
+way/217657447,school,,13.0500499,80.2699726,True
+way/217677435,park,Maadi Poonga,13.1038024,80.2885775,True
+way/217684165,park,,13.0807029,80.2633676,True
+way/217685973,park,,13.0752187,80.2566326,True
+way/217685974,park,,13.0737377,80.2460989,True
+way/217685976,park,,13.072025,80.2501317,True
+way/217685977,park,,13.0717401,80.2488201,True
+way/217691748,school,,13.0349386,80.2369303,True
+way/217726810,hospital,ஆந்திர மாநில சபா,13.0176759,80.2598878,True
+way/217731073,school,Sri Ramakrishna Mission Sarada Vidyalaya Model Higher Secondary School For Girls,13.0351945,80.2322138,True
+way/217745267,school,Corporation Boys Higher Secondary School,13.0622065,80.2307061,True
+way/217745268,school,Government Girls Higher Secondary School,13.0599925,80.2311335,True
+way/217745269,school,"Kendriya Vidyalaya, Gill Nagar",13.0635331,80.224639,True
+way/217745309,park,Gill Nagar Park,13.0640565,80.2247145,True
+way/217745311,park,,13.054534,80.2292555,True
+way/217745312,park,,13.0561096,80.2277964,True
+way/217745313,park,,13.0568205,80.2222612,True
+way/217747551,park,,13.0650472,80.2323508,True
+way/217747553,school,Kidzee School,13.0636149,80.2281297,True
+way/217750136,school,,13.059506,80.2276236,True
+way/217750138,school,,13.0600774,80.2292018,True
+way/217753848,school,,13.051748,80.2170217,True
+way/217753849,school,,13.051167,80.2145862,True
+way/217757166,park,,13.0667563,80.2156602,True
+way/217757168,school,,13.0644647,80.2153464,True
+way/217757169,school,,13.0674961,80.2154423,True
+way/217760905,park,Chennai Corporation Park,13.0691787,80.2227281,True
+way/217760906,school,,13.0658388,80.213478,True
+way/217760908,school,,13.0694698,80.2145593,True
+way/217763975,school,Vidya Ratna PTS Matriculation Higher Secondary School,13.0002357,80.2583504,True
+way/217767228,school,,13.0592924,80.2524818,True
+way/217767931,school,,13.0295245,80.2345421,True
+way/217797428,hospital,Mehta Hospital,13.0719905,80.2408853,True
+way/217797447,school,,13.07283,80.2299005,True
+way/217797449,park,,13.0672269,80.2302232,True
+way/217797450,park,,13.0722239,80.2383191,True
+way/217797451,school,,13.0736742,80.2285916,True
+way/217797453,school,,13.0694311,80.2328466,True
+way/217802638,park,,13.0435204,80.1877834,True
+way/217845095,park,,13.0821284,80.2771992,True
+way/217845116,park,,13.0818846,80.2756141,True
+way/217845117,park,,13.0820741,80.2760348,True
+way/217846762,hospital,Corporation Baby Hospital,13.0971804,80.2754276,True
+way/217860913,park,,13.1121739,80.2851934,True
+way/217860914,park,,13.1103288,80.2875904,True
+way/217864765,hospital,C.S.I. Rainy Multi Speciality Hospital,13.1179059,80.2910031,True
+way/217864792,school,,13.1174704,80.2914582,True
+way/217864793,school,,13.1242592,80.2907515,True
+way/217864796,school,,13.1186909,80.291712,True
+way/217864797,hospital,Government Peripheral Hospital,13.1260276,80.2866925,True
+way/217864799,school,,13.1166062,80.2901856,True
+way/217864800,school,,13.1179732,80.2924605,True
+way/217865455,school,C.S.I. Northwick Girls' Higher Secondary School,13.1178695,80.296362,True
+way/217865828,school,,13.1187477,80.2977955,True
+way/217868140,hospital,ESI,13.1269596,80.2912215,True
+way/217870939,school,,13.1170683,80.2792334,True
+way/217870940,park,,13.1128109,80.2756781,True
+way/217878787,park,,13.0984129,80.2587424,True
+way/217902578,park,,13.1201107,80.2503966,True
+way/217904437,school,,13.115473,80.2592524,True
+way/217904439,park,,13.1108091,80.2484743,True
+way/217904441,school,,13.1177675,80.2568464,True
+way/217904442,park,,13.1093901,80.2537259,True
+way/217906527,school,,13.109304,80.2367009,True
+way/217906531,school,,13.122061,80.262288,True
+way/217906534,school,School Ground,13.1196956,80.2391542,True
+way/217906535,park,,13.1093713,80.2348583,True
+way/217920755,school,,13.1218333,80.2339192,True
+way/217920758,park,,13.1109883,80.2287793,True
+way/217922859,school,,13.0987875,80.2310963,True
+way/217922861,park,,13.098216,80.232106,True
+way/217926520,park,,13.0952668,80.2288688,True
+way/217926521,park,,13.0946074,80.2287943,True
+way/217926522,park,Childrens Park,13.0839959,80.2319495,True
+way/217926523,park,,13.1025512,80.2261405,True
+way/217927454,park,,13.0866188,80.2084487,True
+way/217930035,school,,13.1072147,80.2016713,True
+way/217933042,park,,13.1087511,80.2281167,True
+way/217933043,park,,13.1147554,80.2202418,True
+way/217933044,park,,13.1145906,80.2264032,True
+way/217933046,school,Periyar Matriculation Higher Secondary School,13.113031,80.2253707,True
+way/217933048,park,,13.1137996,80.2301612,True
+way/217933049,school,,13.1139135,80.2290139,True
+way/217935590,park,,13.1066938,80.2426113,True
+way/217945180,park,,13.1239837,80.2647994,True
+way/217950388,park,,13.1299579,80.2734861,True
+way/217952453,school,Chennai Corporation School,13.1109331,80.2731211,True
+way/217954833,park,Children's Road Safety and Traffic Park,13.0674746,80.2847564,True
+way/217960574,hospital,Tamil Nadu Government Multi Super Speciality Hospital,13.0693752,80.2741496,True
+way/218144562,school,Padma Seshadri Bala Bhavan School,13.0493178,80.2410069,True
+way/218144573,school,Thakkar Bapa Vidyalaya,13.0325438,80.2378997,True
+way/218144939,school,,13.0571663,80.2387791,True
+way/218149507,hospital,Billroth Hospital,13.0273509,80.2567528,True
+way/218163938,hospital,Fortis Malar Hospital,13.0101605,80.2585641,True
+way/218191088,school,Sir M. Ct. Muthiah Chettiar Boys Higher Secondary School,13.080777,80.2541408,True
+way/218208896,park,,13.1333653,80.2889254,True
+way/218208897,park,,13.1295271,80.286342,True
+way/218212412,school,,13.1315787,80.2595112,True
+way/218212413,school,,13.1442892,80.2903912,True
+way/218212415,school,,13.1450763,80.2905359,True
+way/218216037,school,,13.083967,80.2385919,True
+way/218216038,school,,13.0877791,80.2621687,True
+way/218221722,park,,13.0430737,80.208831,True
+way/218221723,school,,13.0561209,80.2005854,True
+way/219558917,school,,13.0753222,80.2076747,True
+way/220821765,hospital,Gowri Nursing Home,12.9773885,80.1883328,True
+way/231052536,hospital,Vasan Dental Care,13.0920868,80.218563,True
+way/234104731,community_centre,Manapakkam Community Hall,13.0158209,80.1750672,True
+way/237099388,school,HLC International,12.8625382,80.2067658,False
+way/240385003,hospital,,13.0847775,80.282677,True
+way/240461919,school,PN Dhawan Adasrsh Vidyalaya,13.0546307,80.2608934,True
+way/240472123,hospital,Police Hospital,13.0744047,80.2592982,True
+way/240501600,school,Nungambakkam Boys HSS,13.0574917,80.2408633,True
+way/240501606,park,,13.0563812,80.2416904,True
+way/240501607,hospital,Kanchi Kamakoti Childs Trust Hospital,13.0573425,80.2458975,True
+way/240501608,school,,13.0502156,80.2394937,True
+way/240516729,park,,13.0501911,80.2361087,True
+way/240525449,school,,13.0567696,80.2371635,True
+way/240869137,school,,13.0267791,80.2753523,True
+way/240869140,park,,13.0968876,80.261144,True
+way/240869141,hospital,,13.0922878,80.2593357,True
+way/240919858,school,,13.0645723,80.2701087,True
+way/240933492,park,,13.0182824,80.2721567,True
+way/240933493,park,Rohini Garden Park,13.0219351,80.2693943,True
+way/240980214,park,,13.0866064,80.2684161,True
+way/240980215,school,,13.0845285,80.2671366,True
+way/240980217,school,,13.0826405,80.2550926,True
+way/241007908,park,,13.0287924,80.2722931,True
+way/241028007,school,Thiru-Vi-Ka Boys Higher Secondary School,13.0794261,80.2229336,True
+way/241028011,park,,13.0868092,80.2255353,True
+way/241320696,park,,13.0394095,80.2681266,True
+way/243880686,school,Lalaji Memorial Omega International School,13.0025398,80.1484193,False
+way/248648744,park,,12.9821885,80.2661686,True
+way/255505185,school,Chennai Girls Higher Secondary School,13.0254727,80.2185845,True
+way/255505633,library,Branch Library,13.0249259,80.218505,True
+way/262012749,hospital,Chennai Corporation 24 Hours Maternity Hospital,13.0208732,80.2241344,True
+way/262497162,park,,13.0255577,80.2192556,True
+way/262497854,park,,13.0255761,80.218593,True
+way/274364913,park,SAF Games Village Park,13.0646307,80.2083191,True
+way/274370562,park,,13.0642962,80.2078073,True
+way/274370564,park,,13.0636816,80.2071232,True
+way/274370566,park,,13.0633129,80.2082539,True
+way/274370568,park,,13.0631877,80.2077438,True
+way/274372020,park,,13.0654736,80.2078293,True
+way/275969981,park,,13.0642992,80.2071497,True
+way/275969983,park,,13.0649143,80.2071507,True
+way/275969985,park,,13.0658285,80.207196,True
+way/288770582,park,VGN Blooming Garden Park 2,13.0154212,80.1549645,True
+way/288771626,park,VGN Blooming Garden Park 1,13.0152918,80.153079,False
+way/288774679,park,VND Avenue Park,13.01805,80.1530805,True
+way/297511962,park,Thirupur Kumaran Park,12.9216996,80.1375888,False
+way/298749057,park,Bharathi Park,12.9197161,80.140991,False
+way/315499682,hospital,Apollo Speciality Hospital - Block A,13.0336469,80.2451684,True
+way/315499747,hospital,Apollo Speciality Hospital - Block B,13.0336169,80.2456392,True
+way/315499965,hospital,Apollo Speciality Hospital - Block C,13.0339285,80.245666,True
+way/328706398,hospital,Chennai Clinical Centres,12.9941997,80.2516271,True
+way/332525434,hospital,Public Health Centre (In Patient Block),13.0359986,80.2218494,True
+way/332525519,hospital,Public Health Centre (Out Patient Block),13.0363842,80.2219385,True
+way/332528077,park,Chennai Corporation Play ground and Park,13.0263229,80.2189833,True
+way/333378331,park,,13.0277782,80.235991,True
+way/333385681,park,,13.0268786,80.2358587,True
+way/337543765,school,,13.0231547,80.2179272,True
+way/337923794,hospital,Chitra Maternity andSurgival Centre,13.0234391,80.2229133,True
+way/337929079,hospital,Bora Hospital,13.0223109,80.2222779,True
+way/338925008,park,,13.021523,80.2212485,True
+way/338925010,park,Gandhi Park,13.0215151,80.2209776,True
+way/339508304,school,C.S.I. Middle School,13.0200875,80.2206527,True
+way/339533629,school,,13.0198473,80.2221127,True
+way/339877359,school,Vidhya Sagara Brotherhood aided Middle School,13.0241408,80.2260961,True
+way/339882890,school,Sri Sitaram Vidyalaya Matriculation Higher Secondary School,13.0359645,80.2208609,True
+way/343141649,hospital,Vasan,13.0217319,80.2257691,True
+way/343142452,park,Chennai Corporatin Park,13.0305306,80.2158865,True
+way/344469663,school,,12.9990644,80.2143443,True
+way/344473839,park,,13.0054478,80.2259415,True
+way/348294605,school,B.S.Mootha Girls Senior Secondary School,13.0417604,80.2280973,True
+way/348495070,school,Chennai Primary School,13.0165648,80.2445274,True
+way/348495071,school,Advent Primary School,13.0188201,80.2450928,True
+way/349583642,park,Thiruvengada Nagar Park,13.1168179,80.1461852,True
+way/349586216,school,Thiruvengada Nagar School,13.1169159,80.1441995,True
+way/349587480,school,TI Matriculation Higher Secondary School,13.1164942,80.1480196,True
+way/350538223,hospital,SRM Hospital,13.0418111,80.2246322,True
+way/354217572,park,Richar Park,13.0197716,80.2271526,True
+way/354243595,hospital,Guest Hospital,13.0772245,80.2387532,True
+way/354248239,school,Velammal Vidhyashram,13.1507004,80.1933444,True
+way/354250115,school,Padma Sarangapani School,13.1022152,80.199169,True
+way/354262443,community_centre,Sam Mahal,13.1029067,80.1568317,True
+way/354275874,school,Chennai Public School Global,13.0825333,80.2181887,True
+way/354278944,hospital,Frontier Lifeline Hospital,13.0875243,80.1857322,True
+way/354290251,hospital,Essvee Hospital,13.1232317,80.1460602,True
+way/354293689,hospital,Hande Medical Centre,13.0611783,80.2466206,True
+way/354304957,community_centre,ArulJothi Wedding Hall,13.122981,80.1494095,True
+way/354452683,hospital,Mahalakshmi Multi-Speciality Hospital,13.1227176,80.1468899,True
+way/354460032,hospital,Kauvery Hospital,13.0474765,80.2041464,True
+way/354467887,clinic,Iswarya Fertility Center,13.1217932,80.1482455,True
+way/354494104,community_centre,Shree Kailash Mahal (A/c),13.1223433,80.1504555,True
+way/354496963,school,Shri Tarachand Galada Jain Vidyalaya Matriculation School,13.0342727,80.228584,True
+way/354540004,hospital,Balaji Hospital (P) Ltd,13.0074019,80.2060853,True
+way/354547008,hospital,Madras Heart Centre and Super Speciality Hospitals Pvt Ltd,12.9831529,80.189162,True
+way/354562297,hospital,Sugam Hospitals,12.9617858,80.1467001,False
+way/354569784,school,St. Savio Matriculation Higher secondary school,12.9817436,80.2261918,True
+way/354572408,hospital,Chennai Medical Centre,13.0381039,80.1890642,True
+way/354736399,community_centre,Kanthimathi Kalyana Mandapam,13.0464393,80.2461876,True
+way/354748230,community_centre,Karthikeyapuram Co-Operative Community Hall,12.9622774,80.1935672,True
+way/354751871,community_centre,K.S.R. Hall,13.1053631,80.2089318,True
+way/354767727,community_centre,Rajalakshmi Kalyana Mandapam,12.9849882,80.2239728,True
+way/354769082,clinic,Urban Primary Health Center,13.1179841,80.1544193,True
+way/354775532,community_centre,Meenavar Palnokku Maiya Kattidam,12.9602576,80.2632931,True
+way/354794564,library,,12.9798222,80.2449998,True
+way/354800642,community_centre,PTR Chelliah Chettiar Marriage Hall,13.1243271,80.1521227,True
+way/354803312,school,SRM (Primary Section),13.0418722,80.2240541,True
+way/354810486,hospital,,12.9856604,80.228913,True
+way/354814307,hospital,Chennai Fertility Center,13.0690367,80.2257614,True
+way/354814768,school,DAV Primary Secondary School,13.0649343,80.2225596,True
+way/354821517,school,,13.0415574,80.2223614,True
+way/354828908,park,GRT School Playground,13.0379022,80.2166536,True
+way/354839873,hospital,J.V. Hospitals Llp,13.0505664,80.2299034,True
+way/354840226,hospital,R.R Dental Hospital,13.0519005,80.2292607,True
+way/354840384,hospital,JV Hospital,13.0505634,80.2297492,True
+way/354843658,library,Full Time Public Library,13.105648,80.2076065,True
+way/354850585,community_centre,Benson Party Hall and Cultural Centre,13.1213776,80.1510872,True
+way/354856496,park,osr,13.053314,80.1909601,True
+way/355002910,park,Public Panchayat Park,12.9049963,80.1833386,False
+way/355020654,school,Panchayat School,12.9595717,80.2401239,True
+way/355024500,community_centre,Arul Murugan Towers,12.9516974,80.174923,False
+way/355046931,library,Teacher's Colony Branch Library,12.9735301,80.182913,True
+way/355049844,school,St. Antony's School,12.93586,80.2046868,True
+way/355050640,library,,12.9442946,80.1439908,False
+way/355052484,hospital,Viganesh Hospital,13.0308661,80.1717417,True
+way/355067576,hospital,Chennai Heritage Hospital,13.0653715,80.2119909,True
+way/355074376,school,Sri Maharishi Vasudeva Vidhyalaya Nursery And Primary School,13.0350817,80.2256742,True
+way/355074781,hospital,Xcellent Care Hospital,12.9856288,80.2183869,True
+way/355085375,community_centre,Hindu Colony Community Center,12.9781931,80.1844918,True
+way/355601577,school,Sandipani Vidyalaya,13.045241,80.2047376,True
+way/355658593,hospital,Be Well Hospitals,13.0794481,80.1983283,True
+way/355664883,community_centre,ஸ்ரீ முருகன் திருமண மண்டபம்,12.9840533,80.217497,True
+way/355717461,community_centre,இனாயத் மஹால்,12.9698311,80.1456845,False
+way/356206176,library,Achieve your Goals Study Space,13.0883603,80.1828057,True
+way/361224706,hospital,MN Eye Hospital,13.1229398,80.2875069,True
+way/361900994,park,,13.0646269,80.1620233,False
+way/362003657,park,Rajambaal Nagar Park,12.8978866,80.155402,False
+way/363930311,hospital,Chennai National Hospital,13.0963673,80.2914373,True
+way/364356223,hospital,Diha Clinic,12.9809453,80.1871143,True
+way/364487975,park,Thirumurugan Salai Park,12.9313456,80.1399259,False
+way/364721502,hospital,Athipathy Hospitals,12.976434,80.2221909,True
+way/366443479,park,Central park,12.8968517,80.2215326,True
+way/369070247,park,,12.9917884,80.2438925,True
+way/369457521,school,The Gopalapuram Boys Higher Secondary School,13.0512482,80.2580505,True
+way/370546681,community_centre,Sulochana Kalyana Mandapam,12.9733181,80.1384201,False
+way/371874546,park,Eco park,13.0128283,80.2431092,True
+way/371874547,park,Energy park,13.0121901,80.2431834,True
+way/371874548,park,Science Park,13.0116007,80.2438528,True
+way/371874549,park,Traffic Park,13.0115706,80.2430964,True
+way/371969522,park,,12.9364709,80.2126416,True
+way/371970196,park,IIT colony park,12.9383687,80.2086794,True
+way/371970672,hospital,Dr.Kamakshi Memorial Hospital,12.9492371,80.2091585,True
+way/372671602,park,,13.0319251,80.2209744,True
+way/372672381,park,,13.0348076,80.2250854,True
+way/373792906,school,Guntur Subbiah Pillai Girls Higher Secondary,13.0357893,80.2377712,True
+way/374048313,hospital,Shivasundar Hospital,12.9977694,80.2574762,True
+way/374049782,school,Sri Mylai Karpagavalli Matriculation Higher Secondary School,12.9986398,80.2580196,True
+way/376657519,park,Children Play area,13.0052429,80.2370122,True
+way/379084045,park,Indra nagar park,12.9280102,80.233298,True
+way/387329867,school,,13.0514923,80.2747099,True
+way/393560234,park,Pachayappas Ground,13.0728721,80.232663,True
+way/393946464,school,St. Sebastian Matriculation Higher Secondary School,12.9727309,80.1465367,False
+way/393946466,school,St. Theresa Girls' Higher Secondary School,12.9718961,80.1453268,False
+way/396836344,school,,12.8963403,80.2172188,True
+way/396964551,park,,12.983292,80.2541051,True
+way/397071693,park,Palavakkam Play Ground,12.9630787,80.2599539,True
+way/397271559,clinic,Government Dispensary,12.9608465,80.2564406,True
+way/397273050,park,Thiruvanmiyur Park,12.9778756,80.2606409,True
+way/397276618,park,Government Playground,12.9894137,80.2582517,True
+way/397277421,park,Government Park,13.0017401,80.2661224,True
+way/406910200,park,Metro Nagar Park,13.0427224,80.1619831,True
+way/424042638,park,Children Play Ground,13.1153227,80.2286063,True
+way/428484763,school,"Government Higher Secondary School, Velachery",12.9879534,80.2198477,True
+way/438356555,school,,12.919116,80.2480548,True
+way/438356558,school,Pon Vidhyashram School,12.9179369,80.2475975,True
+way/440897489,school,AMM School,12.9646286,80.2583329,True
+way/442585803,park,,12.9104872,80.2282532,True
+way/442607342,school,St. Francis International School,13.0119445,80.1545542,False
+way/443225463,park,Madhavaram Botanical Garden,13.1487185,80.2423412,True
+way/451681464,hospital,CMC Hospital,13.0380763,80.1889033,True
+way/460134287,park,,13.0820538,80.2813472,True
+way/462704776,park,,13.0348529,80.2254294,True
+way/462740006,hospital,corporation hospital,12.9846941,80.2573424,True
+way/465136339,park,Corpora<tion Pa<rk,12.9619225,80.2332385,True
+way/466318373,park,King park,12.983083,80.1926091,True
+way/466597421,park,Chennai Corporation Park & Childrens Play Ground,13.0498994,80.1987002,True
+way/468598860,park,Sai Nagar Park,12.9515084,80.234628,True
+way/469516348,park,Welcome colony 1st Street park,13.0877045,80.1930113,True
+way/469517284,park,ABC Rohini park,13.0890063,80.1980576,True
+way/469943026,park,,13.1237324,80.2659641,True
+way/469945922,hospital,,13.1235594,80.2662176,True
+way/475248725,park,anna,13.0093253,80.235113,True
+way/475657057,park,,13.1121259,80.1870617,True
+way/479683027,park,Kammkottai Park,12.9414645,80.2126662,True
+way/479683343,park,Chitra Park,12.9631001,80.1572738,False
+way/479690976,park,Play area,12.9410848,80.2165083,True
+way/480219904,park,Park that belongs to Prestige Cyber towers,12.9120413,80.2287462,True
+way/480596183,park,Lawn near SDB 1,12.9105164,80.2218411,True
+way/480805260,park,Public park,12.9017878,80.2309437,True
+way/486686062,park,Kosapet Park,13.0929823,80.256624,True
+way/486897115,park,Karthik's Roof Top Garden,13.0739861,80.2303021,True
+way/487806994,park,Himalaya Lawns,12.9867696,80.2360231,True
+way/487967169,school,Singaram Pillai Higher Secondary School,13.1035239,80.2000852,True
+way/487967170,school,S.B.O.A School and Junior College,13.0920625,80.1952101,True
+way/487967171,school,Singaram Pillai School,13.1019963,80.1958986,True
+way/490902904,park,TNHB PARK,13.103035,80.1352071,False
+way/490995276,park,Nehru Nagar Park,12.9319682,80.2300053,True
+way/490995278,park,,12.9327596,80.2305794,True
+way/506143532,school,,12.9229613,80.1624159,False
+way/506143875,park,Kamarajapuram Football Ground,12.922934,80.1542625,False
+way/511393216,park,Thiru V. Ka Park,13.0498707,80.1848509,True
+way/511456891,park,,13.0536496,80.2009228,True
+way/521868462,park,osr,13.0488065,80.2056893,True
+way/540215475,park,R.B.S.Q school playground,12.9966601,80.2663993,True
+way/540616695,park,Vidyodaya School Play Ground,13.050461,80.2409539,True
+way/544076330,park,Mogappir east park,13.0804071,80.1829802,True
+way/544337071,park,Velachery Railway playground,12.9654911,80.2185424,True
+way/544339230,park,"GCC Park, Porur",13.0303779,80.1686035,True
+way/544341304,park,Thirumalai Nagar Park,12.9612829,80.241964,True
+way/544501641,park,,12.9575361,80.2371863,True
+way/549189961,park,,13.0890772,80.2038433,True
+way/549670582,school,Singaram Pillai Hr Sec School,13.1014828,80.1958137,True
+way/552025621,park,Thirunagar Park,13.1008343,80.2039573,True
+way/552031520,park,,12.9951216,80.2666081,True
+way/552034851,park,Nandanam Metro Park,13.0271264,80.2422254,True
+way/552095637,park,Mayor Sundar Rao Naidu Park,13.0650502,80.260715,True
+way/552144777,park,Annai Anjugam Ammaiyar Park,12.9240574,80.1490792,False
+way/554594824,park,3rd block park,13.0825337,80.1857934,True
+way/554594904,park,Golden jublee park,13.082484,80.1927933,True
+way/554594969,park,Millenium park,13.0944571,80.1923005,True
+way/554594979,park,Gandhi park,13.0938707,80.196111,True
+way/554595345,park,I block Park,13.0937707,80.1997284,True
+way/554596118,park,J Block park,13.0898534,80.1996548,True
+way/554596123,park,Brinley garden park,13.0897709,80.2016829,True
+way/554596346,park,Officers colony park,13.0913623,80.186025,True
+way/554673787,park,Mangal Eri park,13.0875056,80.1763154,True
+way/554677105,park,Officer Colony park,13.0900136,80.1859405,True
+way/554677106,park,ICF playground,13.09697,80.2138582,True
+way/556258181,park,Sowmya Nagar Park,12.9089865,80.1929415,False
+way/556258439,park,Ramakrishna Nagar Park,12.9282585,80.1440539,False
+way/558181821,park,Thirumalai Nagar Park,12.9356299,80.1570282,False
+way/558186264,park,Ponniamman Kovil Park,12.9363724,80.158924,False
+way/578162082,park,,13.0519388,80.2780068,True
+way/583005949,park,Rotary Park,12.9864057,80.1930474,True
+way/584866229,park,Ganga nagar play ground,12.9642386,80.1856882,False
+way/584866230,park,Sheela nagar park,12.9666831,80.2029894,True
+way/589722331,park,Corporation Park,12.8971292,80.2240887,True
+way/589722657,school,Babaji School Play Ground,12.8965498,80.2181867,True
+way/595450064,park,Jains Park,12.9577121,80.2404202,True
+way/604176831,park,,13.1034899,80.2662651,True
+way/631742535,park,Children Play Area / Park,13.0019298,80.2656423,True
+way/633014679,park,,13.0228745,80.175632,True
+way/633436224,park,Mogappair west park,13.0825417,80.1709165,True
+way/634143710,park,Government Park,13.0907169,80.2250566,True
+way/650575873,park,,13.0467583,80.2477116,True
+way/650575877,park,,13.0484137,80.2466337,True
+way/657856747,park,Chetpat Eco Park,13.0756155,80.2424707,True
+way/664310663,park,Cantonment Park,12.9710091,80.1486575,False
+way/667782539,school,,13.0839451,80.1715976,True
+way/670050708,park,,13.074125,80.2214089,True
+way/670053470,school,Porur Government High School,13.0338289,80.1600654,True
+way/670974340,park,,12.9974426,80.1939364,False
+way/670974351,school,Kendriya Vidyalaya,12.9918967,80.1861982,True
+way/682034795,park,TRIL Central Park,12.9914721,80.2479137,True
+way/682756111,park,,12.9939902,80.2629101,True
+way/690472866,park,,12.9948823,80.1893991,True
+way/691012449,park,Secretariat Colony Govt Park,12.9377735,80.2449291,True
+way/691717414,park,Corporation Park,12.8976192,80.2224275,True
+way/691717415,park,,12.8974114,80.221651,True
+way/693441072,park,puzhuthivakkam park,12.9690462,80.2013745,True
+way/693441079,park,,12.9678771,80.1983948,True
+way/696033286,park,Corporation Park,13.1217379,80.1496475,True
+way/704143153,park,Krishnan Park,13.0496299,80.194676,True
+way/717096860,park,Balaji Nagar Children Park,12.9582429,80.1833363,False
+way/730963732,school,Shri Mangichand Bhandari Jain Higher Secondary School,13.0346708,80.2279862,True
+way/733490386,park,Garden Area Wipro near CDC 5,12.9058709,80.2199658,True
+way/733490388,park,Wipro CDC 2 Lawn Area with a Ampitheatre,12.9068305,80.2249516,True
+way/733499088,park,GOCHS Park,12.996781,80.2675575,True
+way/733530087,park,Ampitheatre with Lawn near S4 and S3 towers,12.9082755,80.2239713,True
+way/733530088,park,Artificial Lawn area inside a building with open roof space,12.9085861,80.2257162,True
+way/734511072,park,,12.910903,80.2221016,True
+way/734749801,park,Aadukalam,12.9096485,80.2221902,True
+way/736275612,park,SDB4 lawn,12.9089804,80.2235113,True
+way/736275613,park,SDB5 Lawn,12.9086839,80.2247991,True
+way/750453696,park,Lawn Area,12.9067823,80.2255351,True
+way/750458438,park,,12.9051475,80.2218177,True
+way/751902155,park,Ramappa Nagar Park,12.9637969,80.2426995,True
+way/760753775,park,,12.9054887,80.2250131,True
+way/764195228,park,Ramasamy Nagar Children Park,13.0255745,80.1583045,True
+way/765366835,school,Sindhi Model Senior Secondary School,13.0851058,80.2441326,True
+way/765605778,hospital,Gleneagles Global Heath City,12.8981219,80.2061579,False
+way/768032823,park,Giri Nagar Park,13.0280897,80.1787302,True
+way/776208827,park,Municipality Park,12.973978,80.2141112,True
+way/778758340,community_centre,Uswatham Human Community Hall,13.0556606,80.2448994,True
+way/790336942,park,,13.0363569,80.2066396,True
+way/792345466,school,Chinmaya Vidyalaya (Tapovanam),13.0813686,80.2394153,True
+way/809970385,park,,13.0458005,80.1550417,False
+way/812843987,school,,13.0548843,80.1936343,True
+way/813037814,park,Thiruvalluvar park,12.9250764,80.1864934,False
+way/813039219,park,Medavakkam park,12.9176882,80.1793252,False
+way/817452165,school,TI Matriculation Higher Secondary School,13.1149567,80.1474079,True
+way/818993191,park,AGS Colony Park,12.9449736,80.1571632,False
+way/818995823,park,V.O.C Park,12.9425067,80.153858,False
+way/818999842,park,Balaji Nagar Childrens Park,12.9455238,80.1504216,False
+way/819430327,park,Children's park,12.9441637,80.1442377,False
+way/819430701,school,Sri Chaitanya School,12.959405,80.1456693,False
+way/819446107,park,BBR Nagar Park,12.9430243,80.1464419,False
+way/819447165,park,AGS Garden Park,13.0197561,80.1615466,True
+way/819696783,school,,13.0711113,80.2206728,True
+way/834885922,park,Thangal Pond Park,13.124583,80.1593014,True
+way/834887501,park,Thangal Park,13.1244063,80.1593474,True
+way/837413171,school,,13.0172432,80.2686919,True
+way/842358375,school,Nathella Vidyodaya,13.1194194,80.1593257,True
+way/843529201,school,Mahaganesa Government School,13.1195167,80.15496,True
+way/851754855,park,Ambattur Park,13.0881017,80.1963758,True
+way/873366720,park,Outdoor exercise area,12.9782532,80.1862553,True
+way/873366721,park,Open Space,12.9780282,80.1866408,True
+way/873366722,park,Roadside park,12.9776801,80.1873301,True
+way/892143138,park,,13.1284853,80.2921192,True
+way/895994111,park,,13.0660979,80.1525316,False
+way/907941478,hospital,Tiruvottiyur Government Hospital,13.1576042,80.3012556,True
+way/907941484,hospital,,13.1485646,80.2994665,True
+way/914570852,park,,13.0463767,80.1814917,True
+way/918321235,park,,13.0153303,80.2169664,True
+way/929091544,park,,12.9805227,80.2212272,True
+way/932513552,park,Corporation Park cum Playground,12.9787703,80.2548875,True
+way/932696786,park,Corporation Park,12.9783861,80.2210449,True
+way/932759592,park,,12.9780974,80.1861445,True
+way/938699837,school,Sunshine Senior Secondary School,12.9735113,80.2092014,True
+way/940932459,hospital,,12.9694332,80.1851055,False
+way/943797892,school,,12.965156,80.1692906,False
+way/969993574,school,D.A.V Boys School,13.0887467,80.1818235,True
+way/969993576,park,,13.0901098,80.1853085,True
+way/970326684,park,,13.091532,80.1831802,True
+way/970633580,school,Chennai Public School,13.0889701,80.1900207,True
+way/970633582,park,,13.0898838,80.1783283,True
+way/970633585,school,Spartan Group of Schools,13.0865607,80.1801087,True
+way/970633587,park,,13.0918066,80.1786369,True
+way/970634106,school,D.A.V Girls School,13.0877779,80.1792164,True
+way/984861030,park,,13.0515295,80.2800338,True
+way/984863268,park,,13.0515907,80.2805175,True
+way/984867581,park,,13.0508442,80.2806055,True
+way/984874501,park,,13.050668,80.2801834,True
+way/984925381,park,,13.0504428,80.28025,True
+way/985482164,school,Green Valley School,13.0832627,80.1643263,True
+way/1019183969,school,Government High School Grounds,12.9261512,80.1986737,True
+way/1021331581,community_centre,Vivekananda Cultural Centre,13.0499246,80.2804026,True
+way/1021331583,park,Vivekananda Park,13.0491313,80.2803651,True
+way/1031073053,school,KV sports ground,13.0819496,80.1979848,True
+way/1034057832,school,Government School,12.9291728,80.1824619,False
+way/1051225780,park,,12.8760723,80.2348071,True
+way/1051225781,park,,12.8757131,80.2352287,True
+way/1051241338,park,,13.2286481,80.1682522,False
+way/1066019826,park,,13.081654,80.2710891,True
+way/1066918399,school,Perumbakkam Higher Secondary School,12.8857646,80.2104745,False
+way/1066925630,park,Chemmancherry Park,12.8745432,80.2106623,True
+way/1067904835,park,,12.8662613,80.2201937,True
+way/1067904838,park,,12.8660649,80.2210932,True
+way/1074246086,school,Sagaya Madha Matriculation Higher Secondary School,13.1844927,80.3162737,True
+way/1074547179,park,,13.1147637,80.2717123,True
+way/1076583933,park,Loane Square,13.0909822,80.2853906,True
+way/1080616302,park,,13.0664728,80.2852301,True
+way/1080669052,park,,12.9790064,80.184845,True
+way/1081242033,park,,13.0413294,80.2796285,False
+way/1082035631,school,Sri Venkateswara Chakra School,13.1309554,80.146963,False
+way/1082503906,park,,13.0002351,80.2666373,True
+way/1089785795,clinic,KHM Medical Centre,13.0914517,80.2889213,True
+way/1089831758,park,Naval Park,13.0694063,80.2851977,True
+way/1089857395,park,,13.112548,80.2710364,True
+way/1089857396,park,,13.113163,80.2718105,True
+way/1091003545,school,Shri Ram Universal School,13.1000674,80.2537181,True
+way/1091003561,park,Alexander Park,13.0999809,80.2553631,True
+way/1091003578,park,,13.1020688,80.2507167,True
+way/1091661742,park,,12.9891496,80.267552,True
+way/1091661743,park,,12.9893038,80.2668293,True
+way/1091661745,park,,12.9902152,80.266657,True
+way/1095915242,park,,13.0308305,80.2398537,True
+way/1103981090,park,,13.1003119,80.2938484,True
+way/1104424886,school,Muthialpet Higher Secondary School,13.0957443,80.2897857,True
+way/1104433136,hospital,Chennai National Hospital Speciality Clinics,13.094813,80.2914574,True
+way/1110191307,hospital,SA Hospital,13.0991366,80.2868807,True
+way/1115397644,park,,13.0812498,80.271221,True
+way/1115397645,park,,13.0813933,80.2712531,True
+way/1115397646,park,,13.0813468,80.271035,True
+way/1115397647,park,,13.0812891,80.2710964,True
+way/1115397659,park,,13.0814004,80.2716578,True
+way/1115397660,park,,13.0813163,80.2716664,True
+way/1115397661,park,,13.0814752,80.271658,True
+way/1115397677,park,,13.081406,80.2721156,True
+way/1115397681,park,,13.0815562,80.2720772,True
+way/1115399657,park,,13.0814839,80.2724457,True
+way/1115399658,park,,13.0816482,80.2724115,True
+way/1115399670,park,,13.0816922,80.272696,True
+way/1115399689,park,,13.0816671,80.2730401,True
+way/1115399690,park,,13.0818471,80.2729652,True
+way/1116172429,school,St. Columbans Anglo-Indian Matriculation School,13.0904227,80.2868605,True
+way/1116172431,school,St. Mary's Anglo-Indian Higher Secondary School,13.0895978,80.287335,True
+way/1116186789,school,Dr. Rathnavelu Subramaniam Muthialpet Girls Higher Secondary School,13.096881,80.2900414,True
+way/1116272501,school,B.S. Nursery and Primary School,13.0988347,80.2932792,True
+way/1122814970,park,Turtle Park,13.0024842,80.2720641,True
+way/1126031841,community_centre,St. Thomas Community Hall,13.0170217,80.2278268,True
+way/1126977164,library,Connemera Public Library,13.0705257,80.2566913,True
+way/1127409906,park,,13.070548,80.2573348,True
+way/1127409907,park,,13.0707961,80.2573539,True
+way/1127409908,park,,13.0705937,80.2570988,True
+way/1127409913,park,,13.0711405,80.2576333,True
+way/1128424557,park,Gandhi Nagar Ground,13.0114952,80.2541218,True
+way/1128424564,park,,13.0116185,80.2549006,True
+way/1128434720,library,Anna Centenary Library,13.0170205,80.2397791,True
+way/1128548944,park,,13.0691148,80.2771568,True
+way/1130557237,park,,13.073495,80.2856515,True
+way/1130557261,park,Victory Park,13.0734918,80.2856542,True
+way/1130557265,park,,13.0742572,80.285501,True
+way/1130557267,park,,13.0740307,80.2859506,True
+way/1130557270,park,,13.0728029,80.285522,True
+way/1130587017,park,Napier Park,13.0734784,80.2730007,True
+way/1130591112,park,Buckingham Canal Green,12.9852694,80.252372,True
+way/1130609524,community_centre,Memorial Hall,13.0828251,80.2783209,True
+way/1132163487,park,,13.0067733,80.2519504,True
+way/1134197152,park,Mint Park,13.1048833,80.2780997,True
+way/1134239465,park,,13.0216919,80.231539,True
+way/1135430982,school,Dominic Savio Matriculation School,13.0998842,80.2859003,True
+way/1135514039,park,Anna Nagar Roundabout,13.0846536,80.2179675,True
+way/1136378746,park,,13.0079705,80.2044379,True
+way/1136378747,park,,13.0079309,80.2050131,True
+way/1136378748,park,,13.0074053,80.2043154,True
+way/1136378749,park,,13.0074526,80.2050649,True
+way/1136378764,park,,13.0067483,80.203139,True
+way/1136378774,park,,13.0055948,80.2017725,False
+way/1136670234,school,"Chennai Middle School, Ramasamy Street",13.0984494,80.2889183,True
+way/1136682578,school,Dr.Rathinavel Subramanian Muthialpet Girls Higher Secondary School,13.0971264,80.2901184,True
+way/1147266480,school,M. Ellappa Chettiar Aided Primary School,13.1005681,80.2906501,True
+way/1147283499,school,Dr. Rajamanickanar Memorial Nursery and Primary School,13.1010897,80.2912977,True
+way/1147473112,school,K. Ramiah Chetty A.R.C. Girl's Higher Secondary School,13.1024716,80.2886905,True
+way/1147474036,school,MSB Matriculation Higher Secondary School,13.1025111,80.2882344,True
+way/1149331619,school,Bharath Dass Matriculation Higher Secondary School,12.9600946,80.2430339,True
+way/1149362735,school,Montfort Matriculation School,12.9631813,80.235019,True
+way/1149611704,park,,12.9009485,80.154612,False
+way/1149611705,park,GREATER KAILASH NAGAR PARK,12.9000161,80.1524334,False
+way/1149837903,school,,12.896976,80.1465465,False
+way/1155133570,school,Chennai Middle School,13.104472,80.2843271,True
+way/1155182281,hospital,Prashanth Superspeciality Hospital Kolathur,13.1400478,80.2176872,True
+way/1169602546,school,Vivekananda Centenary Girls Higher Secondary School,13.1037922,80.2782914,True
+way/1172399083,school,Sri Ramakrishna Math National School,13.1037782,80.2750407,True
+way/1172399090,park,Corporation Park,13.1031458,80.273589,True
+way/1172638593,park,,13.1102738,80.2574645,True
+way/1172638604,school,Sriram Vidhya Mandir School,13.1118716,80.2578859,True
+way/1172639331,school,Annai Vailankanni Matriculation School,13.1185931,80.2571739,True
+way/1174462632,school,The Hindu Theological Higher Secondary School,13.0931522,80.2790783,True
+way/1174507990,school,The Madras Progressive Union Higher Secondary School,13.0931804,80.2784721,True
+way/1176509600,park,Sivagnanam Park,13.1025867,80.2787856,True
+way/1176840421,school,The Saivite Middle School and T.T.V. Higher Secondary School,13.0960669,80.280292,True
+way/1176848828,school,Ganeshbai Galada Jain Girls Higher Secondary School,13.0954814,80.2800718,True
+way/1176875169,hospital,Shaarave Hospital,13.0983937,80.2798773,True
+way/1178017210,school,CSI Middle School,13.0964026,80.2789718,True
+way/1178254053,park,,13.0953193,80.2832073,True
+way/1178725427,school,K.T.C.T Girls Primary & Higher Secondary School,13.0935351,80.2803887,True
+way/1178725431,school,Shree Jethmal Tikamchand Chajed Jain Mission High School,13.0939396,80.280468,True
+way/1180441173,clinic,Mother Diagnostic Centre,13.1030164,80.2843951,True
+way/1180926082,hospital,The Arya Vysya Meternity Home and Child Welfare Centre,13.0910905,80.2813876,True
+way/1180950683,school,S.K.P.D Boys Primary School and Higher Secondary School,13.0902792,80.2816663,True
+way/1188023732,park,Chennai - Arul Murugan Public Park,12.953621,80.1932604,True
+way/1188024026,park,Tambaram Corporation Park,12.9532712,80.1910743,False
+way/1188024386,park,Pallavaram Park,12.9537886,80.1896727,False
+way/1188025098,park,Anna Nagar Park,12.9542553,80.1963536,True
+way/1188025964,park,Chennai Corporation Park,12.951814,80.190714,False
+way/1188026825,park,Chennai Corporation Park,12.9523218,80.1918702,False
+way/1188619707,library,High Court Library,13.0874994,80.287959,True
+way/1188874038,park,,13.0820168,80.2744053,True
+way/1188874047,park,,13.0819555,80.2740063,True
+way/1188874065,park,,13.0822139,80.2742659,True
+way/1188946003,park,,13.0692642,80.2767482,True
+way/1202245460,school,Sri Venkateswara Public School,13.1678833,80.2125316,True
+way/1202517125,park,,12.8613658,80.1713527,False
+way/1202517142,park,,12.8619695,80.1706284,False
+way/1202517159,school,Christwood School,12.8598253,80.1693189,False
+way/1202517177,park,,12.8601202,80.184197,False
+way/1222733157,park,,12.9868976,80.2375368,True
+way/1237138893,school,Annai Arul Public School,12.8957152,80.1553243,False
+way/1237145613,park,,12.8672419,80.1980439,False
+way/1237215502,park,,12.8978071,80.2421604,True
+way/1237674824,school,Government Muslim High School,13.1029082,80.2815504,True
+way/1237718894,park,,13.1018894,80.282021,True
+way/1237719337,park,,13.014199,80.2350024,True
+way/1237719338,park,,13.0144558,80.2350153,True
+way/1237724076,park,,13.0943472,80.2775434,True
+way/1237728799,park,Rajasthani Ground,13.0943811,80.2759943,True
+way/1237744463,school,St. Gabriel's Higher Secondary School,13.1010225,80.2863136,True
+way/1237744470,school,Don Bosco Nursery & Primary School,13.1004544,80.2862277,True
+way/1238543071,park,,13.1089933,80.2777537,True
+way/1239088646,school,Bishop Corrie Anglo-Indian Higher Secondary School,13.1025852,80.2861933,True
+way/1239353112,school,St. Anne's Girls Higher Secondary School / St. Francis Xavier's Primary School / St. Anne's Convent,13.0991294,80.2850251,True
+way/1239353120,school,St. Francis Xavier Anglo-Indian Higher Secondary School,13.0989461,80.2855722,True
+way/1239353122,school,,13.0983664,80.2851306,True
+way/1239369341,school,Chennai Urdu Middle School,13.0978847,80.2860648,True
+way/1239369342,school,,13.0983467,80.2861633,True
+way/1241283253,school,Shri Sarathy Vidyalaya Nursery and Primary School,13.0983182,80.2844095,True
+way/1241298308,hospital,Mint Hospital,13.100229,80.2837595,True
+way/1245194387,park,,13.0884858,80.1927417,True
+way/1252873485,park,,13.0377772,80.2365662,True
+way/1252873486,park,,13.0376686,80.2366249,True
+way/1252873487,park,,13.0375088,80.2363273,True
+way/1252873488,park,,13.0376061,80.2362647,True
+way/1263441145,hospital,,13.0985158,80.2796105,True
+way/1264096553,park,Babuji Memorial Ashram,13.0196138,80.1767792,True
+way/1264854948,hospital,Vinitha Multi Speciality Hospital,13.0544844,80.2453874,True
+way/1267555310,park,,13.0940516,80.282207,True
+way/1274717686,park,,13.0536699,80.2128639,True
+way/1274717696,park,,13.0592059,80.2156268,True
+way/1274719534,park,,13.0581755,80.2167574,True
+way/1285178550,park,Ranga garden park,13.1238399,80.2005908,True
+way/1288910793,school,Velammal Global School,13.158466,80.1974178,True
+way/1289794279,park,Barathiyar Park,12.9829735,80.2218864,True
+way/1289802426,hospital,Dr. Mehta's Hospitals - Global Campus,13.0617739,80.1356616,False
+way/1307561461,park,Elegant Pinnacle Park,12.878117,80.216014,True
+way/1309791529,park,,13.140921,80.1909931,True
+way/1310971065,park,Teachers colony park,13.1294561,80.2015091,True
+way/1314581960,school,Dr.B.M. Sundaravadanan Matriculation Higher Secondary School,13.0803052,80.2230732,True
+way/1314584110,school,Girls Higher Secondary School,13.0772327,80.2244586,True
+way/1314584114,hospital,Government child birth Hospital,13.0765495,80.2245565,True
+way/1314660931,school,Chennai Middle School,13.0765234,80.2235869,True
+way/1323805507,school,Sri Chaitanya Techno School,12.9775609,80.2179159,True
+way/1323806867,school,Bethel Matriculation hr sec school,12.9758765,80.2230577,True
+way/1329582487,park,Krishnapuram Park,13.1216746,80.1463209,True
+way/1330104072,school,GK Shetty Vivekananda Vidyalaya,13.1274387,80.1393444,False
+way/1338852799,park,,12.873365,80.219418,True
+way/1338852800,park,,12.8736942,80.2194731,True
+way/1338852801,park,,12.8732926,80.2197767,True
+way/1338852802,park,,12.8736216,80.2198097,True
+way/1338987960,park,Metropolitan Chennai Corporation Park,13.0142403,80.1562679,True
+way/1338989730,school,Ology School Ground,13.0156686,80.1560737,True
+way/1338991811,park,Kolapakkam Park,13.0128977,80.1568007,False
+way/1353938220,park,,12.971886,80.2268065,True
+way/1353938225,park,,12.9679893,80.2381022,True
+way/1353938227,school,,12.9662704,80.2418081,True
+way/1354435845,school,,12.9436831,80.2321112,True
+way/1354435861,school,,12.9418664,80.2035005,True
+way/1354435862,school,,12.9397928,80.2151848,True
+way/1354435885,school,,12.9419284,80.2119139,True
+way/1354435907,park,,12.9425521,80.2114983,True
+way/1354443590,school,,12.953783,80.2046586,True
+way/1363535447,park,,12.9960315,80.2459573,True
+way/1363535448,park,,12.9961892,80.2462126,True
+way/1364549855,park,,12.9962078,80.2466576,True
+way/1364549859,park,,12.9960745,80.2465403,True
+way/1373636175,school,,12.9547011,80.2384979,True
+way/1373636348,school,St. George Matric Higher Secondary School,12.9509727,80.2346458,True
+way/1373636356,hospital,Chennai Urology & Robotics Institute,12.9520249,80.2412332,True
+way/1373636360,school,"Government Higher Secondary School, Okkiam Thuraipakkam",12.9495239,80.2416625,True
+way/1373748178,park,,12.94705,80.2339228,True
+way/1373821405,school,,12.9461567,80.256816,True
+way/1373996238,park,,12.9489659,80.2336349,True
+way/1373996247,park,,12.9463491,80.2330408,True
+way/1374655866,park,,12.9419996,80.2557046,True
+way/1378947370,park,,12.9184393,80.1712391,False
+way/1382246419,park,,13.0025098,80.2470498,True
+way/1382248559,park,,12.9971743,80.2462143,True
+way/1383486898,park,,13.0156047,80.1876183,True
+way/1383489933,park,,13.0275995,80.1357261,False
+way/1383489937,park,,13.029244,80.1357652,False
+way/1395438696,park,,13.1781335,80.3044994,True
+way/1395438697,park,,13.1787246,80.3029492,True
+way/1408241420,school,St. Joseph's Matriculation Higher Secondary School,13.2206104,80.3192294,True
+way/1410036059,hospital,Govt. Kilpauk Hospital,13.0766394,80.2430155,True
+way/1410285626,park,,13.1662551,80.2945028,True
+way/1418928205,park,Dr. M.S. Swaminathan Wetland Eco Park,13.0404791,80.1457979,True
+way/1424951155,community_centre,SPACES,13.0024783,80.2716945,True
+way/1425739385,school,Ramakrishna Mission Residential High School,13.041574,80.2636677,True
+way/1428318904,hospital,Gynmc PG Block,13.0769748,80.2174878,True
+way/1459226733,library,Central Library,12.9909677,80.2339604,True
+way/1480836551,school,Smt. Mohini Saraogi Vivekananda Vidyalaya,13.1789878,80.3015157,True
+way/1485978713,school,Madambakkam High School Ground,12.9090179,80.1530486,False
+way/1485978714,park,Yeshwanth Nagar Park,12.9008143,80.1496296,False
+way/1486781522,park,Natesan Park,13.0578947,80.1921429,True
+way/1487226519,park,Chennai Corporation Park,12.9759602,80.2178136,True
+way/1508224671,park,,13.0914984,80.194862,True
+way/1508224684,park,,13.0807245,80.2213163,True
+way/1508224694,community_centre,Amma Arangam,13.0824926,80.219811,True
+way/1508224695,park,,13.0826604,80.2202837,True
+way/1508224702,park,,13.084049,80.2236968,True
+way/1528196779,community_centre,Velammal Hall,13.0807627,80.1618484,True
+way/1528196780,community_centre,PSB Conventions,13.1059221,80.1627016,True
+way/1528196783,community_centre,Mohan Gardens,13.1178748,80.196208,True
+way/1528380352,school,Government School,13.0932005,80.1593062,True
+way/1528770737,park,TAISHA Park,13.055321,80.1878421,True
+way/1529537806,park,Navins OSR park,12.9072274,80.1831942,False
+way/1531057133,park,A.G.S. Colony Park,12.9727877,80.2086655,True
+way/1531057134,park,,12.9728714,80.2076902,True
+way/1531806196,park,Jothi Nagar Park,12.9394018,80.1384295,False
+way/1533021093,park,Malishwari Nagar Park,12.904444,80.1460631,False
+way/1533021094,park,Bhuvaneswari Nagar Park,12.9032094,80.1475335,False
+way/1533501161,hospital,Dr. Agarwal's Eye Hospital - Ambattur,13.1218701,80.1472701,True
+way/1533546775,hospital,Mother's Speciality Hospital,13.1210134,80.14985,True
+way/1533546776,hospital,Mother's Hospital - General & Laparoscopic center,13.1209479,80.1495211,True
+way/1533550991,clinic,Swathi Fertility Centre,13.1238452,80.1497316,True
+way/1533595574,hospital,Rakki Hospital,13.1216415,80.1512869,True
+way/1533900649,community_centre,Sri Ranga Hall,13.1245296,80.1511786,True
+way/1533900659,community_centre,Thiruvizha Hall,13.1235916,80.1454462,True
+way/1534681406,park,Corporation Park - Kallikuppam,13.1313784,80.1665455,True
+way/1535985670,park,Bharathi Nagar Park,13.1283546,80.1572861,True
+way/1535985671,park,"Vannakulam Park, Pari Nagar",13.1190065,80.1617697,True
+way/1535985672,park,"GCC Park, Athipattu",13.0959668,80.1542163,True
+way/1535985673,park,Corporation Park Nolambur,13.0801764,80.1621745,True
+way/1536100228,school,Velammal NewGen School,13.1517075,80.1942953,True
+way/1536688663,park,Kumar Avenue Children's Park,12.93411,80.1389546,False
+way/1540938488,school,THe PSBB Millenium School,12.8742031,80.2075548,False
+way/1540976874,hospital,MMC Government Hospital,13.1635612,80.2438376,True
+way/1540976876,park,,13.1587866,80.2492764,True
+way/1541219460,park,Aavin Park,13.1457988,80.239219,True
+way/1541240454,park,Mayor Sathiyamoorthy Park,13.0743819,80.2510549,True
+way/1541240467,school,Greater Chennai Middle School,13.0738958,80.2465879,True
+way/1541290586,park,GCC OSR Land Park,12.9909644,80.2177439,True
+way/1541290590,park,,12.9924836,80.2175663,True
+way/1543217024,park,"GCC Park, Ramapuram",13.0318957,80.1829805,True
+way/1544017031,school,St. Britto's Academy Senior Secondary School,12.9929624,80.2101891,True
+way/1544073583,park,,12.900323,80.2275999,True
+way/1544629589,school,,12.9250648,80.2279712,True
+way/1544754971,park,,13.0976121,80.1552552,True
+way/1544754973,park,"GCC Park, Athipattu",13.0962826,80.1540812,True
+way/1544754976,park,,13.0972143,80.1537795,True
+way/1544754977,park,,13.0971203,80.1533275,True
+way/1545061816,park,"GCC Park, Ramapuram",13.0246899,80.1790111,True
+way/1545658249,park,,12.9498307,80.2269883,True
+way/1545658250,park,,12.9498773,80.2282091,True
+way/1545658251,park,,12.9499112,80.228838,True
+way/1545658252,park,,12.9499836,80.2301494,True
+way/1546051642,park,Seethapathy Nagar Park,12.980623,80.2273935,True
+way/1546117006,school,Balakka Nursery and Primary School,13.0522458,80.2585162,True
+way/1546252105,school,Velammal Matric Hr Sec School,13.146782,80.1937427,True
+way/1546615782,school,,12.9539369,80.1658025,False
+way/1546615785,community_centre,Preethika Mahal,12.9534772,80.1657069,False
+way/1546917949,hospital,Kauvery Hospitals,12.9480968,80.1895707,False
+way/1548276509,school,Hussainy Schools & Home for Children,13.0261976,80.1715105,True
+way/1551295879,park,"GCC Park, KPK Nagar",12.9773015,80.2458546,True
+way/1551345378,park,Rail Vihar Park,13.1126636,80.1455491,True
+way/1551462425,school,P.J Gupta's High school,13.1165649,80.1535287,True
+way/1552015237,park,Kalaingar Centenary Park,13.0426987,80.2480685,True
+way/1552376773,park,,12.9824748,80.1674804,True
+way/1553299853,park,Greater Chennai Corporation Park,13.0995791,80.1587114,True
+way/1553299854,park,Menambedu Lake Park,13.1230215,80.1672752,True
+way/1553299858,park,Children's Park,13.1233802,80.1471547,True
+way/1553299861,park,Corporation Park Ward 7 - Oragadam,13.1332544,80.1537019,True
+way/1553299864,park,Corporation Park Oragadam,13.1338383,80.1527048,True
+way/1553304910,school,PNET Global School,13.1218054,80.1531318,True
+way/1553304911,school,Aacini Matric Hr. Sec. School,13.1221068,80.1526911,True
+way/1553309127,school,Ebenezer Marcus Matric School,13.1312038,80.1567019,True
+way/1553309128,school,Sethu Bhaskara Matric Hr. Sec. School,13.1305687,80.1562168,True
+way/1553567129,school,Ebenezer Marcus International School,13.1317257,80.1578211,True
+way/1553567131,school,Annai Violet International School,13.1325158,80.1583979,True
+way/1553988173,park,,13.0593857,80.1490718,False
+way/1554431374,park,,12.9763165,80.2304175,True
+way/1554732316,school,"Velammal Vidhyashram, Ambattur",13.1284814,80.1495546,True
+way/1554732318,school,"Velammal Vidhyashram, Ambattur",13.128144,80.1490704,True
+way/1554752867,school,Hussain Memorial Matric Hr. Sec. School,13.1214595,80.1470035,True
+way/1554752868,school,Sharon Matric Hr. Sec. School,13.1360749,80.1684919,True
+way/1554752869,school,"Everwin Vidhyashram, Surapet",13.1404881,80.1845151,True
+way/1554752870,school,Sree Saraswathi Matriculation School,13.135303,80.1760002,True
+way/1555049082,clinic,"Urban Primary Health Center, Varadharajapuram",13.1126422,80.1534067,True
+way/1556740019,school,The Indian Public School,13.1116696,80.1590683,True
+way/1557270664,community_centre,Ayswariya Mahal & Sowbhagya Mahal,13.0623588,80.2110861,True
+way/1558574783,school,Birla Open Minds International School,13.0924593,80.1516403,True
+way/1558574794,school,Velammal Vidyalaya Ayanambakkam,13.0815523,80.1516155,False
+way/1558576840,school,Velammal Vidyalaya Annexure,13.0803945,80.1551224,False
+way/1558781671,school,Emmanuel Methodist Matric Hr. Sec. School,13.1309725,80.1611636,True
+way/1561921988,school,Mar Gregorios Public School (CBSE),13.0812526,80.1719331,True
+relation/5298914,community_centre,Elam Mahal,13.1217631,80.15176,True
+relation/10107530,park,,13.0346062,80.2290086,True
+relation/14377391,hospital,Royapettah Government Hospital,13.0541723,80.2649264,True
+relation/14906650,park,,13.0815404,80.2727157,True
+relation/15427385,park,,13.0644145,80.2848013,True
+relation/16065489,park,,13.1045627,80.1966866,True
+relation/16952798,school,Elephant Gate Chennai High School,13.0947134,80.2755726,True

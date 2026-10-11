@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 """
 T20: building-level drill-down for the top-risk hexes.
 
@@ -354,7 +354,9 @@ def main():
             time.sleep(PAUSE_S)
     if failed:
         print(f"\nWARNING: {len(failed)} hexes could not be downloaded and are missing from the result: {failed}\n"
-              "  Run the script again later; hexes already downloaded are cached and will not be fetched twice.")
+              "  Existing CSV/JSON outputs have been preserved. Run again later; successful batches are cached.")
+        sys.exit("Incomplete Overpass fetch; refusing to overwrite building-drilldown outputs.")
+
     out, skipped = build(sel, rings, got, args.min_roof)
     if not out:
         sys.exit("No buildings found.")

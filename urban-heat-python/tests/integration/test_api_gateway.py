@@ -1,45 +1,68 @@
 import os
-
 import boto3
 import pytest
 import requests
-
-"""
-Make sure env variable AWS_SAM_STACK_NAME exists with the name of the stack we are going to test. 
-"""
 
 
 class TestApiGateway:
 
     @pytest.fixture()
     def api_gateway_url(self):
-        """ Get the API Gateway URL from Cloudformation Stack outputs """
-        stack_name = os.environ.get("AWS_SAM_STACK_NAME")
+        """Get the configured API URL or resolve it from CloudFormation."""
+        configured_url = os.environ.get("CLIMATEGUARD_API_URL")
 
-        if stack_name is None:
-            raise ValueError('Please set the AWS_SAM_STACK_NAME environment variable to the name of your stack')
+        if configured_url:
+            return configured_url.rstrip("/")
+
+        stack_name = os.environ.get(
+            "AWS_SAM_STACK_NAME",
+            "urban-heat-python"
+        )
 
         client = boto3.client("cloudformation")
 
         try:
             response = client.describe_stacks(StackName=stack_name)
-        except Exception as e:
-            raise Exception(
-                f"Cannot find stack {stack_name} \n" f'Please make sure a stack with the name "{stack_name}" exists'
-            ) from e
+        except Exception as exc:
+            pytest.skip(
+                f"Could not inspect CloudFormation stack '{stack_name}': "
+                f"{exc}"
+            )
 
-        stacks = response["Stacks"]
-        stack_outputs = stacks[0]["Outputs"]
-        api_outputs = [output for output in stack_outputs if output["OutputKey"] == "HelloWorldApi"]
+        stacks = response.get("Stacks", [])
+
+        if not stacks:
+            pytest.skip(f"Stack '{stack_name}' was not found.")
+
+        outputs = stacks[0].get("Outputs", [])
+        api_outputs = [
+            output["OutputValue"]
+            for output in outputs
+            if output["OutputKey"] == "RiskApiUrl"
+        ]
 
         if not api_outputs:
-            raise KeyError(f"HelloWorldAPI not found in stack {stack_name}")
+            pytest.skip("RiskApiUrl output was not found in the stack.")
 
-        return api_outputs[0]["OutputValue"]  # Extract url from stack outputs
+        return api_outputs[0].rstrip("/")
 
     def test_api_gateway(self, api_gateway_url):
-        """ Call the API Gateway endpoint and check the response """
-        response = requests.get(api_gateway_url)
+        """Verify that POST /risk returns a valid prediction."""
+        response = requests.post(
+            api_gateway_url,
+            json={
+                "location_id": "integration_test",
+                "temperature": 36,
+                "humidity": 40
+            },
+            timeout=20
+        )
 
-        assert response.status_code == 200
-        assert response.json() == {"message": "hello world"}
+        assert response.status_code == 200, response.text
+
+        data = response.json()
+
+        assert data["location_id"] == "integration_test"
+        assert data["temperature"] == 36
+        assert data["humidity"] == 40
+        assert data["risk_level"] == "MODERATE"

@@ -1,4 +1,5 @@
-
+import csv
+import io
 import json
 import os
 import boto3
@@ -8,6 +9,14 @@ from decimal import Decimal
 dynamodb = boto3.resource("dynamodb")
 TABLE_NAME = os.environ.get("TABLE_NAME", "HeatRiskPredictions")
 table = dynamodb.Table(TABLE_NAME)
+
+s3 = boto3.client("s3")
+SUMMARY_BUCKET = os.environ.get(
+    "SUMMARY_BUCKET", "urban-heat-risk-sai-001"
+)
+SUMMARY_KEY = os.environ.get(
+    "SUMMARY_KEY", "processed/chennai_risk_summary.csv"
+)
 
 
 def calculate_risk(temperature, humidity):
@@ -30,7 +39,62 @@ def response(status_code, body):
     }
 
 
+def get_risk_summary():
+    try:
+        result = s3.get_object(
+            Bucket=SUMMARY_BUCKET,
+            Key=SUMMARY_KEY
+        )
+
+        content = result["Body"].read().decode("utf-8")
+        rows = csv.DictReader(io.StringIO(content))
+
+        summary = []
+
+        for row in rows:
+            summary.append({
+                "risk_category": row["risk_category"],
+                "hexagons": int(row["hexagons"]),
+                "mean_risk": (
+                    float(row["mean_risk"])
+                    if row["mean_risk"].strip()
+                    else None
+                ),
+                "vulnerable_population": float(
+                    row["vulnerable_population"]
+                )
+            })
+
+        return response(200, {
+            "source": SUMMARY_KEY,
+            "count": len(summary),
+            "summary": summary
+        })
+
+    except Exception:
+        print("Failed to read the configured S3 risk summary")
+        return response(500, {
+            "error": "Failed to retrieve risk summary"
+        })
+
+
 def lambda_handler(event, context):
+    method = event.get("httpMethod", "")
+
+    if not method and isinstance(event.get("requestContext"), dict):
+        method = (
+            event["requestContext"]
+            .get("http", {})
+            .get("method", "")
+        )
+
+    path = event.get("path", "")
+    if not path:
+        path = event.get("rawPath", "")
+
+    if method == "GET" and path.rstrip("/") == "/summary":
+        return get_risk_summary()
+
     try:
         body = event.get("body", event)
 

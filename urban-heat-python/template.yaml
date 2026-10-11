@@ -1,4 +1,4 @@
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: Urban Heat Risk Prediction development API
 
@@ -16,18 +16,34 @@ Resources:
       Handler: app.lambda_handler
       Runtime: python3.12
       MemorySize: 128
+
       Environment:
         Variables:
           TABLE_NAME: HeatRiskPredictions
+          SUMMARY_BUCKET: urban-heat-risk-sai-001
+          SUMMARY_KEY: processed/chennai_risk_summary.csv
       Policies:
         - DynamoDBWritePolicy:
             TableName: HeatRiskPredictions
+        - Version: "2012-10-17"
+          Statement:
+            - Effect: Allow
+              Action:
+                - s3:GetObject
+              Resource: arn:aws:s3:::urban-heat-risk-sai-001/processed/chennai_risk_summary.csv
+
       Events:
         RiskPost:
           Type: Api
           Properties:
             Path: /risk
             Method: post
+
+        SummaryGet:
+          Type: Api
+          Properties:
+            Path: /summary
+            Method: get
 
 Outputs:
   RiskApiUrl:
